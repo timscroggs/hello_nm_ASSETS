@@ -1,0 +1,25 @@
+<div>where mountains meet technology.</div>
+
+<!--<iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/gfobert.p3fpln05/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw'></iframe>-->
+
+<meta charset='utf-8' />
+    <title></title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+        .container {width: 100%; height: 500px}
+    </style>
+
+<div class="container" id='map'></div>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
+var map = new mapboxgl.Map({
+    container: 'map', // container id
+    style: 'mapbox://styles/gfobert/cikcuwcv8007c9slyoez5mhyj', //stylesheet location
+    center: [-82.56, 35.60], // starting position
+    zoom: 13.7// starting zoom
+});
+    </script>
