@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+body {
+	
+  	  
+
+}
+
+html { 
+  background: url(zeis.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  
+}
+@font-face {
+  font-family: 'Raleway';
+  src:url(raleway_thin-webfont.woff);
+  src:url(raleway_thin-webfont.ttf);
+  src:url(Raleway%20Thin.otf);
+  
+  
+  
+  
+ 
+}
+
+
+/* ------------------------------------------------------------------ */
+
+background{
+	opacity:0.7;	
+	
+	
+}
+
+h1 {
+	width: 1200px;
+	height: 336px;
+	font-family: 'Raleway';
+	font-style:bold;
+	color: #FFFFFF;
+	font-size: 110px;
+	font-weight: 100;
+	position:absolute;
+	top:50px;
+	left:275px;
+	
+	
+	
+	}
+	
+p{
+	width: 678px;
+	height: 310px;
+	font-family: 'Raleway';
+	font-style: bold;
+	color: #FFFFFF;
+	font-size: 40px;
+	font-weight: 100;
+	position:absolute;
+	top:250px;
+	left:425px;
+	text-align:center;
+	z-index:3;
+}
+
+
+
+
+
+
+/* ------------------------------------------------------------------ */
