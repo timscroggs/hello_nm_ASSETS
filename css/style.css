@@ -1,0 +1,146 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+html {
+    width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  background-color: #bebebe;
+  font-family: 'Source Sans Pro', sans-serif;
+  display: flex;
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.tame {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.nm_kinds {
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.nm_kinds h1 {
+    color: #ffffff;
+    font-size: 5em;
+}
+
+.question h1 {
+  color: #ffffff;
+  font-size: 5em;
+}
+
+.question {
+    position: relative;
+    text-align: left;
+}
+
+.question h1 {
+    color: #ffffff;
+    font-size: 5em;
+}
+
+.answer {
+    display: block;
+    position: relative;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 3em;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.typed {
+  border-bottom: 2px solid #51a0a7;
+}
+
+.typed-cursor{
+   opacity: 1;
+   animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+p {
+  font-size: 17px;
+  line-height: 30px;
+  font-family: 'Lato', Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+}
+.info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+}
+.info a {
+  color: #16b39b;
+}
+
+.block {
+  display: inline-block;
+  width: 300px;
+  height: 160px;
+  background-position: center center;
+  background-size: 160%;
+  transition: all 0.35s;
+  display: block;
+  transition: all 0.35s;
+  color: #fff;
+  padding: 40px;
+  cursor: pointer;
+}
+
+.inline {
+    display: inline-block;
+}
+
+.one {
+  background-image: url("/images/gphdesign.jpeg");
+}
+.two {
+  background-image: url("/images/animation.jpeg");
+}
+.three {
+  background-image: url("/images/video.jpeg");
+}
+
+.block h2 {
+  font-size: 30px;
+  line-height: 30px;
+  margin: 0 0 25px 0;
+  padding: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: 400;
+    color: #16b39b;
+}
+
+.block:hover {
+  background-color: #314345;
+  background-position: center center;
+  background-size: 200%;
+  transition: all 0.35s;
+}
+

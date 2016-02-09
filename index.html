@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>BORING!</title>
+
+    <!-- CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="tame">
+
+<section class="nm_kinds">
+    <h1>Kinds of New_Media</h1>
+	<div class="inline">
+		<div class="block one">
+		<h2>Interactive</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+	    </div>
+	</div>
+	
+	<div class="inline">
+	<div class="block two">
+		<h2>Animation</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+	</div>
+	</div>
+	
+	<div class="inline">
+	<div class="block three">
+		<h2>Video </h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+	</div>
+	</div>
+
+
+<div class="question">
+<h1>
+ What can you do with a degree in NM?
+</h1>
+<h2>You can be <span id="typed" class="typed"></span></h2>
+</div>
+</section>
+</div>
+ 
+<!--quick JS -->
+<script>
+$(function() {
+	$("#typed").typed({
+		strings: ["an ASTRONAUT, JK","a 3D ANIMATOR","a CODER","a DIGITAL EDITOR", "a VIDEO DIRECTOR", "a MUSICIAN", "a UX/UI DESIGNER", "a GRAPHIC DESIGNER","an EDUCATOR"],
+		typeSpeed: 100,
+    backDelay: 1500,
+    loop: true,
+    callback: function(){}
+	});
+});
+</script>
+</body>
+</html>
