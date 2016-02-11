@@ -16,6 +16,10 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
 
+    <!-- FeatherLight Box -->
+    <link href="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,51 +30,31 @@
 </head>
 <body>
 <div class="tame">
-
-<section class="nm_kinds">
-    <h1>Kinds of New_Media</h1>
-	<div class="inline">
-		<div class="block one">
-		<h2>Interactive</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-	    </div>
-	</div>
-	
-	<div class="inline">
-	<div class="block two">
-		<h2>Animation</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-	</div>
-	</div>
-	
-	<div class="inline">
-	<div class="block three">
-		<h2>Video </h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-	</div>
-	</div>
-
-
-<div class="question">
-<h1>
- What can you do with a degree in NM?
-</h1>
-<h2>You can be <span id="typed" class="typed"></span></h2>
-</div>
+<header class="nm_kinds">
+    <h1><span>Flavors</span> <span> of</span> <span>New_Media</span></h1>
+</header>
+<section class="new-media-kinds container">
+                	<a href="#" data-featherlight="#mylightbox"><div class="new-media new-media-b new-media-im">
+                    	<div class="new-media-path new-media-path-b">Interactive Media</div>
+                    	<div class="new-media-legend new-media-legend-b">More_Info</div>
+                    </div></a>
+                    
+                    <a href="#"><div class="new-media new-media-b new-media-an">
+                        <div class="new-media-path new-media-path-b">Animation</div>
+                        <div class="new-media-legend new-media-legend-b">More_Info</div>
+                    </div></a>
+                    
+                    <a href="#"><div class="new-media new-media-b new-media-vo">
+                        <div class="new-media-path new-media-path-b">Video</div>
+                        <div class="new-media-legend new-media-legend-b">More_Info</div>
+                    </div></a>
+                    
+                    <a href="#"><div class="new-media new-media-b new-media-sm">
+                        <div class="new-media-path new-media-path-b">Social Media</div>
+                        <div class="new-media-legend new-media-legend-b">More_Info</div>
+                    </div></a>
 </section>
 </div>
- 
-<!--quick JS -->
-<script>
-$(function() {
-	$("#typed").typed({
-		strings: ["an ASTRONAUT, JK","a 3D ANIMATOR","a CODER","a DIGITAL EDITOR", "a VIDEO DIRECTOR", "a MUSICIAN", "a UX/UI DESIGNER", "a GRAPHIC DESIGNER","an EDUCATOR"],
-		typeSpeed: 100,
-    backDelay: 1500,
-    loop: true,
-    callback: function(){}
-	});
-});
-</script>
+
 </body>
 </html>
