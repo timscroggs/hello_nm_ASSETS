@@ -1783,15 +1783,15 @@ function(t) {
         }), $(".about-wrap").colorScroll({
             colors: [{
                 color: "#00ff0a",
-                position: "40%"
+                position: "10%"
             }, {
                 color: "#00ffb1",
-                position: "60%"
+                position: "40%"
+            }, {
+                color: "#0069f8",
+                position: "70%"
             }, {
                 color: "#1400ff",
-                position: "80%"
-            }, {
-                color: "#FFFFFF",
                 position: "90%"
             }]
         })

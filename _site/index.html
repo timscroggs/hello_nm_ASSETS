@@ -25,11 +25,13 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
      <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.css' rel='stylesheet' />
+    
+    
     <script type="text/javascript" src="/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/jquery.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.js'></script>
     <script src="/scripts/vendor/modernizr-2.8.3.min.js"></script>
-    
+   
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -48,7 +50,7 @@
         </div>
 
         <div id="hero">
-            <h1 class="hero-txt hero-reveal">Open your mind...<br>  <!-- Button trigger modal --><a class="btn" data-toggle="modal" data-target="#myModal" id="play-video"><i class="fa fa-play-circle fa-1x"></i></a></h1>
+            <h1 class="hero-txt hero-reveal">Watch what we think here.<br>  <!-- Button trigger modal --><a class="btn" data-toggle="modal" data-target="#myModal" id="play-video"><i class="fa fa-play-circle fa-1x"></i></a></h1>
         </div>
 
     </header>
@@ -104,38 +106,77 @@
     </div>
 
         <section id="hello">
-    <h2>so what is New_Media</h2>
-    <p class="txt-lrg">Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur. Nullam quis risus eget urna mollis ornare vel eu leo. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Maecenas faucibus mollis interdum.</p>
+    <h2>what is New_Media?</h2>
+    <p class="txt-lrg">New Media is humans playing, breaking, learning, building, fixing, and innovating with technology in search of new forms of communication, art and entertainment. It's anything, you make it – it's everything, you create it. New media is <span style="text-decoration:underline;">YOU</span> experimenting with the power and mysterious possilbilities of technology. </p>
 </section>
     <section id="types">
     <h2>types_nm</h2>
+
+
     <div class="types-row clearfix">
-        <div class="block one type-blk">
-            <h3>Interactive</h3>
-            <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
-        </div>
 
+        <a href="#" data-featherlight="#interactive">
+            <div class="block_types one type-blk">
+                <div class="type_content">
+                    <h3 class="title">web &amp; Interactive Design</h3>
+                    <p>learn_more</p>
+                </div>
+            </div>
+        </a>
 
+        <a href="#" data-featherlight="#animation">
+            <div class="block_types two type-blk">
+                <div class="type_content">
+                    <h3 class="title">3-d &amp; Animation</h3>
+                    <p>learn_more</p>
+                </div>
+            </div>
+        </a>
 
-        <div class="block two type-blk">
-            <h3>Animation</h3>
-            <p>Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. </p>
-        </div>
-
-
-
-        <div class="block three type-blk">
-            <h3>Video </h3>
-            <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vivamus sagittis lacus vel augue laoreet rutrum. </p>
-        </div>
-
-        <div class="block four type-blk">
-            <h3>Or mix it up </h3>
-            <p>You choose how you want to blend the technologies throughout your degree and go crazy. </p>
-        </div>
+        <a href="#" data-featherlight="#video">
+            <div class="block_types three type-blk">
+                <div class="type_content">
+                    <h3 class="title">Video &amp; motion graphics</h3>
+                    <p>learn_more</p>
+                </div>
+            </div>
+        </a>
+        <a href="#" data-featherlight="#mix">
+            <div class="block_types four type-blk">
+                <div class="type_content">
+                    <h3 class="title">Or you can mix it up</h3>
+                    <p>learn_more</p>
+                </div>
+            </div>
+        </a>
     </div>
 
 </section>
+<div class="lightbox" id="interactive">
+    <div class="lightbox-half">
+        <h3 class="title">web &amp; Interactive Design</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
+</div>
+<div class="lightbox" id="animation">
+    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+</div>
+<div class="lightbox" id="video">
+    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+</div>
+<div class="lightbox" id="mix">
+    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+</div>
+
     <!-- Big block of content that has the changing color background when scrolling -->
 
 <div class="about-wrap">
@@ -156,19 +197,24 @@
 
             $(function () {
                 $("#typed").typed({
-                    strings: ["design websites", 
+                    strings: ["do anything you want. no really!",
+                              "design websites", 
                               "be a film director",
                               "work at a hospital",
                               "be a coder",
                               "join the cia!",
-                              "design virtual reality environments",
+                              "build virtual reality environments",
                               "be a digital editor",
                               "work from anywhere on your laptop",
+                              "start a revolution.",
+                              "become a youtube sensation",
+                              "work for Pixar",
+                              "start your own production company",
+                              "work a camera",
                               "create music videos", 
                               "design user interface for surgeons",
                               "make big bucks as a creative director",
                               "be a graphic designer", 
-                              "a GRAPHIC DESIGNER",
                               "do research",
                               "visualize data",
                               "change the world",
@@ -177,7 +223,7 @@
                               "start your own agency",
                               "be an educator"],
                     
-                    typeSpeed: 100,
+                    typeSpeed: 60,
                     backDelay: 1500,
                     loop: true,
                     callback: function () {}
@@ -188,48 +234,148 @@
 
 
 </section> 
+    <section id="statistics">
+    <h2>proof_nm</h2>
+    <div class="statistics-row clearfix">
+        <div class="block_timeline one_timeline type-blk">
+            <p>If your goal was to become a graphic designer four years ago, you are now headed for a field that has become wholly digitized, so that designers with website design and digital animation experience will have the best opportunities and likely the highest salaries in the profession.</p>
+            <h6 class="credit">Source: Bureau of Labor Statistics</h6>
+        </div>
+
+
+
+        <div class="block_timeline two_timeline type-blk">
+            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <p>The economic impact of art and design exceeds that of sports worldwide </p>
+            <h6 class="credit">Source: U.S. Bureau of Education</h6>
+        </div>
+
+
+
+        <div class="block_timeline three_timeline type-blk">
+            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <p>Creative jobs have grown from 10% to over 30% of the economy </p>
+            <h6 class="credit">Source: Americans for the Arts</h6>
+        </div>
+
+        <div class="block_timeline four_timeline type-blk">
+            <h3><i class="fa fa-binoculars fa-2x"></i> 42%</h3>
+            <p>By 2016, jobs for artists and designers are predicted to increase by 42% </p>
+            <h6 class="credit">Source: National Endowment for the Arts</h6>
+        </div>
+
+        <div class="block_timeline five_timeline type-blk">
+            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <p>Computer Science and Software Engineering are ranked by Forbes as the 3rd and 4th Most Valuable College Majors </p>
+            <h6 class="credit">Source: Forbes</h6>
+        </div>
+
+        <div class="block_timeline six_timeline type-blk">
+            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h6 class="credit">Source: Name Here</h6>
+        </div>
+
+        <div class="block_timeline seven_timeline type-blk">
+            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h6 class="credit">Source: Name Here</h6>
+        </div>
+
+        <div class="block_timeline eight_timeline type-blk">
+            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h6 class="credit">Source: Name Here</h6>
+        </div>
+
+    </div>
+
+</section>
     <section id="about">
         <h2>Our_Story</h2>
-        <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-
+        <p>We are a science experiment brought together to blend the disciplines of artist, designer, and computer scientist. We are a rare bunch who push oursleves to open our minds and produce creative work in a broad spectrum of softwares and technological devices – and then, after we have made a crazy assortment of projects, we choose and focus on our specialty with well rounded experience in new media and a widened understanding of processes. Check out what a typical portfolio of one of our graduates looks like.</p>
+    
         <div id="nm-slider" class="owl-carousel owl-theme">
-            <div class="item"><img src="/images/animation.jpeg"></div>
-            <div class="item"><img src="/images/photography.jpeg"></div>
-            <div class="item"><img src="/images/video.jpeg"></div>
-            <div class="item"><img src="/images/video.jpeg"></div>
+            <div class="item"><div class="port-slider"><h1 class="hero-txt">Check this out!</h1> <a href="#"><h2>Click here</h2></a></div></div>
+            <div class="item"><img src="/images/home5.jpg"></div>
+            <div class="item"><img src="/images/home18.jpg"></div>
+            <div class="item"><img src="/images/home27.jpg"></div>
+            <div class="item"><img src="/images/home6.jpg"></div>
         </div>
 
     </section> 
     <section id="philosophy">
-    <h2>Our Philosophy</h2>
-    <p class="quote">“Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.”</p>
-
+    <h2 class="light">Our_Philosophy</h2>
+    <p class="quote light">“Experimentation is relevant to any discipline but particularly New Media because its <span style="text-decoration:underline;">new</span>, so how are you going to know what's possible unless you play and break things to see how it works”</p>
+    <h6 class="credit light">Curt Cloninger, Professor of New Media at UNC Asheville</h6>
+<br>
 
     <div class="philo-wrap clearfix">
-        <div class="philo-half">
-            <!--put content here-->
+        <div class="philo-half light">
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis.
         </div>
 
-        <div class="philo-half">
-            <!--put content here-->
+        <div class="philo-half light">
+            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Curabitur blandit tempus porttitor. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
         </div>
     </div>
 </section> 
     <section id="commitment">
-    <h2>Our Commitment</h2>
-    <p class="txt-lrg">You will have the tools to go out and create the life you want to live. When you fuse tech with our Liberal arts methods you will become a master problem solver in this culture – probably...if you are any good :&#41;</p>
+    <h2 class="light">Our_Commitment</h2>
+    <p class="txt-adv light">You will be given the tools to go out and create the life you want to live. Using a method that fuses technology with a Liberal Arts education that will make you a unicorn in this media centric culture – probably...if you're any good! :&#41;</p>
 
     <div id="com-photo">
         <img src="images/optical_art.png">
-        <div class="com-hero">this is the future</div>
+        <div class="com-hero">New media is the future of a brave new world and we're here to make you brave!</div>
         <p class="photo-caption"></p>
     </div>
 
-    <p class="txt-lrg">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+    <p class="txt-adv light">Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+</section>
+    <section id="graduate">
+    <div class="graduate-pic light">
+            <img src="/images/idea_graduate.png">
+        </div>
+    <h2 class="light">your_story</h2>
+    <h1 class="hero-txt">typical graduate's portfolio</h1>
+    <br>
+    <p class="txt-adv light">If you graduate from here with a BA in New Media, the potential that you will leave with a diverse portfolio will be great. You will get the opportunity to gain experience across multiple disciplines, technological devices and software.</p>
+    <div class="graduate-wrap clearfix">
+        <div class="graduate-half light">
+            <ul>
+                <li>Custom mythical creature</li>
+                <li>Promotional video using type animation</li>
+                <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
+                <li>Director of an episode for a Independent Pilot Show</li>
+                <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
+                <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
+                <li>Interactive mucsical interface website </li>
+                 
+            </ul>
+        </div>
+
+        <div class="graduate-half light">
+            <ul>
+                <li>3-d animated short film</li>
+                <li>Music video</li>
+                <li>Personal logo</li>
+                <li>Pitch deck template</li>
+                <li>Stop-motion film</li>
+                <li>Abstract film</li>  
+                <li>T-shirt design</li>
+                <li>Web application using an api that evaluates the sentiment of text and website urls</li>
+                <li>Custom typeface that was offered online as a free download</li>
+                <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
+                <li>Narrative short film</li>
+               
+
+            </ul>
+        </div>
+    </div>
 </section>
 
     <section id="nm_buttons">
-        <h1 class="hero-txt">choose wisely</h1>
+        <h1 class="hero-txt">it's your choice</h1>
         <br>
         <div class="center_buttons">
             <a href="http://nm.unca.edu" target="_blank">
@@ -357,6 +503,9 @@
 
     <!-- Main JS -->
     <script src="/scripts/main.js"></script>
+    
+    <!-- for featherlight light box -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
 
     <!-- Include all compiled plugins (below), or include individual files as needed -->
