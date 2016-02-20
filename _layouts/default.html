@@ -1,0 +1,223 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{page.title}}{% else %}{{site.title}}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description}}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{site.baseurl}}{{page.url}}">
+    <link rel="apple-touch-icon" href="{{site.baseurl}}/apple-touch-icon.png">
+    <link rel="stylesheet" href="{{site.baseurl}}/css/bootstrap.css">
+
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.css' rel='stylesheet' />
+    
+    
+    <script type="text/javascript" src="{{site.baseurl}}/scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="{{site.baseurl}}/scripts/jquery.js"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.js'></script>
+    <script src="{{site.baseurl}}/scripts/vendor/modernizr-2.8.3.min.js"></script>
+   
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+    <!-- load cover -->
+    <div class="pace-cover"></div>
+<div class="container-main">
+    <header role="banner" id="top">
+        
+        <div class="curtain">
+            <h2 class="fixed-logo">{{site.title}}</h2>
+            <div class="hero-knockout"></div>
+        </div>
+
+        <div id="hero">
+            
+            <h1 class="hero-txt hero-reveal">Watch what we think here.<br>  <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
+            
+            <!--<h1 class="hero-txt hero-reveal">Watch what we think here.<br>  <!-- Button trigger modal <a class="btn" data-toggle="modal" data-target="#myModal" id="play-video"><i class="fa fa-play-circle fa-1x"></i></a></h1>-->
+        </div>
+
+    </header>
+
+    <iframe class="lightbox" src="//player.vimeo.com/video/33110953" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    
+    <!-- Modal 
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="close-vid">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="pause-video">&times;</button>
+        </div>
+
+        <div class="video-watch">
+            <iframe id="player" src="//www.youtube.com/embed/nLTlo-LGAuY" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div>-->
+
+    <div id="nav-spacer"></div>
+
+    <!-- main nav -->
+    <nav id="main-nav">
+        <ul>
+            <li class="nav1 nav-active"><a href="#hello">hello_nm</a></li>
+            <li class="nav2"><a class="ss-target" href="#types">types_nm</a></li>
+            <li class="nav3"><a class="ss-target" href="#faq">faq</a></li>
+            <li class="nav4"><a class="ss-target" href="#about">our_story</a></li>
+            <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
+            <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
+
+        </ul>
+    </nav>
+
+    <!-- mobile nav -->
+    <div id="mobile-nav">
+        <header class="cd-header">
+            <a href="#top">
+                <div class="mobile-nav-logo">hello_nm</div>
+            </a>
+
+            <div class="cd-primary-nav-trigger">
+                <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+            </div>
+        </header>
+
+        <nav>
+            <ul class="cd-primary-nav">
+                <li><a class="ss-target" href="#types">types_nm</a></li>
+                <li><a class="ss-target" href="#faq">faq</a></li>
+                <li><a class="ss-target" href="#about">our_story</a></li>
+                <li><a class="ss-target" href="#locations">location</a></li>
+                <li><a class="ss-target" href="#contact-form">get_more</a></li>
+
+            </ul>
+        </nav>
+    </div>
+
+    {{content}} 
+    {% include footer.html %}
+
+    </div>
+    <!-- Load jQuery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="{{site.baseurl}}/scripts/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+
+
+
+    <!-- Main JS -->
+    <script src="{{site.baseurl}}/scripts/main.js"></script>
+    
+    <!-- for featherlight light box -->
+<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.min.js"></script>
+
+    <script type="text/javascript">
+        if (!window['YT']) {
+            var YT = {
+                loading: 0,
+                loaded: 0
+            };
+        }
+        if (!window['YTConfig']) {
+            var YTConfig = {
+                'host': 'http://bl.ocks.org/'
+            };
+        }
+        if (!YT.loading) {
+            YT.loading = 1;
+            (function () {
+                var l = [];
+                YT.ready = function (f) {
+                    if (YT.loaded) {
+                        f();
+                    } else {
+                        l.push(f);
+                    }
+                };
+                window.onYTReady = function () {
+                    YT.loaded = 1;
+                    for (var i = 0; i < l.length; i++) {
+                        try {
+                            l[i]();
+                        } catch (e) {}
+                    }
+                };
+                YT.setConfig = function (c) {
+                    for (var k in c) {
+                        if (c.hasOwnProperty(k)) {
+                            YTConfig[k] = c[k];
+                        }
+                    }
+                };
+                var a = document.createElement('script');
+                a.id = 'www-widgetapi-script';
+                a.src = 'https:' + '//s.ytimg.com/yts/jsbin/www-widgetapi-vflktr3k_.js';
+                a.async = true;
+                var b = document.getElementsByTagName('script')[0];
+                b.parentNode.insertBefore(a, b);
+            })();
+        }
+        var player;
+
+        function onYouTubePlayerAPIReady() {
+            player = new YT.Player('player');
+        }
+
+        $(document).ready(function () {
+
+            $("#play-video").click(function () {
+                player.playVideo();
+            });
+
+            $("#pause-video").click(function () {
+                player.pauseVideo();
+            });
+        });
+    </script>
+
+
+
+    <!-- Google Analytics -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l;
+            b[l] || (b[l] =
+                function () {
+                    (b[l].q = b[l].q || []).push(arguments)
+                });
+            b[l].l = +new Date;
+            e = o.createElement(i);
+            r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-00000000-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Site by Gabriel Fobert, Nicole Erskine, Janice Andrews, and Tim Scroggs -->
+</body>
+
+</html>
