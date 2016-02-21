@@ -1,13 +1,99 @@
 <div id='map'></div>
 <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
+    L.mapbox.accessToken = 
+'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
+    var geojson = [
+    {
+  "type": "FeatureCollection",
+  "features": [
+      
+      
+      
+    {
+        "type": "Feature",
+        "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.554426,
+            35.600102
+        ]
+      },
+        "properties": {
+        "title": "Moog Music Inc",
+        "marker-color": "#3bb2d0",
+        "marker-size": "medium",
+        "marker-symbol": "triangle"
+      }
+    },
+      
+      
+      
+      {
+        "type": "Feature",
+        "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.552817,
+          35.597776
+        ]
+      },
+        "properties": {
+        "title": "Center for Craft, Creativity & Design",
+        "marker-color": "#3bb2d0",
+        "marker-size": "medium",
+        "marker-symbol": "square"
+      }
+    },
+      
+      {
+        "type": "Feature",
+        "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.552044,
+          35.597118
+        ]
+      },
+        "properties": {
+        "title": "Black Mountain Museum",
+        "marker-color": "#3bb2d0",
+        "marker-size": "medium",
+        "marker-symbol": "star"
+      }
+    },
+      
+      {
+        "type": "Feature",
+        "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -82.567850,
+          35.616402
+        ]
+      },
+        "properties": {
+        "title": "UNC Asheville",
+        "marker-color": "#3bb2d0",
+        "marker-size": "large",
+        "marker-symbol": "college"
+      }
+    }
+      
+  ]
+}
+        ];
+    /*Old Map Code
+    mapboxgl.accessToken =
+    'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
     var map = new mapboxgl.Map({
-        container: 'map', // container id
-        style: 'mapbox://styles/gfobert/cikcuwcv8007c9slyoez5mhyj', //stylesheet location
-        center: [-82.56, 35.60], // starting position
-        zoom: 13.7, // starting zoom
-        scrollZoom:false 
-        
-    });
+    container: 'map', // container id
+    style: 'mapbox://styles/gfobert/cikcuwcv8007c9slyoez5mhyj', //stylesheet location{
+    scrollZoom: false //stop zoom on scroll
+    }).setView([-82.56, 35.60], 13.8); //location of the map*/
+    
+    var map = L.mapbox.map('map', 'gfobert.6f9af935');
+    map.scrollWheelZoom.disable();
+    var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(map);
+    map.scrollWheelZoom.disable();
     
 </script>
