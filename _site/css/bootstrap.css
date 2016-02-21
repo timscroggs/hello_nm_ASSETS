@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:700|Droid+Sans+Mono);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:700|Droid+Sans+Mono); 
 
 /*!
  * Bootstrap v3.0.0
@@ -272,21 +272,6 @@ table {
     border-spacing: 0;
 }
 
-a {
-    text-decoration: none;
-    color: red;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-a:hover,
-a:visited {
-    color: #666;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
 img {
     border: 0;
 }
@@ -529,12 +514,17 @@ a {
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
 }
-a:hover,
+a:hover {
+    color: #000;
+}
 a:visited {
-    color: #fff;
+    color: #777;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+}
+section h2, section p {
+    max-width: 700px;
 }
 section {
     padding-top: 40px;
@@ -542,15 +532,14 @@ section {
     padding-right: 11%;
     padding-left:11%;
 }
-.txt-lrg {
-    width: 65%;
+.txt-lrg {  
     
     font-size: 28px;
     line-height: 1.5;
     text-align: left;
 }
 .txt-adv {
-    width: 65%;
+    
     
     font-size: 26px;
     line-height: 1.5;
@@ -585,23 +574,25 @@ section {
     width: 100%;
     height: 100vh;
     position: fixed;
+    /*
     background: url(/images/artofprojection_small.gif) no-repeat center center;
-    background-color: #fff;
+    background-color: #fff;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    
 }
 #hero h1.hero-txt {
-    top: 20%;
+    top: 40%;
     opacity: 1;
-    width: 86%;
+    width: 100%;
     color: #2b019d;
-    padding: 0 5% 0 11%;
+    /*padding: 0 5% 0 11%;*/
     line-height: 1;
     font-size: 110px;
     font-weight: 700;
-    text-align: left;
+    text-align: center;
     position: relative;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
     text-transform: lowercase;
@@ -613,7 +604,7 @@ h1.hero-txt {
     opacity: 1;
     width: 90%;
     color: #fff;
-    max-width: 80%;
+    /*max-width: 80%;*/
     line-height: 1;
     font-size: 110px;
     font-weight: 700;
@@ -1005,7 +996,7 @@ section#locations {
     margin: 80px auto 0 auto;
 }
 section#locations h2, section#locations p {
-    padding: 0 11%;
+    padding-left: 11%;
 }
 section#locations #map-container {
     height: 700px;
@@ -1016,10 +1007,11 @@ section#locations #map-container #map {
 }
 section#locations #map-container #map-bar {
     width: 100%;
-    height: 25px;
-    bottom: 25px;
+    height: 35px;
+    bottom: 35px;
     position: relative;
     background-color: #DBE0D9;
+    z-index: 9999;
 }
 section#locations #stock {
     padding: 20px 0 0 0;
@@ -2166,6 +2158,7 @@ body.overflow-hidden {
     font-size: 32px;
     color: #000;
     line-height: 64px;
+    max-width: 90%;
 }
 .typed {
     border-bottom: 2px solid #000;
@@ -2201,38 +2194,35 @@ body.overflow-hidden {
 .block_types {
     background-position: center center;
     background-size: cover;
-    -webkit-transition: background-image 0.8s ease-in-out;
-    transition: background-image 0.8s ease-in-out;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
     /*border: solid 5px #000;*/
     color: #fff;
 }
-.block_types:hover {}
+.block_types:hover { }
 .one {
     /*background-color: #2b019d;*/
     background-image: url("/images/home5.jpg");
 }
 .one:hover {
-    border: none;
-    color: white;
-    background-image: url("/images/nature_slow_small.gif")
+   background-image: url("/images/artofprojection_small.gif");
+    color:#000;
 }
 .two {
     background-image: url("/images/home6.jpg");
     /*background-color: #ff5454;*/
 }
 .two:hover {
-    border: none;
-    color: white;
-    background-image: url(/images/nature_slow_small.gif);
+    background-image: url("/images/artofprojection_small.gif");
+    color:#000;
 }
 .three {
     background-image: url("/images/home18.jpg");
     /*background-color: #0b89c1;*/
 }
 .three:hover {
-    border: none;
-    color: white;
-    background-image: url(/images/nature_slow_small.gif);
+    background-image: url("/images/artofprojection_small.gif");
+    color:#000;
 }
 .four {
     background-color: rgba(0, 255, 132, 1);
@@ -2240,7 +2230,7 @@ body.overflow-hidden {
 .four:hover {
     border: none;
     background-color: rgba(0, 255, 132, 1);
-    color: white;
+    color: #000;
     background-image: url("/images/end_fast.gif");
     background-blend-mode: difference;
 }
@@ -2259,7 +2249,15 @@ body.overflow-hidden {
     padding-top: 15px;
     transition: all 0.55s;
     color: #000;
-    border: solid 5px #000;
+    background-color:#fff;
+    /*border: solid 5px #000;*/
+    -webkit-transition: box-shadow .2s, transform .2s, opacity .2s;
+}
+.block_timeline:hover{
+    opacity: 1 !important;
+    -webkit-box-shadow: 0 15px 20px rgba(0,0,0,0.2);
+    -webkit-transform: translate(0, -4px);
+    z-index: 999;
 }
 .one_timeline {
     height: 304px;
@@ -2268,9 +2266,7 @@ body.overflow-hidden {
     width: 42.70833%;
 }
 .one_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url(/images/nature_slow_small.gif)
+    
 }
 .two_timeline {
     float: right;
@@ -2280,12 +2276,7 @@ body.overflow-hidden {
     width: 30.20833%;
 }
 .two_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url(/images/nature_slow_small.gif);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .three_timeline {
     height: 300px;
@@ -2294,12 +2285,7 @@ body.overflow-hidden {
     width: 26.04167%;
 }
 .three_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url(/images/nature_slow_small.gif);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .four_timeline {
     height: 300px;
@@ -2310,12 +2296,7 @@ body.overflow-hidden {
     width: 26.04167%;
 }
 .four_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url("/images/end_fast.gif");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    
 }
 .five_timeline {
     height: 250px;
@@ -2324,9 +2305,7 @@ body.overflow-hidden {
     width: 38.54167%;
 }
 .five_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url("/images/end_fast.gif");
+    
 }
 .six_timeline {
     float: right;
@@ -2336,9 +2315,7 @@ body.overflow-hidden {
     width: 46.875%;
 }
 .six_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url("/images/end_fast.gif");
+    
 }
 .seven_timeline {
     height: 348px;
@@ -2347,9 +2324,7 @@ body.overflow-hidden {
     width: 30.20833%;
 }
 .seven_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url("/images/end_fast.gif");
+   
 }
 .eight_timeline {
     float: right;
@@ -2359,9 +2334,7 @@ body.overflow-hidden {
     width: 26.04167%;
 }
 .eight_timeline:hover {
-    border: none;
-    color: white;
-    background-image: url("/images/end_fast.gif");
+    
 }
 
 /*Creating a portfolio slider in the about wrap section*/
@@ -2467,6 +2440,7 @@ h6.credit {
         margin-right: -.25em
     }
     .featherlight .featherlight-content {
+        max-width: 800px;
         position: relative;
         text-align: left;
         vertical-align: middle;
@@ -2517,3 +2491,4 @@ h6.credit {
         border-bottom: 10px solid transparent;*/
     }
 }
+

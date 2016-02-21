@@ -24,14 +24,14 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
-    
-    
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+
+
     <script type="text/javascript" src="/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/jquery.js"></script>
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
     <script src="/scripts/vendor/modernizr-2.8.3.min.js"></script>
-   
+
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -41,66 +41,71 @@
 
     <!-- load cover -->
     <div class="pace-cover"></div>
-<div class="container-main">
-    <header role="banner" id="top">
-        
-        <div class="curtain">
-            <h2 class="fixed-logo">hello_nm</h2>
-            <div class="hero-knockout"></div>
-        </div>
+    <div class="container-main">
+        <header role="banner" id="top">
 
-        <div id="hero">
-            
-            <h1 class="hero-txt hero-reveal">Watch what we think here.<br>  <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
-            
-            <!--<h1 class="hero-txt hero-reveal">Watch what we think here.<br>  <!-- Button trigger modal <a class="btn" data-toggle="modal" data-target="#myModal" id="play-video"><i class="fa fa-play-circle fa-1x"></i></a></h1>-->
-        </div>
-
-    </header>
-
-    <iframe class="lightbox" src="//player.vimeo.com/video/33110953" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    
-
-    <div id="nav-spacer"></div>
-
-    <!-- main nav -->
-    <nav id="main-nav">
-        <ul>
-            <li class="nav1 nav-active"><a href="#hello">hello_nm</a></li>
-            <li class="nav2"><a class="ss-target" href="#types">types_nm</a></li>
-            <li class="nav3"><a class="ss-target" href="#faq">faq</a></li>
-            <li class="nav4"><a class="ss-target" href="#about">our_story</a></li>
-            <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
-            <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
-
-        </ul>
-    </nav>
-
-    <!-- mobile nav -->
-    <div id="mobile-nav">
-        <header class="cd-header">
-            <a href="#top">
-                <div class="mobile-nav-logo">hello_nm</div>
-            </a>
-
-            <div class="cd-primary-nav-trigger">
-                <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+            <div class="curtain">
+                <h2 class="fixed-logo">hello_nm</h2>
+                <div class="hero-knockout"></div>
             </div>
-        </header>
 
-        <nav>
-            <ul class="cd-primary-nav">
-                <li><a class="ss-target" href="#types">types_nm</a></li>
-                <li><a class="ss-target" href="#faq">faq</a></li>
-                <li><a class="ss-target" href="#about">our_story</a></li>
-                <li><a class="ss-target" href="#locations">location</a></li>
-                <li><a class="ss-target" href="#contact-form">get_more</a></li>
+            <div id="hero">
+
+                <h1 class="hero-txt hero-reveal"><!--what is new media?-->  
+                    <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
+                <video loop autoplay poster="/videos/Snapshots/A-Purple-Balloon.jpg" class="video_layer_vid">
+                    <source src="/videos/MP4/A-Purple-Balloon.mp4" type="video/mp4">
+                    <source src="/videos/OGV/A-Purple-Balloon.ogv" type="video/ogg">
+                    <source src="/videos/WEBM/A-Purple-Balloon.webm" type="video/webm">Your browser does not support HTML5 video.
+                </video>
+
+            </div>
+
+        </header>
+        <div class="lightbox-vid">
+            <iframe class="lightbox" src="//player.vimeo.com/video/33110953" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+
+        <div id="nav-spacer"></div>
+
+        <!-- main nav -->
+        <nav id="main-nav">
+            <ul>
+                <li class="nav1 nav-active"><a href="#hello">hello_nm</a></li>
+                <li class="nav2"><a class="ss-target" href="#types">types_nm</a></li>
+                <li class="nav3"><a class="ss-target" href="#faq">faq</a></li>
+                <li class="nav4"><a class="ss-target" href="#about">our_story</a></li>
+                <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
+                <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
 
             </ul>
         </nav>
-    </div>
 
-        <section id="hello">
+        <!-- mobile nav -->
+        <div id="mobile-nav">
+            <header class="cd-header">
+                <a href="#top">
+                    <div class="mobile-nav-logo">hello_nm</div>
+                </a>
+
+                <div class="cd-primary-nav-trigger">
+                    <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+                </div>
+            </header>
+
+            <nav>
+                <ul class="cd-primary-nav">
+                    <li><a class="ss-target" href="#types">types_nm</a></li>
+                    <li><a class="ss-target" href="#faq">faq</a></li>
+                    <li><a class="ss-target" href="#about">our_story</a></li>
+                    <li><a class="ss-target" href="#locations">location</a></li>
+                    <li><a class="ss-target" href="#contact-form">get_more</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+            <section id="hello">
     <h2>what is New_Media?</h2>
     <p class="txt-lrg">New Media is humans playing, breaking, learning, building, fixing, and innovating with technology in search of new forms of communication, art and entertainment. It's anything, you make it – it's everything, you create it. New media is <span style="text-decoration:underline;">YOU</span> experimenting with the power and mysterious possilbilities of technology. </p>
 </section>
@@ -163,13 +168,49 @@
     </div>
 </div>
 <div class="lightbox" id="animation">
-    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+    <div class="lightbox-half">
+        <h3 class="title">3-d &amp; Animation</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
 </div>
 <div class="lightbox" id="video">
-    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+    <div class="lightbox-half">
+        <h3 class="title">video &amp; Motion Graphics</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
 </div>
 <div class="lightbox" id="mix">
-    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+    <div class="lightbox-half">
+        <h3 class="title">mix it up/dual focus</h3>
+        <p class="overview">This is a dual focus track that blends the courses.</p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
 </div>
 
     <!-- Big block of content that has the changing color background when scrolling -->
@@ -233,14 +274,15 @@
     <h2>proof_nm</h2>
     <div class="statistics-row clearfix">
         <div class="block_timeline one_timeline type-blk">
-            <p>If your goal was to become a graphic designer four years ago, you are now headed for a field that has become wholly digitized, so that designers with website design and digital animation experience will have the best opportunities and likely the highest salaries in the profession.</p>
+            <h3>Highest Salaries</h3>
+            <p>Designers with website design and digital animation experience will have the best opportunities and likely the highest salaries in the profession.</p>
             <h6 class="credit">Source: Bureau of Labor Statistics</h6>
         </div>
 
 
 
         <div class="block_timeline two_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <h3>Exceeds Sports</h3>
             <p>The economic impact of art and design exceeds that of sports worldwide </p>
             <h6 class="credit">Source: U.S. Bureau of Education</h6>
         </div>
@@ -248,38 +290,38 @@
 
 
         <div class="block_timeline three_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <h3>Over 30%</h3>
             <p>Creative jobs have grown from 10% to over 30% of the economy </p>
             <h6 class="credit">Source: Americans for the Arts</h6>
         </div>
 
         <div class="block_timeline four_timeline type-blk">
-            <h3><i class="fa fa-binoculars fa-2x"></i> 42%</h3>
+            <h3>42%</h3>
             <p>By 2016, jobs for artists and designers are predicted to increase by 42% </p>
             <h6 class="credit">Source: National Endowment for the Arts</h6>
         </div>
 
         <div class="block_timeline five_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <h3>3rd &amp; 4th</h3>
             <p>Computer Science and Software Engineering are ranked by Forbes as the 3rd and 4th Most Valuable College Majors </p>
             <h6 class="credit">Source: Forbes</h6>
         </div>
 
         <div class="block_timeline six_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h3>150 million</h3>
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
             <h6 class="credit">Source: Name Here</h6>
         </div>
 
         <div class="block_timeline seven_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h3>More than 80%</h3>
+            <p> Nulla vitae elit libero, a pharetra augue.  </p>
             <h6 class="credit">Source: Name Here</h6>
         </div>
 
         <div class="block_timeline eight_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h3>Wow</h3>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
             <h6 class="credit">Source: Name Here</h6>
         </div>
 
@@ -381,7 +423,7 @@
     
     <section id="locations">
         <h2>location</h2>
-        <p class="txt-lrg">asheville, where technology meets nature</p>
+        <p class="txt-lrg">unc asheville campus is located in the mountains of Asheville, NC, which is home to <a href="http://www.moogmusic.com/content/visit-moog">Moog Music Inc</a>, <a href="http://moogfoundation.org/">Bob Moog Foundation</a>, <a href="http://www.blackmountaincollege.org/">The Black Mountain College Museum + Arts Center</a> and <a href="http://www.craftcreativitydesign.org/">The Center for Craft, Creativity and Design</a>. The diverse spirit of new media lives hear.</p>
 
         <div id="map-container">
             <div id='map'></div>
@@ -483,7 +525,7 @@
     map.scrollWheelZoom.disable();
     
 </script>
-             <div id="map-bar"></div>
+             <!--<div id="map-bar"></div>-->
         </div>
 
 
@@ -507,8 +549,7 @@
 
 
 
- 
-    <footer role="contentinfo" class="page-footer">
+ <footer role="contentinfo" class="page-footer">
         <div id="footer-split" class="clearfix">
             <address>
                     
@@ -568,18 +609,11 @@
         window.jQuery || document.write('<script src="/scripts/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
 
-
-
     <!-- Main JS -->
     <script src="/scripts/main.js"></script>
-    
+
     <!-- for featherlight light box -->
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
-
-
-    
-
-
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 
     <!-- Google Analytics -->
     <script>
