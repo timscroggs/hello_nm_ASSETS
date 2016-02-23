@@ -515,10 +515,10 @@ a {
     transition: all 0.2s ease-in-out;
 }
 a:hover {
-    color: #000;
+    color: #000!important;
 }
 a:visited {
-    color: #777;
+    color: #ff7a54;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -584,7 +584,7 @@ section {
     
 }
 #hero h1.hero-txt {
-    top: 40%;
+    top: 35%;
     opacity: 1;
     width: 100%;
     color: #2b019d;
@@ -620,10 +620,12 @@ h1.hero-txt {
     opacity: .5;
     font-size: 130px;
     font-weight: 700;
-    color: #2b019d;
+    color:#fff;
+    /*color: #2b019d;*/
 }
 #hero h1.hero-txt a:hover {
     opacity: 1;
+    color:#fff!important;
 }
 .video_layer_vid {
     position: absolute;
@@ -931,16 +933,16 @@ section#statistics .product-circ {
 }
 section#statistics h3 {
     font-size: 32px;
-    line-height: 1.5;
+    line-height: 1;
     font-weight: 700;
-    margin: 20px 0;
+    margin: 15px 0 12px 0;
     padding: 0 2% 0 11%;
     text-transform: lowercase;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 section#statistics p {
     width: 80%;
-    margin: 25px 2% 10px 11%;
+    margin: 5px 2% 10px 11%;
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 1px;
@@ -1072,7 +1074,6 @@ section#locations #stock ul#list {
     text-align: left;
 }
 section#about p {
-    width: 65%;
     
     font-size: 24px;
     line-height: 1.75;
@@ -1143,7 +1144,7 @@ section#graduate {
 }
 section#graduate .graduate-wrap {
     position: relative;
-    width: 90%;
+    
     font-size: 21px;
     line-height: 1.75;
     margin: 3% 0 9% 0;
@@ -1357,7 +1358,7 @@ footer div.unca-logo {
 @media only screen and (max-width: 992px) {
    
     #hero h1.hero-txt {
-        width: 760px;
+        
         font-size: 110px;
     }
     .sticky-wrapper {
@@ -1415,16 +1416,23 @@ footer div.unca-logo {
     footer #footer-split {
         width: 800px;
     }
+    section#graduate .graduate-wrap .graduate-half{
+        width: 45%;
+    }
+    section#statistics h2{
+        padding-left:11%;
+    }
+    section#statistics{
+        padding-right: 0;
+        padding-left: 0;
+    }
 }
 @media only screen and (max-width: 768px) {
     #hero h1.hero-txt {
         /*top: 23%;*/
-        font-size: 75px;
-        padding: 0 0 0 11%;
-         
+        font-size: 75px; 
     }
     #hero h1.hero-txt a{
-      
         font-size: 90px;
     }
     h1.hero-txt {
@@ -1480,10 +1488,16 @@ footer div.unca-logo {
         font-size: 32px;
     }
     section#statistics .statistics-row {
-        width: 70%;
+        width: 90%;
         margin: 0;
     }
-    
+    section#statistics h2{
+        padding-left: 0;
+    }
+    section#statistics{
+        padding-right: 11%;
+        padding-left: 11%;
+    }
     section#statistics .type-blk {
         width: 100%;
         float: none;
@@ -1543,9 +1557,7 @@ footer div.unca-logo {
         font-size: 17px;
         text-align: left;
     }
-    section#about p {
-        width: 750px;
-    }
+    
     #nm-slider {
         width: 100%
     }
@@ -1610,6 +1622,13 @@ footer div.unca-logo {
         padding-bottom: 20px;
         margin-bottom: 15px;
     }
+    section#graduate .graduate-wrap .graduate-half{
+        width: 75%;
+    float: none;
+    }
+    .learn.button{
+        margin-bottom: 25px;
+    }
 }
 @media only screen and (max-width: 480px) {
     .txt-lrg,
@@ -1631,7 +1650,6 @@ footer div.unca-logo {
     #hero h1.hero-txt {
         width: 100%;
         font-size: 66px;
-        top:15%;
     }
     .logo {
         width: 200px;
@@ -1706,9 +1724,7 @@ footer div.unca-logo {
     .adv-btn {
         max-width: 95%
     }
-    .learn.button{
-        margin-bottom: 25px;
-    }
+    
     section#contact-form {
         padding: 45px 11% 90px 11%;
        
@@ -2144,6 +2160,7 @@ body.overflow-hidden {
 .question {
     position: relative;
     text-align: left;
+     min-height: 350px;
 }
 .question h1 {
     color: #ffffff;
@@ -2257,7 +2274,7 @@ body.overflow-hidden {
     opacity: 1 !important;
     -webkit-box-shadow: 0 15px 20px rgba(0,0,0,0.2);
     -webkit-transform: translate(0, -4px);
-    z-index: 999;
+    
 }
 .one_timeline {
     height: 304px;
@@ -2440,6 +2457,23 @@ h6.credit {
         margin-right: -.25em
     }
     .featherlight .featherlight-content {
+        max-width: 100%;
+        position: relative;
+        text-align: left;
+        vertical-align: middle;
+        display: inline-block;
+        overflow: auto;
+        border-bottom: 25px solid transparent;
+        min-width: 50%;
+        height: 100vh;
+        width:100vw;
+        background: #fff;
+        cursor: auto;
+        white-space: normal;
+        padding: 50px;
+    }
+    /*
+    .featherlight .featherlight-content {
         max-width: 800px;
         position: relative;
         text-align: left;
@@ -2457,19 +2491,34 @@ h6.credit {
         cursor: auto;
         white-space: normal;
     }
+    */
     .featherlight .featherlight-close-icon {
         position: absolute;
         z-index: 9999;
-        top: 0;
-        right: 0;
+        top: 1em;
+        left: 1em;
         line-height: 25px;
         width: 25px;
         cursor: pointer;
         text-align: center;
-        font-family: Arial, sans-serif;
-        background: #fff;
-        background: rgba(255, 255, 255, .3);
-        color: #000;
+        font-family: "Karla", sans-serif;  
+        color: #bbb;
+    }
+ 
+    .featherlight .featherlight-close-icon:hover:after {
+        background: rgba(154, 154, 154, 0.2);
+    }
+    .featherlight .featherlight-close-icon::after {
+        content: "";
+    position: absolute;
+    width: 2.625em;
+    height: 2.625em;
+    display: block;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6.25em;
+    transition: all 0.3s ease;
     }
     .featherlight .featherlight-image {
         width: 100%;
@@ -2481,14 +2530,88 @@ h6.credit {
     .featherlight iframe {
         border: 0;
     }
+    
 }
 @media only screen and (max-width:1024px) {
+ 
+    /*
     .featherlight .featherlight-content {
         margin-left: 8%;
         margin-right: 8%;
         max-height: 98%;
         /*padding: 25px 25px 0;
-        border-bottom: 10px solid transparent;*/
+        border-bottom: 10px solid transparent;
     }
+    */
+}
+
+
+
+
+
+
+/* ++++++++++ fixed style switcher buttons ++++++++++ */
+.style-switcher{
+    position: fixed;
+    font-size: .6em;
+    top: 42%;
+    left: -62px;
+    color: #fff;
+    -ms-transform: rotate(-90deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-90deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+    z-index: 999999999999999;
+    
+}
+.style-switcher input{
+    opacity: 1;
+    border: none;
+    width: 35px;
+    height: 15px;
+    float: left;
+    
+}
+.style-switcher input:focus, .style-switcher input:active{
+    outline:0;
+    -webkit-box-shadow: -5px 2px 7px rgba(0,0,0,0.3);
+    
+}
+.style-switcher input:hover, .style-switcher-mobile input:hover{
+    opacity: 1 !important;
+    -webkit-box-shadow: -5px 2px 7px rgba(0,0,0,0.3);
+    -webkit-transform: translate(1px, 0);
+}
+.style-switcher input#main-refresh, .style-switcher-mobile input#main-refresh{
+    background: #3b45c3;
+}
+.style-switcher input#tim-theme, .style-switcher-mobile input#tim-theme{
+    background: #c319e2;
+}
+.style-switcher input#janice-theme, .style-switcher-mobile input#janice-theme{
+    background: #12ff80;
+}
+.style-switcher input#gabriel-theme, .style-switcher-mobile input#gabriel-theme{
+    background: #f5f522;
+}
+.style-switcher input#nicole-theme, .style-switcher-mobile input#nicole-theme{
+    background: #ff7a54;
+
+}
+/* ++++++++++ fixed style switcher buttons ++++++++++ */
+
+.cd-primary-nav li:last-child{
+    border-bottom: none;
+}
+.style-switcher-mobile{
+    margin-top:25px;
+}
+.style-switcher-mobile input{
+    opacity: 1;
+    border: none;
+    width: 45px;
+    height: 35px;
+    float: left;
 }
 

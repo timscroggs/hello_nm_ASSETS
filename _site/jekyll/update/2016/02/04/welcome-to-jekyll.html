@@ -17,7 +17,13 @@
 
     <link rel="canonical" href="/jekyll/update/2016/02/04/welcome-to-jekyll.html">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" title="main">
+    <link rel="stylesheet" type="text/css" href="/css/tim.css" title="tim">
+    <link rel="stylesheet" type="text/css" href="/css/janice.css" title="janice">
+     <link rel="stylesheet" type="text/css" href="/css/gabriel.css" title="gabriel">
+    <link rel="stylesheet" type="text/css" href="/css/nicole.css" title="nicole">
 
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -47,6 +53,7 @@
             <div class="curtain">
                 <h2 class="fixed-logo">hello_nm</h2>
                 <div class="hero-knockout"></div>
+                
             </div>
 
             <div id="hero">
@@ -63,7 +70,7 @@
 
         </header>
         <div class="lightbox-vid">
-            <iframe class="lightbox" src="//player.vimeo.com/video/33110953" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            <iframe class="lightbox" src="//player.vimeo.com/video/33110953?autoplay=1&badge=0&title=0&byline=0" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
 
         <div id="nav-spacer"></div>
@@ -77,7 +84,16 @@
                 <li class="nav4"><a class="ss-target" href="#about">our_story</a></li>
                 <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
                 <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
-
+            
+            <li>
+            <form class="style-switcher">
+                        <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="" id="main">
+                        <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="" id="tim">
+                        <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="" id="janice">
+                        <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="" id="gabriel">
+                        <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="" id="nicole">
+                </form>
+            </li>
             </ul>
         </nav>
 
@@ -100,7 +116,15 @@
                     <li><a class="ss-target" href="#about">our_story</a></li>
                     <li><a class="ss-target" href="#locations">location</a></li>
                     <li><a class="ss-target" href="#contact-form">get_more</a></li>
-
+                    <li>
+                        <form class="style-switcher-mobile">
+                            <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="" id="main">
+                            <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="" id="tim">
+                            <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="" id="janice">
+                            <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="" id="gabriel">
+                            <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="" id="nicole">
+                        </form>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -205,6 +229,73 @@
 
     <!-- for featherlight light box -->
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+
+
+
+    <script>
+        // *** TO BE CUSTOMISED ***
+
+        var style_cookie_name = "style";
+        var style_cookie_duration = 30;
+        var style_domain = "";
+
+        // *** END OF CUSTOMISABLE SECTION ***
+        // You do not need to customise anything below this line
+
+        function switch_style(css_title) {
+            // You may use this script on your site free of charge provided
+            // you do not remove this notice or the URL below. Script from
+            // http://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+            var i, link_tag;
+            for (i = 0, link_tag = document.getElementsByTagName("link"); i < link_tag.length; i++) {
+                if ((link_tag[i].rel.indexOf("stylesheet") != -1) &&
+                    link_tag[i].title) {
+                    link_tag[i].disabled = true;
+                    if (link_tag[i].title == css_title) {
+                        link_tag[i].disabled = false;
+                    }
+                }
+                set_cookie(style_cookie_name, css_title,
+                    style_cookie_duration, style_domain);
+            }
+        }
+
+        function set_style_from_cookie() {
+            var css_title = get_cookie(style_cookie_name);
+            if (css_title.length) {
+                switch_style(css_title);
+            }
+        }
+
+        function set_cookie(cookie_name, cookie_value,
+            lifespan_in_days, valid_domain) {
+            // http://www.thesitewizard.com/javascripts/cookies.shtml
+            var domain_string = valid_domain ?
+                ("; domain=" + valid_domain) : '';
+            document.cookie = cookie_name +
+                "=" + encodeURIComponent(cookie_value) +
+                "; max-age=" + 60 * 60 *
+                24 * lifespan_in_days +
+                "; path=/" + domain_string;
+        }
+
+        function get_cookie(cookie_name) {
+            // http://www.thesitewizard.com/javascripts/cookies.shtml
+            var cookie_string = document.cookie;
+            if (cookie_string.length != 0) {
+                var cookie_value = cookie_string.match(
+                    '(^|;)[\s]*' +
+                    cookie_name +
+                    '=([^;]*)');
+                return decodeURIComponent(cookie_value[2]);
+            }
+            return '';
+        }
+    </script>
+
+
+
 
     <!-- Google Analytics -->
     <script>
