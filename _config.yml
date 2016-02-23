@@ -1,0 +1,18 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: hello_nm
+email: tscroggs@unca.edu
+description: "Hi, you. Meet New Media. New media, say hello. Hello_nm! Welcome to a light hearted introduction to New Media and what we think about it here at UNC Asheville. Going to college is expensive. Choosing a degree is heavy. Let us help you earn a degree you can use to create yourself, tools to create the life you want."  
+baseurl: ""
+url: ""
+tagline: "What is new media?"
+
+
+# Build settings
+markdown: kramdown
