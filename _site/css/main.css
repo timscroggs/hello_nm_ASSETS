@@ -2551,28 +2551,45 @@ h6.credit {
 
 
 /* ++++++++++ fixed style switcher buttons ++++++++++ */
+
 .style-switcher{
     position: fixed;
     font-size: .6em;
-    top: 42%;
-    left: -62px;
+    width: 250px;
+    line-height: 3.5;
+    top: 32%;
+    left: 20px;
     color: #fff;
-    -ms-transform: rotate(-90deg);
-    /* IE 9 */
-    -webkit-transform: rotate(-90deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(-90deg);
     z-index: 999999999999999;
     
+}
+.style-switcher-labels{
+    position: fixed;
+    font-size: .6em;
+    top: 31.25%;
+    left: 50px;
+    color: #fff; 
+    z-index: 999999999999999;
+    
+}
+.style-switcher-labels{
+    font-size: 22px;
+    color:#000;
+    line-height: 35px;
+}
+ul.style-switcher-text{
+    list-style: none;
 }
 .style-switcher input{
     opacity: 1;
     border: none;
-    width: 35px;
-    height: 15px;
+    width: 15px;
+    height: 35px;
     float: left;
+    color: transparent;
     
 }
+
 .style-switcher input:focus, .style-switcher input:active{
     outline:0;
     -webkit-box-shadow: -5px 2px 7px rgba(0,0,0,0.3);
@@ -2582,6 +2599,9 @@ h6.credit {
     opacity: 1 !important;
     -webkit-box-shadow: -5px 2px 7px rgba(0,0,0,0.3);
     -webkit-transform: translate(1px, 0);
+}
+.style-switcher input#main-refresh:hover>.style-switcher li#main-title{
+    visibility: visible;
 }
 .style-switcher input#main-refresh, .style-switcher-mobile input#main-refresh{
     background: #3b45c3;
@@ -2597,8 +2617,24 @@ h6.credit {
 }
 .style-switcher input#nicole-theme, .style-switcher-mobile input#nicole-theme{
     background: #ff7a54;
-
 }
+.style-switcher-labels li#main-title{
+    visibility: hidden;
+    color: #3b45c3;
+}
+.style-switcher-labels li#tim-title{
+    color: #c319e2;
+}
+.style-switcher-labels li#janice-title{
+    color: #12ff80;
+}
+.style-switcher-labels li#gabriel-title{
+    color: #f5f522;
+}
+.style-switcher-labels li#nicole-title{
+    color: #ff7a54;
+}
+
 /* ++++++++++ fixed style switcher buttons ++++++++++ */
 
 .cd-primary-nav li:last-child{
@@ -2614,4 +2650,6 @@ h6.credit {
     height: 35px;
     float: left;
 }
+
+
 
