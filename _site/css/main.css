@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:700|Droid+Sans+Mono);
+#@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:700|Droid+Sans+Mono);
 
 /*!
  * Bootstrap v3.0.0
@@ -1043,7 +1043,7 @@ section#locations #stock ul#list {
     font-size: 19px;
     text-align: left;
 }
-section#about p {
+#about p {
     font-size: 24px;
     line-height: 1.75;
     text-align: left;
@@ -1665,7 +1665,7 @@ footer div.unca-logo {
         -moz-column-width: 80%;
         column-width: 80%
     }
-    section#about p {
+    #about p {
         width: 90%
     }
     section#philosophy p {
@@ -2309,29 +2309,93 @@ body.overflow-hidden {
 .eight_timeline:hover {}
 
 /*Creating a portfolio slider in the about wrap section*/
-
-.port-slider {
-    padding: 75px 0 50px 0;
-    height: 600px;
-    background-image: url("/images/home12.jpg");
-    background-position: center center;
+#nm-slider {
+    max-height: 
+}
+.slider1 {
+    background-color: rgba(0,0,0,0.85);
+    background-blend-mode: overlay;
+    background-image: url(/images/allison_callaway.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: block;
+    height: 506px;
 }
-.port-slider h1 {
-    padding: 15px 10px 15px 10px;
-    margin-bottom: 50px;
-    background-color: #000;
+.slider2 {
+    background-color: rgba(0,0,0,0.85);
+    background-blend-mode: overlay;
+    background-image: url(/images/davidh.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 506px;
 }
-.port-slider h2 {
-    width: 400px;
-    background-color: #000;
+.slider3 {
+    background-color: rgba(0,0,0,0.85);
+    background-blend-mode: overlay;
+    background-image: url(/images/joshua_coyle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 506px;
+}
+.slider4 {
+    background-color: rgba(0,0,0,0.85);
+    background-blend-mode: overlay;
+    background-image: url(/images/mike_patterson.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 506px;
+}
+.slider5 {
+    background-color: rgba(0,0,0,0.85);
+    background-blend-mode: overlay;
+    background-image: url(/images/wray-bowling.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 506px;
+}
+.alumni {
+    padding-left: 30px;
+}
+.alumni h2 {
+    margin: 0 auto; 
+    text-align: left;
+    color: #fff;
+    font-size: 1.5em;
+}
+.alumni h3 {
+    margin: 0 auto; 
+    text-align: left; 
+    padding-bottom: 10px; 
+    color: #f37474;
+    max-width: 700px;
+}
+.alumni p {
+    margin: 0 auto; 
+    line-height: 1.5; 
+    font-size: .9em; 
+    text-align: left; 
+    color: #d8e4e3
+}
+.alumni a {
+    color: #54f2ff;
+}
+.alumni a:hover {
+    color: #fff;
 }
 h6.credit {
     font-size: 12px;
 }
 .light {
-    color: white;
+    color: #fff;
 }
 .featherlight .featherlight-inner {
     display: block;
