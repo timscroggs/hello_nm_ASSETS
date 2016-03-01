@@ -1,4 +1,4 @@
-#@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:700|Droid+Sans+Mono);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:700|Droid+Sans+Mono);
 
 /*!
  * Bootstrap v3.0.0
@@ -473,7 +473,7 @@ body {
     background-color: #fff;
 }
 h2 {
-    font-family: "Droid Sans Mono", "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Droid Sans Mono", "Monaco", "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 5;
     font-size: 18px;
     font-weight: 700;
@@ -731,7 +731,7 @@ section#what {
     height: 100vh;
 }
 nav#main-nav {
-    font-family: "Droid Sans Mono", "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Droid Sans Mono", "Monaco", "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
     width: 100%;
     height: 65px;
     padding: 20px 0 0 0;
@@ -1051,18 +1051,7 @@ section#locations #stock ul#list {
 section#hello {
     margin: 0 0 45px 0;
 }
-#nm-slider {
-    z-index: 4;
-    width: 900px;
-    max-width: 85%;
-    position: relative;
-    padding: 100px 0 40px 0;
-}
-#nm-slider .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
+
 section#philosophy p {
     width: 90%;
     font-size: 32px;
@@ -2310,21 +2299,35 @@ body.overflow-hidden {
 
 /*Creating a portfolio slider in the about wrap section*/
 #nm-slider {
-    max-height: 
+    z-index: 4;
+    max-width: 95%;
+    position: relative;
+    padding: 100px 0 40px 0;
 }
-.slider1 {
-    background-color: rgba(0,0,0,0.85);
+#nm-slider .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.slider1, .slider2, .slider3, .slider4, .slider5{
+    background-color: rgba(0,0,0,0.55);
     background-blend-mode: overlay;
+    transition: all 0.3s ease;
+}
+.slider1:hover, .slider2:hover, .slider3:hover, .slider4:hover, .slider5:hover {
+   background-color: rgba(0,0,0,.25); 
+}
+.slider1 {  
     background-image: url(/images/allison_callaway.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
     height: 506px;
+    
 }
-.slider2 {
-    background-color: rgba(0,0,0,0.85);
-    background-blend-mode: overlay;
+
+.slider2 {  
     background-image: url(/images/davidh.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -2333,8 +2336,6 @@ body.overflow-hidden {
     height: 506px;
 }
 .slider3 {
-    background-color: rgba(0,0,0,0.85);
-    background-blend-mode: overlay;
     background-image: url(/images/joshua_coyle.png);
     background-position: center;
     background-repeat: no-repeat;
@@ -2343,8 +2344,6 @@ body.overflow-hidden {
     height: 506px;
 }
 .slider4 {
-    background-color: rgba(0,0,0,0.85);
-    background-blend-mode: overlay;
     background-image: url(/images/mike_patterson.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -2353,8 +2352,6 @@ body.overflow-hidden {
     height: 506px;
 }
 .slider5 {
-    background-color: rgba(0,0,0,0.85);
-    background-blend-mode: overlay;
     background-image: url(/images/wray-bowling.gif);
     background-position: center;
     background-repeat: no-repeat;
@@ -2363,7 +2360,7 @@ body.overflow-hidden {
     height: 506px;
 }
 .alumni {
-    padding-left: 30px;
+    padding-left: 40px;
 }
 .alumni h2 {
     margin: 0 auto; 
@@ -2372,6 +2369,7 @@ body.overflow-hidden {
     font-size: 1.5em;
 }
 .alumni h3 {
+    font-size: 1.2em;
     margin: 0 auto; 
     text-align: left; 
     padding-bottom: 10px; 
@@ -2386,10 +2384,13 @@ body.overflow-hidden {
     color: #d8e4e3
 }
 .alumni a {
+    letter-spacing: 0;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    text-transform: lowercase;
     color: #54f2ff;
 }
 .alumni a:hover {
-    color: #fff;
+    color: #fff!important;
 }
 h6.credit {
     font-size: 12px;
@@ -2594,7 +2595,7 @@ ul.style-switcher-text {
     height: 35px;
     float: left;
     color: transparent;
-    font-family: "Droid Sans Mono", sans-serif;
+    font-family: "Droid Sans Mono", "Monaco", sans-serif;
     text-transform: lowercase;
     font-size: 12px;
 }
