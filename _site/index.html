@@ -17,21 +17,27 @@
 
     <link rel="canonical" href="/">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="/css/bootstrap.css">
+
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" title="main">
+    <link rel="stylesheet" type="text/css" href="/css/tim.css" title="tim">
+    <link rel="stylesheet" type="text/css" href="/css/janice.css" title="janice">
+     <link rel="stylesheet" type="text/css" href="/css/gabriel.css" title="gabriel">
+    <link rel="stylesheet" type="text/css" href="/css/nicole.css" title="nicole">
 
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.css' rel='stylesheet' />
-    
-    
+    <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+
+
     <script type="text/javascript" src="/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/jquery.js"></script>
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.14.0/mapbox-gl.js'></script>
+    <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
     <script src="/scripts/vendor/modernizr-2.8.3.min.js"></script>
-   
+
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -41,76 +47,93 @@
 
     <!-- load cover -->
     <div class="pace-cover"></div>
-<div class="container-main">
-    <header role="banner" id="top">
-        
-        <div class="curtain">
-            <h2 class="fixed-logo">hello_nm</h2>
-            <div class="hero-knockout"></div>
-        </div>
+    <div class="container-main">
+        <header role="banner" id="top">
 
-        <div id="hero">
-            
-            <h1 class="hero-txt hero-reveal">Watch what we think here.<br>  <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
-            
-            <!--<h1 class="hero-txt hero-reveal">Watch what we think here.<br>  <!-- Button trigger modal <a class="btn" data-toggle="modal" data-target="#myModal" id="play-video"><i class="fa fa-play-circle fa-1x"></i></a></h1>-->
-        </div>
-
-    </header>
-
-    <iframe class="lightbox" src="//player.vimeo.com/video/33110953" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    
-    <!-- Modal 
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="close-vid">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true" id="pause-video">&times;</button>
-        </div>
-
-        <div class="video-watch">
-            <iframe id="player" src="//www.youtube.com/embed/nLTlo-LGAuY" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        </div>
-    </div>-->
-
-    <div id="nav-spacer"></div>
-
-    <!-- main nav -->
-    <nav id="main-nav">
-        <ul>
-            <li class="nav1 nav-active"><a href="#hello">hello_nm</a></li>
-            <li class="nav2"><a class="ss-target" href="#types">types_nm</a></li>
-            <li class="nav3"><a class="ss-target" href="#faq">faq</a></li>
-            <li class="nav4"><a class="ss-target" href="#about">our_story</a></li>
-            <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
-            <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
-
-        </ul>
-    </nav>
-
-    <!-- mobile nav -->
-    <div id="mobile-nav">
-        <header class="cd-header">
-            <a href="#top">
-                <div class="mobile-nav-logo">hello_nm</div>
-            </a>
-
-            <div class="cd-primary-nav-trigger">
-                <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+            <div class="curtain">
+                <h2 class="fixed-logo">hello_nm</h2>
+                <div class="hero-knockout"></div>
+                
             </div>
+
+            <div id="hero">
+
+                <h1 class="hero-txt hero-reveal"><!--what is new media?-->  
+                    <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
+                <video loop autoplay poster="/videos/Snapshots/A-Purple-Balloon.jpg" class="video_layer_vid">
+                    <source src="/videos/MP4/A-Purple-Balloon.mp4" type="video/mp4">
+                    <source src="/videos/OGV/A-Purple-Balloon.ogv" type="video/ogg">
+                    <source src="/videos/WEBM/A-Purple-Balloon.webm" type="video/webm">Your browser does not support HTML5 video.
+                </video>
+
+            </div>
+
         </header>
+        <div class="lightbox-vid">
+            <iframe class="lightbox" src="//player.vimeo.com/video/33110953?autoplay=1&badge=0&title=0&byline=0" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
 
-        <nav>
-            <ul class="cd-primary-nav">
-                <li><a class="ss-target" href="#types">types_nm</a></li>
-                <li><a class="ss-target" href="#faq">faq</a></li>
-                <li><a class="ss-target" href="#about">our_story</a></li>
-                <li><a class="ss-target" href="#locations">location</a></li>
-                <li><a class="ss-target" href="#contact-form">get_more</a></li>
-
+        <div id="nav-spacer"></div>
+        
+<!-- style switcher menu -->
+        <div class="style-switcher-menu">
+                <form class="style-switcher">
+                    <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main">
+                    <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
+                    <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
+                        <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
+                    <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole"><p id="nicole-title"></p>
+                </form>
+            
+          </div> 
+        <!-- main nav -->
+        <nav id="main-nav">
+            <ul>
+                <li class="nav1 nav-active"><a href="#hello">hello_nm</a></li>
+                <li class="nav2"><a class="ss-target" href="#types">types_nm</a></li>
+                <li class="nav3"><a class="ss-target" href="#faq">faq</a></li>
+                <li class="nav4"><a class="ss-target" href="#about">our_story</a></li>
+                <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
+                <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
             </ul>
+           
+            
+            
         </nav>
-    </div>
 
-        <section id="hello">
+        <!-- mobile nav -->
+        <div id="mobile-nav">
+            <header class="cd-header">
+                <a href="#top">
+                    <div class="mobile-nav-logo">hello_nm</div>
+                </a>
+
+                <div class="cd-primary-nav-trigger">
+                    <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
+                </div>
+            </header>
+
+            <nav>
+                <ul class="cd-primary-nav">
+                    <li><a class="ss-target" href="#types">types_nm</a></li>
+                    <li><a class="ss-target" href="#faq">faq</a></li>
+                    <li><a class="ss-target" href="#about">our_story</a></li>
+                    <li><a class="ss-target" href="#locations">location</a></li>
+                    <li><a class="ss-target" href="#contact-form">get_more</a></li>
+                    <li>
+                        <form class="style-switcher-mobile">
+                            <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="" id="main">
+                            <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="" id="tim">
+                            <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="" id="janice">
+                            <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="" id="gabriel">
+                            <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="" id="nicole">
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+            <section id="hello">
     <h2>what is New_Media?</h2>
     <p class="txt-lrg">New Media is humans playing, breaking, learning, building, fixing, and innovating with technology in search of new forms of communication, art and entertainment. It's anything, you make it – it's everything, you create it. New media is <span style="text-decoration:underline;">YOU</span> experimenting with the power and mysterious possilbilities of technology. </p>
 </section>
@@ -173,13 +196,49 @@
     </div>
 </div>
 <div class="lightbox" id="animation">
-    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+    <div class="lightbox-half">
+        <h3 class="title">3-d &amp; Animation</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
 </div>
 <div class="lightbox" id="video">
-    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+    <div class="lightbox-half">
+        <h3 class="title">video &amp; Motion Graphics</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
 </div>
 <div class="lightbox" id="mix">
-    <p>Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+    <div class="lightbox-half">
+        <h3 class="title">mix it up/dual focus</h3>
+        <p class="overview">This is a dual focus track that blends the courses.</p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
 </div>
 
     <!-- Big block of content that has the changing color background when scrolling -->
@@ -243,14 +302,15 @@
     <h2>proof_nm</h2>
     <div class="statistics-row clearfix">
         <div class="block_timeline one_timeline type-blk">
-            <p>If your goal was to become a graphic designer four years ago, you are now headed for a field that has become wholly digitized, so that designers with website design and digital animation experience will have the best opportunities and likely the highest salaries in the profession.</p>
+            <h3>Highest Salaries</h3>
+            <p>Designers with website design and digital animation experience will have the best opportunities and likely the highest salaries in the profession.</p>
             <h6 class="credit">Source: Bureau of Labor Statistics</h6>
         </div>
 
 
 
         <div class="block_timeline two_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <h3>Exceeds Sports</h3>
             <p>The economic impact of art and design exceeds that of sports worldwide </p>
             <h6 class="credit">Source: U.S. Bureau of Education</h6>
         </div>
@@ -258,54 +318,105 @@
 
 
         <div class="block_timeline three_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <h3>Over 30%</h3>
             <p>Creative jobs have grown from 10% to over 30% of the economy </p>
             <h6 class="credit">Source: Americans for the Arts</h6>
         </div>
 
         <div class="block_timeline four_timeline type-blk">
-            <h3><i class="fa fa-binoculars fa-2x"></i> 42%</h3>
+            <h3>42%</h3>
             <p>By 2016, jobs for artists and designers are predicted to increase by 42% </p>
             <h6 class="credit">Source: National Endowment for the Arts</h6>
         </div>
 
         <div class="block_timeline five_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
+            <h3>3rd &amp; 4th</h3>
             <p>Computer Science and Software Engineering are ranked by Forbes as the 3rd and 4th Most Valuable College Majors </p>
             <h6 class="credit">Source: Forbes</h6>
         </div>
 
         <div class="block_timeline six_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h3>150 million</h3>
+            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
             <h6 class="credit">Source: Name Here</h6>
         </div>
 
         <div class="block_timeline seven_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h3>More than 80%</h3>
+            <p> Nulla vitae elit libero, a pharetra augue.  </p>
             <h6 class="credit">Source: Name Here</h6>
         </div>
 
         <div class="block_timeline eight_timeline type-blk">
-            <!--<h3><i class="fa fa-binoculars fa-2x"></i></h3>-->
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
+            <h3>Wow</h3>
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
             <h6 class="credit">Source: Name Here</h6>
         </div>
 
     </div>
 
 </section>
-    <section id="about">
+    <section> 
+<div id="about">
         <h2>Our_Story</h2>
-        <p>We are a science experiment brought together to blend the disciplines of artist, designer, and computer scientist. We are a rare bunch who push oursleves to open our minds and produce creative work in a broad spectrum of softwares and technological devices – and then, after we have made a crazy assortment of projects, we choose and focus on our specialty with well rounded experience in new media and a widened understanding of processes. Check out what a typical portfolio of one of our graduates looks like.</p>
+        <p>We are a science experiment brought together to blend the disciplines of artist, designer, and computer scientist. We are a rare bunch who push oursleves to open our minds and produce creative work in a broad spectrum of softwares and technological devices – and then, after we have made a crazy assortment of projects, we choose and focus on our specialty with well rounded experience in new media and a widened understanding of processes. Check out what a typical portfolio of one of our graduates looks like.</p> </div>
     
         <div id="nm-slider" class="owl-carousel owl-theme">
-            <div class="item"><div class="port-slider"><h1 class="hero-txt">Check this out!</h1> <a href="#"><h2>Click here</h2></a></div></div>
-            <div class="item"><img src="/images/home5.jpg"></div>
-            <div class="item"><img src="/images/home18.jpg"></div>
-            <div class="item"><img src="/images/home27.jpg"></div>
-            <div class="item"><img src="/images/home6.jpg"></div>
+            <div class="item slider1">
+                    <div class="alumni">
+                        <h2>Allison Callaway</h2>
+                        <h3>Web Designer</h3>
+                        <p>UNCA 2009</p>
+                        <br>
+                        <p><a href="www.allisoncallaway.com">
+                            &lt;Check out their work&gt;
+                        </a></p>
+                    </div>
+            </div>
+            <div class="item slider2">
+                    <div class="alumni">
+                        <h2>David Howard</h2>
+                        <h3>Freelance Animator</h3>
+                        <p>UNCA 2010</p>
+                        <br>
+                        <p><a href="www.davidhfilms.com">
+                            &lt;Check out their work&gt;
+                        </a></p>
+                    </div>
+            </div>
+            <div class="item slider3">
+                    <div class="alumni">
+                        <h2>Joshua Coyle</h2>
+                        <h3>Web Designer, CEO of GRP82</h3>
+                        <p>UNCA 2005</p>
+                        <br>
+                        <p><a href="www.joshuacoyle.com">
+                            &lt;Check out their work&gt;
+                        </a></p>
+                    </div>
+            </div>
+            <div class="item slider4">
+                    <div class="alumni">
+                        <h2>Mike Patterson</h2>
+                        <h3>Lead Designer at Secret Michael</h3>
+                        <p>UNCA 2008</p>
+                        <br>
+                        <p><a href="www.secretmichael.com">
+                            &lt;Check out their work&gt;
+                        </a></p>
+                    </div>
+            </div>
+            <div class="item slider5">
+                    <div class="alumni">
+                        <h2>Wray Bolwing</h2>
+                        <h3>Graphic &amp; Web Designer</h3>
+                        <p>UNCA 2009</p>
+                        <br>
+                        <p><a href="www.rgbk.org">
+                            &lt;Check out their work&gt;
+                            </a></p>
+                    </div>
+            </div>
         </div>
 
     </section> 
@@ -332,10 +443,61 @@
     <h2 class="light">your_story</h2>
     <h1 class="hero-txt">typical graduate's portfolio</h1>
     <br>
-    <p class="txt-adv light">If you graduate from here with a BA in New Media, the potential that you will leave with a diverse portfolio will be great. You will get the opportunity to gain experience across multiple disciplines, technological devices and software.</p>
-    <div class="graduate-wrap clearfix">
-        <div class="graduate-half light">
-            <ul>
+    <p class="txt-adv light">A graduate from UNCA New Media will leave with a diverse portfolio covering a wide array of concepts and skills. You will get the experience of experimentation across multiple disciplines, technological devices and software.</p>
+    
+    <div class="types-row clearfix">
+
+        <a href="#" data-featherlight="#interactive-port">
+            <div class="block_types one-port type-blk">
+                <div class="type_content">
+                    <p class="subtitle">portfolio</p>
+                    <h3 class="title">Student #1</h3>
+                    <p>web + Interactive Design track</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" data-featherlight="#animation-port">
+            <div class="block_types two-port type-blk">
+                <div class="type_content">
+                    <p class="subtitle">portfolio</p>
+                    <h3 class="title">Student #2</h3>
+                    <p>web + Interactive Design track</p>
+                </div>
+            </div>
+        </a>
+
+        <a href="#" data-featherlight="#video-port">
+            <div class="block_types three-port type-blk">
+                <div class="type_content light">
+                    <p class="subtitle">portfolio</p>
+                    <h3 class="title">Student #3</h3>
+                     <p>Video Art + Design track</p>
+                </div>
+            </div>
+        </a>
+        
+        <a href="#" data-featherlight="#multi-port">
+            <div class="block_types four-port type-blk">
+                <div class="type_content">
+                    <p class="subtitle">portfolio</p>
+                    <h3 class="title">Student #4</h3>
+                    <p>Dual focus in two tracks</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    
+</section>
+
+
+
+<div class="lightbox" id="interactive-port">
+    <div class="lightbox-half">
+        <h3 class="title">Projects Completed by student on web &amp; Interactive Design track</h3>
+        <p>This is a real overview of work completed while a student at UNCA New Media with a focus in web &amp; Interactive Design</p>
+        <br>
+        <ul>
                 <li>Custom mythical creature</li>
                 <li>Promotional video using type animation</li>
                 <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
@@ -345,10 +507,10 @@
                 <li>Interactive mucsical interface website </li>
                  
             </ul>
-        </div>
-
-        <div class="graduate-half light">
-            <ul>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <ul>
                 <li>3-d animated short film</li>
                 <li>Music video</li>
                 <li>Personal logo</li>
@@ -363,9 +525,56 @@
                
 
             </ul>
-        </div>
     </div>
-</section>
+</div>
+
+
+<div class="lightbox" id="animation-port">
+    <div class="lightbox-half">
+        <h3 class="title">3-d &amp; Animation</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
+</div>
+<div class="lightbox" id="video-port">
+    <div class="lightbox-half">
+        <h3 class="title">video &amp; Motion Graphics</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
+</div>
+
+<div class="lightbox" id="multi-port">
+    <div class="lightbox-half">
+        <h3 class="title">video &amp; Motion Graphics</h3>
+        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+        <br>
+        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    </div>
+    <div class="lightbox-half">
+        <h4 class="lightbox-secondary-heading">Software</h4>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
+        <br>
+        <h4 class="lightbox-secondary-heading">Projects</h4>
+        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+    </div>
+</div>
 
     <section id="nm_buttons">
         <h1 class="hero-txt">that's what we got</h1>
@@ -383,14 +592,7 @@
 
 
 
-    <!-- Gabriel's banner/image link code -->
-        <a href="http://www.playdamage.org/" target="_blank" />
-        <div id="image-swap">
-            <img class="bottom" src="images/button_hover.png"/>
-            <img class="top" src="images/button.png"/>
-        </div>
-    </a>
-
+    
     <div id="faq-hero">
         <h1>create the life you want</h1>
     </div>
@@ -398,14 +600,12 @@
     
     <section id="locations">
         <h2>location</h2>
-        <p class="txt-lrg">asheville, where technology meets nature</p>
+        <p class="txt-lrg">unc asheville campus is located in the mountains of Asheville, NC, which is home to <a href="http://www.moogmusic.com/content/visit-moog" target="_blank">Moog Music Inc</a>, <a href="http://moogfoundation.org/" target="_blank">Bob Moog Foundation</a>, <a href="http://www.blackmountaincollege.org/" target="_blank">The Black Mountain College Museum + Arts Center</a> and <a href="http://www.craftcreativitydesign.org/" target="_blank">The Center for Craft, Creativity and Design</a>. The diverse spirit of new media lives hear.</p>
 
         <div id="map-container">
             <div id='map'></div>
-<script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
-<link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
 <script>
-L.mapbox.accessToken = 
+    L.mapbox.accessToken = 
 'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
     var geojson = [
     {
@@ -419,14 +619,14 @@ L.mapbox.accessToken =
         "geometry": {
         "type": "Point",
         "coordinates": [
-          -82.554426,
-            35.600102
+          -82.552926,
+            35.602002
         ]
       },
         "properties": {
-        "title": "Moog Music Inc",
-        "marker-color": "#3bb2d0",
-        "marker-size": "medium",
+        "title": "Moog Music Inc, 160 Broadway",
+        "marker-color": "#00ff84",
+        "marker-size": "small",
         "marker-symbol": "triangle"
       }
     },
@@ -443,9 +643,9 @@ L.mapbox.accessToken =
         ]
       },
         "properties": {
-        "title": "Center for Craft, Creativity & Design",
-        "marker-color": "#3bb2d0",
-        "marker-size": "medium",
+        "title": "Center for Craft, Creativity & Design, 67 Broadway",
+        "marker-color": "#00ff84",
+        "marker-size": "small",
         "marker-symbol": "square"
       }
     },
@@ -460,9 +660,9 @@ L.mapbox.accessToken =
         ]
       },
         "properties": {
-        "title": "Black Mountain Museum",
-        "marker-color": "#3bb2d0",
-        "marker-size": "medium",
+        "title": "Black Mountain Museum, 56 Broadway",
+        "marker-color": "#00ff84",
+        "marker-size": "small",
         "marker-symbol": "star"
       }
     },
@@ -472,13 +672,13 @@ L.mapbox.accessToken =
         "geometry": {
         "type": "Point",
         "coordinates": [
-          -82.567850,
-          35.616402
+          -82.567590,
+          35.617802
         ]
       },
         "properties": {
-        "title": "UNC Asheville",
-        "marker-color": "#3bb2d0",
+        "title": "We're here!",
+        "marker-color": "#00ff84",
         "marker-size": "large",
         "marker-symbol": "college"
       }
@@ -502,7 +702,7 @@ L.mapbox.accessToken =
     map.scrollWheelZoom.disable();
     
 </script>
-             <div id="map-bar"></div>
+             <!--<div id="map-bar"></div>-->
         </div>
 
 
@@ -526,8 +726,7 @@ L.mapbox.accessToken =
 
 
 
- 
-    <footer role="contentinfo" class="page-footer">
+ <footer role="contentinfo" class="page-footer">
         <div id="footer-split" class="clearfix">
             <address>
                     
@@ -538,14 +737,7 @@ L.mapbox.accessToken =
                     +1 828 350 4567</p>
                     <a href="mailto:info@nm.unca.edu">info@nm.unca.edu</a>
                 </address>
-            
-<!-- Gabriel's code -->
-            <div id="credits">
-                <h4>Credits</h4>
-                <p>Tim Scroggs, Janice Andrews, Nicole Erskine, <a href="https://www.facebook.com/Gabriel-Fobert-Art-Design-795087437245485/" target="_blank">Gabriel Fobert,</a> Madeleine Richardson, Ana Pak, Chris Harris</p>
-      </div>
 
-            
             <div id="follow">
                 <h4>Follow</h4>
                 <div id="icons">
@@ -573,7 +765,7 @@ L.mapbox.accessToken =
                 </div>
                 <p>#hello_nm</p>
             </div>
-            
+
         </div>
         <div class="official-logos">
             
@@ -584,7 +776,6 @@ L.mapbox.accessToken =
             <a href="http://unca.edu"><img src="/images/unca_logo_white.png"></a>
                 </div>
         </div>
-    
     </footer>
 
 
@@ -595,82 +786,78 @@ L.mapbox.accessToken =
         window.jQuery || document.write('<script src="/scripts/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
 
-
-
     <!-- Main JS -->
     <script src="/scripts/main.js"></script>
-    
+
     <!-- for featherlight light box -->
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="/scripts/vendor/featherlight.min.js"></script>
+    <!--
+    <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>-->
 
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-modal/2.1.0/bootstrap-modal.pack.min.js"></script>
 
-    <script type="text/javascript">
-        if (!window['YT']) {
-            var YT = {
-                loading: 0,
-                loaded: 0
-            };
-        }
-        if (!window['YTConfig']) {
-            var YTConfig = {
-                'host': 'http://bl.ocks.org/'
-            };
-        }
-        if (!YT.loading) {
-            YT.loading = 1;
-            (function () {
-                var l = [];
-                YT.ready = function (f) {
-                    if (YT.loaded) {
-                        f();
-                    } else {
-                        l.push(f);
+
+    <script>
+        // *** TO BE CUSTOMISED ***
+
+        var style_cookie_name = "style";
+        var style_cookie_duration = 30;
+        var style_domain = "";
+
+        // *** END OF CUSTOMISABLE SECTION ***
+        // You do not need to customise anything below this line
+
+        function switch_style(css_title) {
+            // You may use this script on your site free of charge provided
+            // you do not remove this notice or the URL below. Script from
+            // http://www.thesitewizard.com/javascripts/change-style-sheets.shtml
+            var i, link_tag;
+            for (i = 0, link_tag = document.getElementsByTagName("link"); i < link_tag.length; i++) {
+                if ((link_tag[i].rel.indexOf("stylesheet") != -1) &&
+                    link_tag[i].title) {
+                    link_tag[i].disabled = true;
+                    if (link_tag[i].title == css_title) {
+                        link_tag[i].disabled = false;
                     }
-                };
-                window.onYTReady = function () {
-                    YT.loaded = 1;
-                    for (var i = 0; i < l.length; i++) {
-                        try {
-                            l[i]();
-                        } catch (e) {}
-                    }
-                };
-                YT.setConfig = function (c) {
-                    for (var k in c) {
-                        if (c.hasOwnProperty(k)) {
-                            YTConfig[k] = c[k];
-                        }
-                    }
-                };
-                var a = document.createElement('script');
-                a.id = 'www-widgetapi-script';
-                a.src = 'https:' + '//s.ytimg.com/yts/jsbin/www-widgetapi-vflktr3k_.js';
-                a.async = true;
-                var b = document.getElementsByTagName('script')[0];
-                b.parentNode.insertBefore(a, b);
-            })();
-        }
-        var player;
-
-        function onYouTubePlayerAPIReady() {
-            player = new YT.Player('player');
+                }
+                set_cookie(style_cookie_name, css_title,
+                    style_cookie_duration, style_domain);
+            }
         }
 
-        $(document).ready(function () {
+        function set_style_from_cookie() {
+            var css_title = get_cookie(style_cookie_name);
+            if (css_title.length) {
+                switch_style(css_title);
+            }
+        }
 
-            $("#play-video").click(function () {
-                player.playVideo();
-            });
+        function set_cookie(cookie_name, cookie_value,
+            lifespan_in_days, valid_domain) {
+            // http://www.thesitewizard.com/javascripts/cookies.shtml
+            var domain_string = valid_domain ?
+                ("; domain=" + valid_domain) : '';
+            document.cookie = cookie_name +
+                "=" + encodeURIComponent(cookie_value) +
+                "; max-age=" + 60 * 60 *
+                24 * lifespan_in_days +
+                "; path=/" + domain_string;
+        }
 
-            $("#pause-video").click(function () {
-                player.pauseVideo();
-            });
-        });
+        function get_cookie(cookie_name) {
+            // http://www.thesitewizard.com/javascripts/cookies.shtml
+            var cookie_string = document.cookie;
+            if (cookie_string.length != 0) {
+                var cookie_value = cookie_string.match(
+                    '(^|;)[\s]*' +
+                    cookie_name +
+                    '=([^;]*)');
+                return decodeURIComponent(cookie_value[2]);
+            }
+            return '';
+        }
     </script>
+
 
 
 

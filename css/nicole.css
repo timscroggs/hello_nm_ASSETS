@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+
+body {
+    font-size: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    overflow-x: hidden;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 5;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 2px;
+    text-transform: lowercase;
+    color: #888;
+}
+
+a {
+    text-decoration: none;
+    color: #29353A;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+a:hover {
+    color: #000!important;
+}
+a:visited {
+    color: #ff7a54;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.txt-lrg {
+    font-size: 28px;
+    line-height: 1.5;
+    text-align: left;
+}
+.txt-adv {
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: left;
+    padding-bottom: 10px;
+    color: white;
+}
+.button {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 30px auto 0 auto;
+    text-transform: lowercase;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#hero h1.hero-txt {
+    top: 35%;
+    opacity: 1;
+    width: 100%;
+    color: #2b019d;
+    /*padding: 0 5% 0 11%;*/
+    line-height: 1;
+    font-size: 110px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: lowercase;
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in;
+}
+h1.hero-txt {
+    opacity: 1;
+    width: 90%;
+    color: #fff;
+    /*max-width: 80%;*/
+    line-height: 1;
+    font-size: 110px;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: lowercase;
+    -webkit-transition: all 0.7s ease-in;
+    -moz-transition: all 0.7s ease-in;
+    transition: all 0.7s ease-in;
+}
+#hero h1.hero-txt a {
+    opacity: .5;
+    font-size: 130px;
+    font-weight: 700;
+    color: #fff;
+    /*color: #2b019d;*/
+}
+#hero h1.hero-txt a:hover {
+    opacity: 1;
+    color: #fff!important;
+}
+
+nav#main-nav {
+    font-family: "Roboto Condensed", sans-serif;
+    width: 100%;
+    height: 65px;
+    padding: 20px 0 0 0;
+    background-color: rgba(255, 255, 255, 0.95);
+}
+#faq-hero h1 {
+    color: #fff;
+    line-height: 1;
+    width: 70%;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 140px;
+    font-weight: 700;
+    position: absolute;
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: lowercase;
+}
+
+section#types h3.title {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    max-width: 200px;
+    text-transform: lowercase;
+    font-family: "Roboto Condensed", sans-serif;
+}
+section#types p {
+    width: 80%;
+    margin: 0 2% 0 11%;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    text-transform: lowercase;
+}
+section#statistics #f4 p {
+    font-size: 17px;
+    text-transform: none;
+    font-family: "Roboto Condensed", sans-serif;
+}
+section#statistics h3 {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 700;
+    margin: 15px 0 12px 0;
+    padding: 0 2% 0 11%;
+    text-transform: lowercase;
+    font-family: "Roboto Condensed", sans-serif;
+}
+section#statistics p {
+    width: 80%;
+    margin: 5px 2% 10px 11%;
+    font-size: 14px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    text-transform: lowercase;
+}
+
+section#custom p {
+    width: 600px;
+    color: #F79769;
+    line-height: 1;
+    font-size: 120px;
+    font-weight: 700;
+    font-family: "Playfair Display", Georgia, serif;
+    margin: 0 11%;
+}
+section#philosophy .quote {
+    line-height: 2;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+}
+section#philosophy .philo-wrap {
+    width: 90%;
+    font-size: 21px;
+    line-height: 1.75;
+    margin: 5% 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+section#philosophy .philo-wrap a {
+    color: #29353A;
+    padding-bottom: 2px;
+    font-family: "Roboto Condensed", sans-serif;
+    border-bottom: 2px solid #869fa9;
+}
+section#commitment .photo-caption {
+    font-size: 12px;
+    color: #a2a2a2;
+    font-style: italic;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+}
+
+section#graduate .graduate-wrap {
+    position: relative;
+    font-size: 21px;
+    line-height: 1.75;
+    margin: 3% 0 9% 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+section#graduate .graduate-wrap a {
+    color: #29353A;
+    padding-bottom: 2px;
+    font-family: "Roboto Condensed", sans-serif;
+    border-bottom: 2px solid #fff;
+}
+section#graduate .graduate-wrap .graduate-half li {
+    font-size: 14px;
+    line-height: auto;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    list-style: circle;
+    padding: 5px 0 0 15px;
+    margin-left: 25px;
+}
+footer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 15px;
+    padding-top: 100px;
+    background-color: #000;
+}
+footer h4 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: white;
+}
+footer p {
+    font-size: 17px;
+    color: white;
+    line-height: inherit;
+}
+footer #footer-split {
+    width: 1000px;
+    padding: 0 11%;
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+footer #footer-split address {
+    width: 60%;
+    float: left;
+}
+footer #footer-split address p {
+    margin-bottom: 10px;
+    color: white;
+}
+footer #footer-split address a {
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #ff7a54;
+    color: #ff7a54;
+}
+footer #footer-split address a:hover,
+footer #footer-split address a:active {
+    border-bottom: 2px solid #c3593b;
+    color: #c3593b;
+}
+footer #footer-split #follow {
+    width: 40%;
+    float: right;
+}
+footer #follow #icons {
+    width: 100%;
+    height: 90px;
+}
+footer #follow .diamond {
+    float: left;
+    width: 74px;
+    height: 74px;
+    position: relative;
+}
+footer #follow .diamond:hover>.diamond-border,
+footer #follow .diamond:active>.diamond-border {
+    border: 2px solid #ff7a54;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+footer #follow .diamond-border {
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    margin: 10px;
+    height: 40px;
+    position: absolute;
+    background: black;
+    border: 2px solid black;
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: center center;
+    -ms-transform-origin: center center;
+    -o-transform-origin: center center;
+    transform-origin: center center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+footer #follow .the-icons {
+    top: 20px;
+    left: 20px;
+    color: #29353A;
+    font-size: 24px;
+    line-height: 24px;
+    position: absolute;
+}
+footer .official-logos {
+    position: relative;
+}
+footer div.unca-logo img {
+    width: 150px;
+}
+footer div.nm-logo {
+    width: 80px;
+    float: right;
+}
+footer .nm-logo img {
+    width: 45px;
+}
+footer div.unca-logo {
+    margin: 0 25px 0 0;
+    float: right;
+}
+.js-bg-white {
+    background-color: #fff;
+}
+
+.featherlight .featherlight-inner h3 {
+    padding-bottom: 15px;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    max-width: 200px;
+    text-transform: lowercase;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.featherlight .featherlight-inner h4 {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-family: "Roboto Condensed", sans-serif;
+    text-transform: lowercase;
+}
+.featherlight .featherlight-inner p.details {
+    font-size: 12px;
+    padding-right: 25px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    text-transform: lowercase;
+    list-style: disc;
+}

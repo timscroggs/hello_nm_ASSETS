@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:900);
+
+section h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px!important;
+    line-height: 2;
+    color:#000;
+    
+}
+footer h4{
+    font-family: 'Playfair Display', serif;
+}
+p{
+    font-size: 18px!important;
+    color:#777;
+}
+section h1{
+    text-transform: uppercase !important;
+}
+
+.txt-lrg{
+    
+}
