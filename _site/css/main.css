@@ -16,7 +16,6 @@
 .container-main {
     margin: auto;
     max-width: 100%;
-    overflow: auto;
 }
 *,
 *:before,
@@ -947,6 +946,80 @@ section#faq #faq-wrap {
     width: 900px;
 }
 
+section#graduate .types-row {
+    margin: 0 auto;
+    max-width: 98%;
+    padding:25px 1%;
+    margin-bottom: 40px;
+    
+}
+section#graduate .type-blk {
+    display: table;
+    float: left;
+    width: 23%;
+    margin-right: 10px;
+    text-align: center;
+    height: 280px;
+    position: relative;
+}
+section#graduate .type-blk:before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 40px solid white;
+    border-left: 40px solid rgba(5, 206, 109, 0.6);
+    width: 0;
+}
+
+section#graduate .type_content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+section#graduate h3.title {
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    max-width: 80%;
+    text-transform: lowercase;
+    color:white;
+    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section#graduate .type_content p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: center;
+    color:black;
+    max-width: 80%;
+   font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    text-transform: lowercase;
+}
+section#graduate .type_content p.subtitle {
+    font-size: .7em;
+}
+section#graduate .block_types{
+    background-color: rgba(0, 255, 132, 1);
+-moz-transition: box-shadow .2s, transform .2s, opacity .2s;
+    -webkit-transition: box-shadow .2s, transform .2s, opacity .2s;
+    transition: box-shadow .2s, transform .2s, opacity .2s;
+}
+section#graduate .block_types:hover{
+    background-color: rgba(0, 255, 132, .9); 
+    opacity: 1 !important;
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -moz-transform: translate(0, -4px);
+    -webkit-transform: translate(0, -4px);
+    transform: translate(0, -4px);
+}
+
+
+
 /* Gabriel's mapbox css for the map */
 
 #map-gabe {
@@ -1133,7 +1206,7 @@ section#graduate .graduate-wrap .graduate-half {
     float: left;
     margin-right: 5%;
 }
-section#graduate .graduate-wrap .graduate-half li {
+section#graduate #interactive-port p {
     font-size: 14px;
     line-height: auto;
     font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
@@ -2310,7 +2383,7 @@ body.overflow-hidden {
     height: auto;
 }
 .slider1, .slider2, .slider3, .slider4, .slider5{
-    background-color: rgba(0,0,0,0.55);
+    background-color: rgba(0,0,0,0.65);
     background-blend-mode: overlay;
     transition: all 0.3s ease;
 }
@@ -2360,24 +2433,22 @@ body.overflow-hidden {
     height: 506px;
 }
 .alumni {
-    padding-left: 40px;
+    padding-left: 50px;
 }
 .alumni h2 {
-    margin: 0 auto; 
+    
     text-align: left;
     color: #fff;
     font-size: 1.5em;
 }
 .alumni h3 {
     font-size: 1.2em;
-    margin: 0 auto; 
     text-align: left; 
     padding-bottom: 10px; 
     color: #f37474;
-    max-width: 700px;
+    max-width: 95%;
 }
 .alumni p {
-    margin: 0 auto; 
     line-height: 1.5; 
     font-size: .9em; 
     text-align: left; 
@@ -2522,14 +2593,18 @@ h6.credit {
         font-family: "Karla", sans-serif;
         color: #bbb;
     }
+    .featherlight .featherlight-close-icon:hover {
+        color: #777;
+    }
+    /*
     .featherlight .featherlight-close-icon:hover:after {
         background: rgba(154, 154, 154, 0.2);
     }
     .featherlight .featherlight-close-icon::after {
         content: "";
         position: absolute;
-        width: 2.625em;
-        height: 2.625em;
+        width: 5em; /*2.625em;
+        height: 2em;
         display: block;
         left: 50%;
         top: 50%;
@@ -2537,6 +2612,7 @@ h6.credit {
         border-radius: 6.25em;
         transition: all 0.3s ease;
     }
+    */
     .featherlight .featherlight-image {
         width: 100%;
     }
