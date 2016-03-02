@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:900);
 
+.curtain .hero-knockout {
+    background: url(/images/new_media_white_type.svg) no-repeat;
+}
 section h2{
     font-family: 'Playfair Display', serif;
     font-size: 40px!important;
