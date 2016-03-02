@@ -153,7 +153,7 @@ section#types p {
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 1px;
-    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    font-family: "Roboto Condensed", sans-serif;
     text-transform: lowercase;
 }
 section#statistics #f4 p {
@@ -176,7 +176,7 @@ section#statistics p {
     font-size: 14px;
     line-height: 1.8;
     letter-spacing: 1px;
-    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    font-family:"Roboto Condensed", sans-serif;
     text-transform: lowercase;
 }
 
@@ -186,12 +186,12 @@ section#custom p {
     line-height: 1;
     font-size: 120px;
     font-weight: 700;
-    font-family: "Playfair Display", Georgia, serif;
+    font-family: "Roboto Condensed", sans-serif;
     margin: 0 11%;
 }
 section#philosophy .quote {
     line-height: 2;
-    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    font-family: "Roboto Condensed", sans-serif;
 }
 section#philosophy .philo-wrap {
     width: 90%;
@@ -210,7 +210,7 @@ section#commitment .photo-caption {
     font-size: 12px;
     color: #a2a2a2;
     font-style: italic;
-    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    font-family: "Roboto Condensed", sans-serif;
 }
 
 section#graduate .graduate-wrap {
@@ -229,7 +229,7 @@ section#graduate .graduate-wrap a {
 section#graduate .graduate-wrap .graduate-half li {
     font-size: 14px;
     line-height: auto;
-    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    font-family:"Roboto Condensed", sans-serif;
     list-style: circle;
     padding: 5px 0 0 15px;
     margin-left: 25px;
@@ -371,7 +371,146 @@ footer div.unca-logo {
     padding-right: 25px;
     line-height: 1.8;
     letter-spacing: 1px;
-    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    font-family:"Roboto Condensed", sans-serif;
     text-transform: lowercase;
     list-style: disc;
 }
+.curtain .hero-knockout {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url(/images/cutout_nicole.svg) no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/*iPhone 6 Portrait*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .curtain .hero-knockout {
+        background: url(/images/cutout_nicole.svg) no-repeat;
+    }
+}
+
+/*iPhone 6+ Portrait*/
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    .curtain .hero-knockout {
+        background: url(/images/cutout_nicole.svg) no-repeat;
+    }
+}
+.hero-reveal {
+    opacity: 0 !important;
+}
+.block_types:hover {}
+.one {
+    /*background-color: #2b019d;*/
+    background-image: url("/images/home5.jpg");
+}
+.one:hover {
+    background-image: url("/images/types_nicole.gif");
+    color: #000;
+}
+.two {
+    background-image: url("/images/home6.jpg");
+    /*background-color: #ff5454;*/
+}
+.two:hover {
+    background-image: url("/images/types_nicole1.gif");
+    color: #000;
+}
+.three {
+    background-image: url("/images/home18.jpg");
+    /*background-color: #0b89c1;*/
+}
+.three:hover {
+    background-image: url("/images/types_nicole2.gif");
+    color: #000;
+}
+.four {
+    background-color: rgba(0, 255, 132, 1);
+}
+.four:hover {
+    border: none;
+    background-color: rgba(0, 255, 132, 1);
+    color: #000;
+    background-image: url("/images/paint_mixing.gif");
+    background-blend-mode: difference;
+}
+
+
+
+#com-photo .com-hero {
+    width: 700px;
+    color: #fff;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 1.2;
+    position: absolute;
+    padding: 42px 60px;
+    font-family: "Roboto Condensed", sans-serif;
+    border: 7px solid #fff;
+    text-transform: lowercase;
+    top: 47%;
+}
+
+ .txt-adv {
+        width: 80%;
+        font-size: 20px;
+    }
+
+section#graduate .graduate-pic {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+}
+
+
+section#statistics h4{
+    max-width: 750px;
+    font-size: 24px;
+    line-height: 1.75;
+    text-align: left;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#faq-hero h3{
+    text-decoration: underline;
+    font-size: 56px;
+     font-family:"Roboto Condensed", sans-serif ;
+}
+
+#faq-hero .hero-content {
+    
+    line-height: 1.25;
+    width: 70%;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    
+    position: absolute;
+    text-align: center;
+   
+    text-transform: lowercase;
+}
+
