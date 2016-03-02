@@ -806,8 +806,9 @@ nav#main-nav .nav-active a {
     display: none;
 }
 #faq-hero {
+    
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     position: relative;
     background-position: fixed!important;
     background: url(/images/rosen2.jpg) no-repeat center center;
@@ -815,9 +816,21 @@ nav#main-nav .nav-active a {
     background-size: cover;
     background-color: #fff;
 }
-#faq-hero h1 {
+#faq-hero h1{
     color: #fff;
-    line-height: 1;
+    font-size: 140px;
+    font-weight: 700;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#faq-hero h3{
+    text-decoration: underline;
+    font-size: 70px;
+     font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+}
+
+#faq-hero .hero-content {
+    
+    line-height: 1.25;
     width: 70%;
     margin: 0 auto;
     left: 50%;
@@ -829,13 +842,13 @@ nav#main-nav .nav-active a {
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    font-size: 140px;
-    font-weight: 700;
+    
     position: absolute;
     text-align: center;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
     text-transform: lowercase;
 }
+
 section#types {
     padding: 0 0 15px 0;
     position: relative;
@@ -918,7 +931,7 @@ section#statistics p {
     text-transform: lowercase;
 }
 section#statistics h4{
-    
+    max-width: 750px;
     font-size: 24px;
     line-height: 1.75;
     text-align: left;
@@ -1114,6 +1127,7 @@ section#commitment .photo-caption {
 }
 section#graduate {
     position: relative;
+    padding-bottom: 65px;
 }
 section#graduate .graduate-wrap {
     position: relative;
@@ -1248,9 +1262,17 @@ section#nm_buttons {
     background-color: #000;
     color: white;
 }
+section#commitment{
+    padding-right: 0;
+    padding-left: 0;
+}
 #com-photo {
-    margin: 60px 0;
+    height: 600px;
+    margin: 100px 0;
     position: relative;
+    background-image: url("/images/infrared-by-numbers.gif");
+    background-size: cover;
+    background-attachment: fixed;
 }
 #com-photo img {
     margin: 0 0 0 -30%;
@@ -1259,7 +1281,7 @@ section#nm_buttons {
     overflow: auto;
 }
 #com-photo .com-hero {
-    width: 700px;
+    max-width: 700px;
     color: #fff;
     left: 50%;
     top: 50%;
