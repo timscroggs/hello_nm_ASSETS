@@ -199,6 +199,8 @@ textarea {
     color: inherit;
     font: inherit;
     margin: 0;
+    -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 button,
 select {
@@ -715,6 +717,27 @@ h1.hero-txt {
         background: url(/images/nm_hero_Portrait.svg) no-repeat;
     }
 }
+
+/*iPad Portrait*/
+
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { /* STYLES GO HERE */ 
+    .curtain .hero-knockout {
+        background: url(/images/nm_hero_Portrait.svg) no-repeat;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */ 
+    .curtain .hero-knockout {
+        background: url(/images/nm_hero_Portrait.svg) no-repeat;
+    }
+}
+
+
 .hero-reveal {
     opacity: 0 !important;
 }
@@ -1430,6 +1453,7 @@ footer div.unca-logo {
 .block_timeline.four_timeline.type-blk{
         height: auto;
     }
+
 @media only screen and (min-width: 1600px) {
     section#types .type-blk{
         height: 380px;
@@ -1512,8 +1536,11 @@ footer div.unca-logo {
     footer #footer-split .site-credits {
         width: 90%;
     }
-    footer #footer-split address, footer #footer-split #follow{
+    footer #footer-split address{
         padding: 0 0 80px 0;
+    }
+    footer #footer-split #follow{
+        padding: 0 0 120px 0;
     }
     
     section#graduate .graduate-wrap .graduate-half {
@@ -1521,6 +1548,8 @@ footer div.unca-logo {
     }
     section#statistics h2 {
         padding-left: 11%;
+        line-height: 1;
+        margin-bottom: 60px;
         
     }
     section#statistics {
@@ -1540,7 +1569,9 @@ footer div.unca-logo {
     }
 }
 @media only screen and (max-width: 768px) {
-    
+    #faq-hero h3{
+    font-size: 50px;
+}
     section#statistics .timeline_content {
     padding: 25px 0 25px 0;
     }
@@ -1557,7 +1588,7 @@ footer div.unca-logo {
     }
     h1.hero-txt {
         overflow: hidden;
-        font-size: 60px;
+        font-size: 50px;
         padding: 0 0 25px 0;
         word-wrap: break-word;
     }
@@ -1568,10 +1599,14 @@ footer div.unca-logo {
         min-height: 350px;
         word-wrap: normal;
         padding-right: 40px;
+    font-size: 22px!important;
     }
     .sticky-wrapper {
         position: relative;
         z-index: 9;
+        display: none;
+    }
+    .style-switcher {
         display: none;
     }
     #mobile-nav {
@@ -1786,6 +1821,10 @@ footer div.unca-logo {
         width: 100%;
         font-size: 66px;
     }
+    h1.hero-txt {
+        
+        font-size: 40px;
+    }
     .logo {
         width: 200px;
         height: 72px;
@@ -1811,6 +1850,9 @@ footer div.unca-logo {
     #faq-hero h1 {
         font-size: 60px;
     }
+    #faq-hero h3{
+    font-size: 30px;
+}
     section#types .types-row {
         margin-bottom: 60px;
     }
@@ -2087,7 +2129,7 @@ body.overflow-hidden {
     list-style: none;
     margin: 0 8%;
     line-height: 23px;
-    border-bottom: 3px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
     font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
 }
 .cd-primary-nav a {
@@ -2810,6 +2852,41 @@ ul.style-switcher-text {
     text-transform: lowercase;
     font-size: 12px;
 }
+p.mobile-nav-title{
+    padding-top: 65px;
+    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 300;
+    color:#bbb;
+    
+}
+.style-switcher-mobile {
+    margin-top: 15px;
+    width: 25px;
+}
+
+.style-switcher-mobile input {
+    margin-top: -40;
+    opacity: 1;
+    border: none;
+    padding-left:30px;
+    border: none;
+    width: 300px;
+    height: 90px;
+    float: none;
+    color: transparent;
+    text-align: left;
+    font-family: "Droid Sans Mono", "Monaco", sans-serif;
+    text-transform: lowercase;
+    font-size: 18px;
+    color: white;
+    opacity: 1 !important;
+}
+.style-switcher-mobile input:hover {
+    opacity: .6;
+}
+
 .style-switcher input:focus,
 .style-switcher input:active {
     color: transparent;
@@ -2822,8 +2899,7 @@ ul.style-switcher-text {
     -webkit-box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.3);
     box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.3);
 }
-.style-switcher input:hover,
-.style-switcher-mobile input:hover {
+.style-switcher input:hover {
     color: white;
     width: auto;
     opacity: 1 !important;
@@ -2866,16 +2942,7 @@ ul.style-switcher-text {
 .cd-primary-nav li:last-child {
     border-bottom: none;
 }
-.style-switcher-mobile {
-    margin-top: 25px;
-}
-.style-switcher-mobile input {
-    opacity: 1;
-    border: none;
-    width: 45px;
-    height: 35px;
-    float: left;
-}
+
 
 
 

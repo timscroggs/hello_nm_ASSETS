@@ -61,9 +61,11 @@
                 <h1 class="hero-txt hero-reveal"><!--what is new media?-->  
                     <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
                 <video loop autoplay poster="/videos/Snapshots/A-Purple-Balloon.jpg" class="video_layer_vid avoid-clicks">
+                    <source src="/videos/WEBM/A-Purple-Balloon.webm" type="video/webm">
                     <source src="/videos/MP4/A-Purple-Balloon.mp4" type="video/mp4">
                     <source src="/videos/OGV/A-Purple-Balloon.ogv" type="video/ogg">
-                    <source src="/videos/WEBM/A-Purple-Balloon.webm" type="video/webm">Your browser does not support HTML5 video.
+                    Your browser does not support HTML5 video.
+                    
                 </video>
 
             </div>
@@ -81,8 +83,8 @@
                     <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main">
                     <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
                     <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
-                        <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
-                    <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole"><p id="nicole-title"></p>
+                    <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
+                    <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
                 </form>
             
           </div> 
@@ -121,14 +123,17 @@
                     <li><a class="ss-target" href="#locations">location</a></li>
                     <li><a class="ss-target" href="#contact-form">get_more</a></li>
                     <li>
+                        <p class="mobile-nav-title">style sitcher menu</p>
                         <form class="style-switcher-mobile">
-                            <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="" id="main">
-                            <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="" id="tim">
-                            <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="" id="janice">
-                            <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="" id="gabriel">
-                            <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="" id="nicole">
+                            <a href=""><input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_ Experience" id="main"></a>
+                            <a href=""><input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim"></a>
+                            <a href=""><input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_ Experience" id="janice"></a>
+                            <a href=""><input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_ Experience" id="gabriel"></a>
+                            <a href=""><input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_ Experience" id="nicole"></a>
                         </form>
+                        <br>
                     </li>
+                    
                 </ul>
             </nav>
         </div>
@@ -298,7 +303,6 @@
             return '';
         }
     </script>
-
 
 
 
