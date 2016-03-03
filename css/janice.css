@@ -1,0 +1,347 @@
+@import url(https://fonts.googleapis.com/css?family=Fredoka+One|Supermercado+One|Muli);
+/******************
+JANICE CSS EXPERIENCE!
+****************/
+body {
+	background-color: rgb(236, 236, 236);
+}
+h2 {
+	font-family: 'Fredoka One', Arial, Times New Roman, cursive;
+}
+.stuck a:visited {
+    color: #00a79d!important;
+}
+.stuck a {
+    color: #1a1a1a!important;
+}
+.stuck {
+    background-color:#DADADA!important;
+}
+#graduate h1.hero-txt {
+    color: #fff!important;
+    font-family: 'Muli', sans-serif; 
+}
+#nm_buttons h1.hero-txt {
+    color: #fff!important;
+    font-family: 'Muli', sans-serif; 
+}
+.txt-adv {
+    position: relative;
+    background-color: rgba(191, 197, 197, 0.8);
+    padding: 20px;
+    border-radius: 25px;
+    margin: 0 auto;
+}
+.light {
+    color: #000000!important;
+}
+#nm-slider .owl-wrapper h2 {
+    color: #fff;
+    padding-top: 20px;
+    text-align: center;
+}
+h1.hero-txt {
+    color: #4C3C3C!important;
+    font-family: 'Muli', sans-serif; 
+}
+.alumni h3 {
+    font-size: 2.2em;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #0dc1b6;
+    max-width: 95%;
+}
+.alumni p {
+    line-height: 1.5;
+    font-size: 2em;
+    text-align: center;
+    color: #d8e4e3;
+}
+.curtain .hero-knockout {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url(/images/new_media_janice.svg) no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#hero h1.hero-txt {
+   color: #e1e1e3;
+}
+.txt-lrg {
+    text-align: center;
+    margin: 0 auto;
+}
+#hero h1.hero-txt a {
+    color: #6ee064;
+    text-transform: uppercase;
+}
+nav#main-nav ul {
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif; 
+}
+nav#main-nav ul li:hover,
+nav#main-nav ul li:active {
+    border-bottom: 3px solid #80d3ce;
+}
+nav#main-nav .nav-active {
+    border-bottom: 3px solid #00A79D;
+}
+nav#main-nav .nav-active a {
+    color: #00A79D;
+}
+.stuck nav#main-nav .nav-active a {
+    color: #888!important;
+}
+section#about p {
+    font-size: 24px;
+    line-height: 1.75;
+    text-align: center;
+    padding-bottom: 30px;
+}
+footer {
+    background-color: #DADADA;
+}
+footer #footer-split address a {
+    border-bottom: 2px solid #00A79D;
+    color: #00A79D;
+}
+footer #footer-split address a:hover,
+footer #footer-split address a:active {
+    border-bottom: 2px solid #70e8e1;
+    color: #70e8e1;
+}
+
+footer #follow .diamond-border {
+    background: none;
+    border: none;
+}
+footer #follow .diamond:hover>.diamond-border,
+footer #follow .diamond:active>.diamond-border {
+    border: 2px solid #00A79D;
+}
+footer #footer-split address p {
+    margin-bottom: 10px;
+    color: #1a1a1a;
+}
+footer h4 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #1a1a1a;
+}
+footer h4 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    color: #1a1a1a;
+}
+.social-icon {
+    color: #00A79D;
+}
+h2.fixed-logo {
+    color: #49ddd4;
+}
+#hello h2 {
+    font-family: 'Fredoka One', Arial, Times New Roman, cursive;
+    line-height: 1;
+    font-size: 4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #44a39e;
+     -webkit-animation-name: example; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+    animation-name: example;
+    animation-duration: 4s;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {color:#729dc3; left:0px; top:0px;}
+    25%  {color:#729dc3; left:200px; right:0px;}
+    50%  {color:#91e2a6; left:200px; right:200px;}
+    75%  {color:#bee8e6; left:0px; right:200px;}
+    100% {color:#44a39e; left:200px; right:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {color:#729dc3; left:0px; top:0px;}
+    25%  {color:#729dc3; left:200px; right:0px;}
+    50%  {color:#91e2a6; left:200px; right:200px;}
+    75%  {color:#bee8e6; left:0px; right:200px;}
+    100% {color:#44a39e; left:200px; right:0px;}
+}
+h2 {
+    line-height: 2em;
+    text-transform: uppercase;
+}
+.about-wrap h2 {
+    font-size: 2em;
+    color: #202222;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    text-align: center;
+}
+section#contact-form {
+    background-color: #ecefee;
+    padding-bottom: 90px;
+}
+
+.block_timeline {
+    border: solid 5px #000;
+}
+section#types h2 {
+    font-size: 2em;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0 auto;
+}
+section#contact-form h2 {
+    font-size: 2em;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0 auto;
+}
+section#faq h2:first-child {
+    text-align: center;
+}
+section#locations h2 {
+    font-size: 2em;
+    color: #1a1a1a;
+    text-align: center;
+    margin: 0 auto;
+}
+h6.credit {
+    margin: 0 auto;
+    text-align: center;
+}
+footer p {
+    font-size: 17px;
+    color: #000;
+}
+h1.hero-txt {
+    font-size: 4em;    
+    text-align: center;
+    margin: 0 auto;
+}
+.block_types {
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: background-image 0.8s ease-in-out;
+    transition: background-image 0.8s ease-in-out;
+    /*border: solid 5px #000;*/
+    color: #fff;
+}
+.one {
+    background-color: #4421a3;
+    border-radius: 80px;
+}
+.one:hover {
+    color: #fff;
+    background-image: url("/images/1.gif");
+    background-blend-mode: difference;
+}
+.two {
+    background-color:#5c9d95;
+    border-radius: 80px;
+    /*background-color: #ff5454;*/
+}
+.two:hover {
+    color: #fff;
+    background-image: url(/images/2.gif);
+    background-blend-mode: difference;
+}
+.three {
+    background-color: #C39ECF;
+    border-radius: 80px;
+}
+.three:hover {
+    color: #fff;
+    background-image: url(/images/9.gif);
+    background-blend-mode: difference;
+}
+.four {
+    background-color: rgb(62, 188, 127);
+    border-radius: 100px;
+}
+.four:hover {
+    color: #fff;
+    background-image: url("/images/6.gif");
+    background-blend-mode: difference;
+}
+.adv-btn {
+    background-color: #729dc3;
+    border-radius: 20px;
+}
+#com-photo .com-hero {
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    font-family: 'Supermercado One', cursive;
+    text-align: center;
+}
+section#graduate .type-blk {
+    background-color: #729dc3;
+    border-radius: 25px;
+}
+section#graduate .type-blk:before {
+    border-top: 40px solid #fff;
+    border-left: 40px solid #2f6391;
+    width: 0;
+}
+.txt-lrg a {
+    color: #0c4171;
+}
+.txt-lrg a:visited {
+    color: #315e86;
+}
+section {
+    padding-bottom: 60px;
+}
+section#philosophy .quote {
+ font-family: 'Muli', sans-serif; 
+    margin: 0 auto;
+    text-align: center;
+}
+.block_timeline {
+    border-radius: 25px;
+}
+section#types .type_content {
+    background-color: rgba(23, 25, 25, 0.75);
+    border-radius: 25px;
+}
+.slider1, .slider2, .slider3, .slider4, .slider5 {
+    background-color: rgba(0, 0, 0, 0.86);
+}
+
+section#locations h2, section#locations p {
+    padding-left: 0;
+}
+#about p {
+    text-align: center;
+    margin: 0 auto;
+}
+section#graduate .type_content p {
+    font-family: 'Muli', sans-serif; 
+}
+
+#faq-hero h1 {
+    font-family: 'Muli', sans-serif; 
+}
+
+#faq-hero {
+    background-blend-mode: overlay;
+	background-color: rgba(35, 34, 34, 0.81);
+}
+
+.site-credits a, a:visited  {
+color: #00A79D;
+}
