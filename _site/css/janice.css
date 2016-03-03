@@ -44,6 +44,9 @@ h1.hero-txt {
     color: #4C3C3C!important;
     font-family: 'Muli', sans-serif; 
 }
+.alumni {
+	padding: 25px;
+}
 .alumni h3 {
     font-size: 2.2em;
     text-align: center;
