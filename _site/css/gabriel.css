@@ -12,6 +12,22 @@
     background-size: cover;
 }
 
+/*iPhone 6 Portrait*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .curtain .hero-knockout {
+        background: url(/images/new_media_white_grunge_portrait.svg) no-repeat;
+    }
+}
+
+/*iPhone 6+ Portrait*/
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    .curtain .hero-knockout {
+        background: url(/images/new_media_white_grunge_portrait.svg) no-repeat;
+    }
+}
+
 section h2 {
     font-family: "Courier New", "Droid Sans Mono", "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
     line-height: 1;
@@ -76,6 +92,30 @@ section#hello {
     text-align: left;
 }
 
+#about p {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: left;
+    letter-spacing: 20px;
+    font-family: "verdana", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+section#philosophy .quote {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: left;
+    letter-spacing: 20px;
+    font-family: "verdana", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
 section#types {
     background-color: #323232;
 }
@@ -86,6 +126,12 @@ section#types {
     padding-top: 5%;
     z-index: 0;
     font-size: 30px;
+}
+
+.typed-cursor {
+    font-size: 36px;
+    opacity: 1;
+    animation: blink 0.7s infinite;
 }
 
 section#about p {
@@ -112,8 +158,9 @@ section#philosophy .quote {
 }
 
 .txt-adv {
-    font-size: 26px;
+    font-size: 24px;
     line-height: 1.5;
+    letter-spacing: -5px;
     text-align: left;
     padding-bottom: 10px;
     -webkit-transform: rotate(45deg);
@@ -137,7 +184,10 @@ section#graduate .graduate-wrap .graduate-half li {
 }
 
 #faq-hero {
-
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: fixed!important;
     background-color: #323232;
 }
 
@@ -146,7 +196,7 @@ section#locations {
     padding: 0;
     width: 100%;
     position: relative;
-    margin: 0 auto;
+    margin: 80px auto 0 auto;
     background-color: #323232;
 }
 

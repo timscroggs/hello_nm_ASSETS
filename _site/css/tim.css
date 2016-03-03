@@ -6,18 +6,7 @@ a{ color:black;
 a:hover{
     color:#bbb!important;
 }
-.curtain .hero-knockout {
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
-    background: url(/images/new_media_white_tim2.svg) no-repeat;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 nav#main-nav{
     background-color: rgba(252, 252, 252, .95);
 }
@@ -115,6 +104,7 @@ section#statistics p{
      background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
+    background-color: #FCFCFC;
     color: #000;
     border: none;
         
@@ -290,4 +280,55 @@ and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */
     .curtain .hero-knockout {
         background: url(/images/new_media_HERO_portrait_tim1.svg) no-repeat;
     }
+}
+.curtain .hero-knockout {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url(/images/new_media_white_tim1.svg) no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 1300px) {
+    section h2, footer h4 {
+        font-size: 80px!important;
+        left:-100px;
+    
+}
+}
+
+@media only screen and (max-width: 992px) {
+    section h2, footer h4 {
+        font-size: 80px!important;
+        left:-80px;
+    
+}
+}
+
+@media only screen and (max-width: 768px) {
+    section h2, footer h4 {
+        font-size: 60px!important;
+        left:-50px;
+    
+}
+}
+@media only screen and (max-width: 480px) {
+    section h2, footer h4 {
+        font-size: 50px!important;
+        left:-40px;
+    
+}
+    
+}
+@media only screen and (max-width: 320px) {
+    section h2, footer h4 {
+        font-size: 40px!important;
+        left:-30px;
+    
+}
 }
