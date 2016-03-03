@@ -345,3 +345,6 @@ section#graduate .type_content p {
 .site-credits a, a:visited  {
 color: #00A79D;
 }
+section#locations .locations-content {
+    padding-left: 0;
+}
