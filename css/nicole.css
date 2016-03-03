@@ -234,72 +234,16 @@ section#graduate .graduate-wrap .graduate-half li {
     padding: 5px 0 0 15px;
     margin-left: 25px;
 }
-footer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: 15px;
-    padding-top: 100px;
-    background-color: #000;
-}
-footer h4 {
-    font-size: 24px;
-    font-weight: 700;
-    padding-bottom: 20px;
-    color: white;
-}
-footer p {
-    font-size: 17px;
-    color: white;
-    line-height: inherit;
-}
-footer #footer-split {
-    width: 1000px;
-    padding: 0 11%;
-    overflow: hidden;
-    padding-bottom: 10px;
-}
-footer #footer-split address {
-    width: 60%;
-    float: left;
-}
-footer #footer-split address p {
-    margin-bottom: 10px;
-    color: white;
-}
-footer #footer-split address a {
-    font-size: 22px;
-    font-weight: 700;
-    padding-bottom: 3px;
-    border-bottom: 2px solid #ff7a54;
-    color: #ff7a54;
-}
-footer #footer-split address a:hover,
-footer #footer-split address a:active {
-    border-bottom: 2px solid #c3593b;
-    color: #c3593b;
-}
-footer #footer-split #follow {
-    width: 40%;
-    float: right;
-}
-footer #follow #icons {
-    width: 100%;
-    height: 90px;
-}
-footer #follow .diamond {
-    float: left;
-    width: 74px;
-    height: 74px;
-    position: relative;
-}
 footer #follow .diamond:hover>.diamond-border,
 footer #follow .diamond:active>.diamond-border {
-    border: 2px solid #ff7a54;
+    border: 2px solid #2a37f0;
     -webkit-transition: all 0.3s ease-in;
     -moz-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
 }
+
+
+
 footer #follow .diamond-border {
     top: 0px;
     left: 0px;
@@ -320,31 +264,7 @@ footer #follow .diamond-border {
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-footer #follow .the-icons {
-    top: 20px;
-    left: 20px;
-    color: #29353A;
-    font-size: 24px;
-    line-height: 24px;
-    position: absolute;
-}
-footer .official-logos {
-    position: relative;
-}
-footer div.unca-logo img {
-    width: 150px;
-}
-footer div.nm-logo {
-    width: 80px;
-    float: right;
-}
-footer .nm-logo img {
-    width: 45px;
-}
-footer div.unca-logo {
-    margin: 0 25px 0 0;
-    float: right;
-}
+
 .js-bg-white {
     background-color: #fff;
 }
@@ -513,4 +433,23 @@ section#statistics h4{
    
     text-transform: lowercase;
 }
-
+section#graduate h3.title {
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    max-width: 80%;
+    text-transform: lowercase;
+    color:white;
+    font-family: "Roboto Condensed", sans-serif;
+}
+section#graduate .type_content p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: center;
+    color:black;
+    max-width: 80%;
+   font-family: "Roboto Condensed", sans-serif;
+    text-transform: lowercase;
+}
