@@ -32,6 +32,7 @@ html {
 body {
     margin: 0;
 }
+    
 article,
 aside,
 details,
@@ -198,6 +199,8 @@ textarea {
     color: inherit;
     font: inherit;
     margin: 0;
+    -webkit-appearance: none;
+  -webkit-border-radius: 0;
 }
 button,
 select {
@@ -483,7 +486,7 @@ h2 {
 }
 a {
     text-decoration: none;
-    color: #29353A;
+    color: #ff7a54;;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
@@ -499,10 +502,9 @@ a:visited {
 }
 section h2,
 section p {
-    max-width: 700px;
+    max-width: 750px;
 }
 section {
-    padding-top: 40px;
     padding-top: 40px;
     padding-right: 11%;
     padding-left: 11%;
@@ -555,9 +557,10 @@ section {
     background-size: cover;
 }
 #hero h1.hero-txt {
-    top: 35%;
+    top: 38%;
     opacity: 1;
     width: 100%;
+     max-width: 100%;
     color: #2b019d;
     /*padding: 0 5% 0 11%;*/
     line-height: 1;
@@ -575,7 +578,7 @@ h1.hero-txt {
     opacity: 1;
     width: 90%;
     color: #fff;
-    /*max-width: 80%;*/
+    max-width: 1200px;
     line-height: 1;
     font-size: 110px;
     font-weight: 700;
@@ -604,7 +607,7 @@ h1.hero-txt {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -999;
+    z-index: -999999;
 }
 @media (min-aspect-ratio: 16/9) {
     .video_layer_vid {
@@ -714,6 +717,27 @@ h1.hero-txt {
         background: url(/images/nm_hero_Portrait.svg) no-repeat;
     }
 }
+
+/*iPad Portrait*/
+
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { /* STYLES GO HERE */ 
+    .curtain .hero-knockout {
+        background: url(/images/nm_hero_Portrait.svg) no-repeat;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */ 
+    .curtain .hero-knockout {
+        background: url(/images/nm_hero_Portrait.svg) no-repeat;
+    }
+}
+
+
 .hero-reveal {
     opacity: 0 !important;
 }
@@ -772,7 +796,7 @@ nav#main-nav .nav-active a {
 }
 .stuck {
     top: 0;
-    z-index: 999;
+    z-index: 999999;
     width: 100%;
     position: fixed;
     -webkit-transition: all 0.3s ease-in;
@@ -805,17 +829,31 @@ nav#main-nav .nav-active a {
     display: none;
 }
 #faq-hero {
+    
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     position: relative;
-    background-size: cover;
-    background: url(/images/school_placeholder.jpg) no-repeat center center;
     background-position: fixed!important;
-    background-color: #E1F6B4;
+    background: url(/images/rosen2.jpg) no-repeat center center;
+    
+    background-size: cover;
+    background-color: #fff;
 }
-#faq-hero h1 {
+#faq-hero h1{
     color: #fff;
-    line-height: 1;
+    font-size: 140px;
+    font-weight: 700;
+     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#faq-hero h3{
+    text-decoration: underline;
+    font-size: 70px;
+     font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+}
+
+#faq-hero .hero-content {
+    
+    line-height: 1.25;
     width: 70%;
     margin: 0 auto;
     left: 50%;
@@ -827,15 +865,17 @@ nav#main-nav .nav-active a {
     -ms-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    font-size: 140px;
-    font-weight: 700;
+    
     position: absolute;
     text-align: center;
-    font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+   
     text-transform: lowercase;
 }
+
 section#types {
     padding: 0 0 15px 0;
+    position: relative;
+    z-index: 1;
 }
 section#types h2 {
     padding: 0 11%;
@@ -882,43 +922,45 @@ section#statistics {
     padding-bottom: 15px;
 }
 section#statistics .statistics-row {
-    margin: 0 auto;
+    
     max-width: 1152px;
     width: 100%;
     margin-bottom: 90px;
 }
-section#statistics #f4 h3 {
-    margin-top: 120px;
-}
-section#statistics #f4 p {
-    font-size: 17px;
-    text-transform: none;
-    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 section#statistics .product-circ {
     width: 280px;
     height: 280px;
     border-radius: 140px;
     margin: 40px auto 0 auto;
 }
+
 section#statistics h3 {
     font-size: 32px;
     line-height: 1;
     font-weight: 700;
     margin: 15px 0 12px 0;
-    padding: 0 2% 0 11%;
+    padding: 0 8% 0 11%;
     text-transform: lowercase;
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 section#statistics p {
     width: 80%;
     margin: 5px 2% 10px 11%;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.8;
     letter-spacing: 1px;
     font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
     text-transform: lowercase;
 }
+section#statistics h4{
+    max-width: 750px;
+    font-size: 24px;
+    line-height: 1.75;
+    text-align: left;
+    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 section#statistics h6 {
     margin: 10px 11%;
 }
@@ -942,81 +984,14 @@ section#custom p {
     font-family: "Playfair Display", Georgia, serif;
     margin: 0 11%;
 }
+section#faq{
+    padding-top: 65px;
+}
 section#faq #faq-wrap {
     width: 900px;
 }
 
-section#graduate .types-row {
-    margin: 0 auto;
-    max-width: 98%;
-    padding:25px 1%;
-    margin-bottom: 40px;
-    
-}
-section#graduate .type-blk {
-    display: table;
-    float: left;
-    width: 23%;
-    margin-right: 10px;
-    text-align: center;
-    height: 280px;
-    position: relative;
-}
-section#graduate .type-blk:before{
-    content: '';
-    position: absolute;
-    top: 0; right: 0;
-    border-top: 40px solid white;
-    border-left: 40px solid rgba(5, 206, 109, 0.6);
-    width: 0;
-}
 
-section#graduate .type_content {
-    display: table-cell;
-    vertical-align: middle;
-}
-
-
-
-section#graduate h3.title {
-    margin: 0 auto;
-    padding: 5px 0;
-    font-size: 32px;
-    line-height: 1.1;
-    font-weight: 700;
-    max-width: 80%;
-    text-transform: lowercase;
-    color:white;
-    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-section#graduate .type_content p {
-    margin: 0 auto;
-    padding-bottom: 15px;
-    text-align: center;
-    color:black;
-    max-width: 80%;
-   font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
-    text-transform: lowercase;
-}
-section#graduate .type_content p.subtitle {
-    font-size: .7em;
-}
-section#graduate .block_types{
-    background-color: rgba(0, 255, 132, 1);
--moz-transition: box-shadow .2s, transform .2s, opacity .2s;
-    -webkit-transition: box-shadow .2s, transform .2s, opacity .2s;
-    transition: box-shadow .2s, transform .2s, opacity .2s;
-}
-section#graduate .block_types:hover{
-    background-color: rgba(0, 255, 132, .9); 
-    opacity: 1 !important;
-    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-    -moz-transform: translate(0, -4px);
-    -webkit-transform: translate(0, -4px);
-    transform: translate(0, -4px);
-}
 
 
 
@@ -1039,9 +1014,13 @@ section#locations {
     position: relative;
     margin: 80px auto 0 auto;
 }
+section#locations .locations-content{
+    padding-left: 11%;
+    padding-bottom: 50px;
+}
 section#locations h2,
 section#locations p {
-    padding-left: 11%;
+   
 }
 section#locations #map-container {
     height: 700px;
@@ -1171,6 +1150,7 @@ section#commitment .photo-caption {
 }
 section#graduate {
     position: relative;
+    padding-bottom: 65px;
 }
 section#graduate .graduate-wrap {
     position: relative;
@@ -1214,6 +1194,77 @@ section#graduate #interactive-port p {
     padding: 5px 0 0 15px;
     margin-left: 25px;
 }
+section#graduate .types-row {
+    width: 98%;
+    max-width: 1200px;
+    padding:45px 0;
+    margin-bottom: 40px;
+    
+}
+section#graduate .type-blk {
+    display: table;
+    float: left;
+    width: 23%;
+    margin-right: 10px;
+    text-align: center;
+    height: 280px;
+    position: relative;
+}
+section#graduate .type-blk:before{
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    border-top: 40px solid white;
+    border-left: 40px solid rgba(5, 206, 109, 0.6);
+    width: 0;
+}
+
+section#graduate .type_content {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+
+section#graduate h3.title {
+    margin: 0 auto;
+    padding: 5px 0;
+    font-size: 32px;
+    line-height: 1.1;
+    font-weight: 700;
+    max-width: 80%;
+    text-transform: lowercase;
+    color:white;
+    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+section#graduate .type_content p {
+    margin: 0 auto;
+    padding-bottom: 15px;
+    text-align: center;
+    color:black;
+    max-width: 80%;
+   font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    text-transform: lowercase;
+}
+section#graduate .type_content p.subtitle {
+    font-size: .7em;
+}
+section#graduate .block_types{
+    background-color: rgba(0, 255, 132, 1);
+-moz-transition: box-shadow .2s, transform .2s, opacity .2s;
+    -webkit-transition: box-shadow .2s, transform .2s, opacity .2s;
+    transition: box-shadow .2s, transform .2s, opacity .2s;
+}
+section#graduate .block_types:hover{
+    background-color: rgba(0, 255, 132, .9); 
+    opacity: 1 !important;
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -moz-transform: translate(0, -4px);
+    -webkit-transform: translate(0, -4px);
+    transform: translate(0, -4px);
+}
 section#nm_buttons {
     position: relative;
 }
@@ -1234,9 +1285,17 @@ section#nm_buttons {
     background-color: #000;
     color: white;
 }
+section#commitment{
+    padding-right: 0;
+    padding-left: 0;
+}
 #com-photo {
-    margin: 60px 0;
+    height: 600px;
+    margin: 100px 0;
     position: relative;
+    background-image: url("/images/infrared-by-numbers.gif");
+    background-size: cover;
+    background-attachment: fixed;
 }
 #com-photo img {
     margin: 0 0 0 -30%;
@@ -1245,7 +1304,7 @@ section#nm_buttons {
     overflow: auto;
 }
 #com-photo .com-hero {
-    width: 700px;
+    max-width: 700px;
     color: #fff;
     left: 50%;
     top: 50%;
@@ -1289,13 +1348,18 @@ footer p {
     color: white;
 }
 footer #footer-split {
-    width: 1000px;
-    padding: 0 11%;
+    max-width: 1600px;
+    padding: 0 0 0 11%;
     overflow: hidden;
     padding-bottom: 10px;
 }
-footer #footer-split address {
-    width: 60%;
+footer #footer-split address{
+    width: 32%;
+    float: left;
+    padding-left: 25px;
+}
+ footer #footer-split .site-credits {
+     width: 28%;
     float: left;
 }
 footer #footer-split address p {
@@ -1314,9 +1378,12 @@ footer #footer-split address a:active {
     border-bottom: 2px solid #c3593b;
     color: #c3593b;
 }
+footer .site-credits h2{
+    line-height: 1;
+}
 footer #footer-split #follow {
-    width: 40%;
-    float: right;
+    width: 22%;
+    float: left;
 }
 footer #follow #icons {
     width: 100%;
@@ -1383,7 +1450,26 @@ footer div.unca-logo {
 .js-bg-white {
     background-color: #fff;
 }
+.block_timeline.four_timeline.type-blk{
+        height: auto;
+    }
+
+@media only screen and (min-width: 1600px) {
+    section#types .type-blk{
+        height: 380px;
+    }
+    
+}
+@media only screen and (max-width: 1200px){
+    footer #footer-split #follow{
+        width: 29%;
+    }
+ 
+    
+    
+}
 @media only screen and (max-width: 992px) {
+
     #hero h1.hero-txt {
         font-size: 110px;
     }
@@ -1431,29 +1517,68 @@ footer div.unca-logo {
         margin: 0 5%
     }
     #nm-slider {
-        width: 75%
+        width: 95%
     }
+    .alumni {
+    
+    width: 60%!important;
+    
+}
     #com-photo img {
         width: 760px;
     }
     #com-photo .com-hero {
         width: 600px;
     }
-    footer #footer-split {
-        width: 800px;
+    footer #footer-split address, footer #footer-split #follow{
+        width: 100%;
     }
+    footer #footer-split .site-credits {
+        width: 90%;
+    }
+    footer #footer-split address{
+        padding: 0 0 80px 0;
+    }
+    footer #footer-split #follow{
+        padding: 0 0 120px 0;
+    }
+    
     section#graduate .graduate-wrap .graduate-half {
         width: 45%;
     }
     section#statistics h2 {
         padding-left: 11%;
+        line-height: 1;
+        margin-bottom: 60px;
+        
     }
     section#statistics {
         padding-right: 0;
         padding-left: 0;
     }
+    section#statistics p{
+        font-size: 12px;
+    }
+    section#statistics h4{
+        padding-left: 11%;
+        max-width: 750px;
+    }
+    section#graduate .type-blk{
+        width: 48%;
+            margin-bottom: 12px;
+    }
 }
 @media only screen and (max-width: 768px) {
+    #faq-hero h3{
+    font-size: 50px;
+}
+    section#statistics .timeline_content {
+    padding: 25px 0 25px 0;
+    }
+    .alumni {
+    width: 70%!important;
+    
+}
     #hero h1.hero-txt {
         /*top: 23%;*/
         font-size: 75px;
@@ -1463,7 +1588,7 @@ footer div.unca-logo {
     }
     h1.hero-txt {
         overflow: hidden;
-        font-size: 60px;
+        font-size: 50px;
         padding: 0 0 25px 0;
         word-wrap: break-word;
     }
@@ -1474,10 +1599,14 @@ footer div.unca-logo {
         min-height: 350px;
         word-wrap: normal;
         padding-right: 40px;
+    font-size: 22px!important;
     }
     .sticky-wrapper {
         position: relative;
         z-index: 9;
+        display: none;
+    }
+    .style-switcher {
         display: none;
     }
     #mobile-nav {
@@ -1513,6 +1642,7 @@ footer div.unca-logo {
         font-size: 32px;
     }
     section#statistics .statistics-row {
+        padding-top: 50px;
         width: 90%;
         margin: 0;
     }
@@ -1523,17 +1653,14 @@ footer div.unca-logo {
         padding-right: 11%;
         padding-left: 11%;
     }
+    section#statistics h4{
+        padding-left: 0;
+    }
     section#statistics .type-blk {
         width: 100%;
         float: none;
         overflow: auto;
         margin: 0 auto 30px auto;
-    }
-    section#statistics .product-circ {
-        width: 280px;
-        height: 280px;
-        border-radius: 140px;
-        margin: 40px auto 0 auto;
     }
     section#statistics h3 {
         font-size: 32px;
@@ -1658,6 +1785,20 @@ footer div.unca-logo {
     .learn.button {
         margin-bottom: 25px;
     }
+    .lightbox-half{
+        width: 100%!important;
+    }
+    .featherlight .featherlight-inner h3{
+        max-width: 80%!important;
+    }
+}
+@media only screen and (max-width: 604px){
+    section#graduate .type-blk{
+        width: 47%;
+    }
+    .alumni{
+        width: 100%!important;
+    }
 }
 @media only screen and (max-width: 480px) {
     .txt-lrg,
@@ -1679,6 +1820,10 @@ footer div.unca-logo {
     #hero h1.hero-txt {
         width: 100%;
         font-size: 66px;
+    }
+    h1.hero-txt {
+        
+        font-size: 40px;
     }
     .logo {
         width: 200px;
@@ -1705,6 +1850,9 @@ footer div.unca-logo {
     #faq-hero h1 {
         font-size: 60px;
     }
+    #faq-hero h3{
+    font-size: 30px;
+}
     section#types .types-row {
         margin-bottom: 60px;
     }
@@ -1734,6 +1882,7 @@ footer div.unca-logo {
         width: 90%
     }
     section#philosophy p.quote {
+        font-size: 26px;
         width: 90%;
         line-height: 1.7;
     }
@@ -1759,6 +1908,9 @@ footer div.unca-logo {
     }
     footer #footer-split {
         margin-bottom: 120px;
+    }
+    section#graduate .type-blk{
+        width: 100%;
     }
 }
 @media only screen and (max-width: 320px) {
@@ -1977,7 +2129,7 @@ body.overflow-hidden {
     list-style: none;
     margin: 0 8%;
     line-height: 23px;
-    border-bottom: 3px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
     font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
 }
 .cd-primary-nav a {
@@ -2238,38 +2390,47 @@ body.overflow-hidden {
 .block_types {
     background-position: center center;
     background-size: cover;
-    -webkit-transition: background-image 0.2s ease-in-out;
-    transition: background-image 0.2s ease-in-out;
+    
     /*border: solid 5px #000;*/
     color: #fff;
 }
 .block_types:hover {}
 .one {
-    /*background-color: #2b019d;*/
     background-image: url("/images/home5.jpg");
+    -moz-transition:all 0.55s;
+    -webkit-transition:all 0.55s;
+    transition: all 0.55s;
 }
 .one:hover {
-    background-image: url("/images/artofprojection_small.gif");
+    background: #fff;
     color: #000;
 }
 .two {
     background-image: url("/images/home6.jpg");
-    /*background-color: #ff5454;*/
+    -moz-transition:all 0.55s;
+        -webkit-transition:all 0.55s;
+    transition: all 0.55s;
+    
 }
 .two:hover {
-    background-image: url("/images/artofprojection_small.gif");
+   background: #fff;
     color: #000;
 }
 .three {
     background-image: url("/images/home18.jpg");
-    /*background-color: #0b89c1;*/
+     -moz-transition:all 0.55s;
+    -webkit-transition:all 0.55s;
+    transition: all 0.55s;
 }
 .three:hover {
-    background-image: url("/images/artofprojection_small.gif");
+    background: #fff;
     color: #000;
 }
 .four {
     background-color: rgba(0, 255, 132, 1);
+     -moz-transition:all 0.55s;
+    -webkit-transition:all 0.55s;
+    transition: all 0.55s;
 }
 .four:hover {
     border: none;
@@ -2283,15 +2444,13 @@ body.overflow-hidden {
 
 .block_timeline {
     float: left;
-    display: inline-block;
+    /*display: table;*/
     position: relative;
     overflow: hidden;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: all 0.55s;
-    padding-top: 15px;
-    transition: all 0.55s;
+    transition: all 0.55s; 
     color: #000;
     background-color: #fff;
     /*border: solid 5px #000;*/
@@ -2307,6 +2466,11 @@ body.overflow-hidden {
     -moz-transform: translate(0, -4px);
     -webkit-transform: translate(0, -4px);
     transform: translate(0, -4px);
+}
+section#statistics .timeline_content{
+    padding-top: 5%;
+    display: table-cell;
+    vertical-align: middle;
 }
 .one_timeline {
     height: 304px;
@@ -2373,7 +2537,7 @@ body.overflow-hidden {
 /*Creating a portfolio slider in the about wrap section*/
 #nm-slider {
     z-index: 4;
-    max-width: 95%;
+    max-width: 850px;
     position: relative;
     padding: 100px 0 40px 0;
 }
@@ -2383,7 +2547,7 @@ body.overflow-hidden {
     height: auto;
 }
 .slider1, .slider2, .slider3, .slider4, .slider5{
-    background-color: rgba(0,0,0,0.65);
+    background-color: rgba(0,0,0,0);
     background-blend-mode: overlay;
     transition: all 0.3s ease;
 }
@@ -2434,19 +2598,24 @@ body.overflow-hidden {
 }
 .alumni {
     padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(0,0,0,.65);
+    width: 50%;
+    
 }
 .alumni h2 {
-    
     text-align: left;
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.8em;
+    line-height: 2em;
 }
 .alumni h3 {
     font-size: 1.2em;
     text-align: left; 
     padding-bottom: 10px; 
     color: #f37474;
-    max-width: 95%;
+    max-width: 75%;
 }
 .alumni p {
     line-height: 1.5; 
@@ -2469,8 +2638,15 @@ h6.credit {
 .light {
     color: #fff;
 }
+
+.featherlight .featherlight-content ul{
+    padding-left: 25px;
+}
 .featherlight .featherlight-inner {
     display: block;
+}
+.full-width{
+    max-width: 750px!important;
 }
 .featherlight .featherlight-inner h3 {
     padding-bottom: 15px;
@@ -2507,6 +2683,7 @@ h6.credit {
 }
 .lightbox-half:first-child {
     margin-right: 4%;
+    padding-bottom: 50px;
 }
 
 /**
@@ -2643,7 +2820,7 @@ h6.credit {
     font-size: .6em;
     width: 25px;
     line-height: 3.5;
-    top: 32%;
+    top: 36%;
     left: 20px;
     color: #fff;
     z-index: 999999999999999;
@@ -2675,6 +2852,41 @@ ul.style-switcher-text {
     text-transform: lowercase;
     font-size: 12px;
 }
+p.mobile-nav-title{
+    padding-top: 65px;
+    font-family: "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: lowercase;
+    font-size: 20px;
+    font-weight: 300;
+    color:#bbb;
+    
+}
+.style-switcher-mobile {
+    margin-top: 15px;
+    width: 25px;
+}
+
+.style-switcher-mobile input {
+    margin-top: -40;
+    opacity: 1;
+    border: none;
+    padding-left:30px;
+    border: none;
+    width: 300px;
+    height: 90px;
+    float: none;
+    color: transparent;
+    text-align: left;
+    font-family: "Droid Sans Mono", "Monaco", sans-serif;
+    text-transform: lowercase;
+    font-size: 18px;
+    color: white;
+    opacity: 1 !important;
+}
+.style-switcher-mobile input:hover {
+    opacity: .6;
+}
+
 .style-switcher input:focus,
 .style-switcher input:active {
     color: transparent;
@@ -2687,8 +2899,7 @@ ul.style-switcher-text {
     -webkit-box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.3);
     box-shadow: 3px 2px 7px rgba(0, 0, 0, 0.3);
 }
-.style-switcher input:hover,
-.style-switcher-mobile input:hover {
+.style-switcher input:hover {
     color: white;
     width: auto;
     opacity: 1 !important;
@@ -2731,13 +2942,10 @@ ul.style-switcher-text {
 .cd-primary-nav li:last-child {
     border-bottom: none;
 }
-.style-switcher-mobile {
-    margin-top: 25px;
-}
-.style-switcher-mobile input {
-    opacity: 1;
-    border: none;
-    width: 45px;
-    height: 35px;
-    float: left;
+
+
+
+
+.avoid-clicks {
+  pointer-events: none;
 }

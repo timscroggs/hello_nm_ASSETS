@@ -1,8 +1,169 @@
-section h2{
-    font-family: serif;
-    font-size: 40px!important;
-    line-height: 1px;
+
+.curtain .hero-knockout {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background: url(/images/new_media_white_grunge.svg) no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
-p{
-    font-size: 58px!important;
+
+section h2 {
+    font-family: "Courier New", "Droid Sans Mono", "Karla", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1;
+    font-size: 180px !important;
+    font-weight: 700;
+    text-align: right;
+    margin: 0px;
+    /*letter-spacing: 40px;*/
+    text-transform: uppercase;
+    color: #ff7a54;
+-webkit-transform: rotate(-90deg);
+-moz-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+    padding-top: 40%;
+    padding-bottom: 1%;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+p {
+    font-size: 18px;
+    font-family: "verdana", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: ff7a54;
+}
+
+h1.hero-txt {
+    opacity: 1;
+    width: 90%;
+    color: #fff;
+    line-height: 1;
+    font-size: 80px;
+    font-weight: 700;
+    text-align: left;
+    position: relative;
+    font-family: "verdana", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: lowercase;
+    padding-top: 1%;
+    padding-right: 0;
+    padding-left: 0;
+-webkit-transform: rotate(90deg);
+-moz-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+-o-transform: rotate(90deg);
+    z-index: 1;
+}
+
+section#hello {
+    background-color: #323232;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-left: 2%;
+}
+
+.txt-lrg {
+    font-size: 28px;
+    letter-spacing: 20px;
+    color: #fff;
+    line-height: .8;
+    text-align: left;
+}
+
+section#types {
+    background-color: #323232;
+}
+
+.typed {
+    border-bottom: 2px solid #000;
+    line-height: 1;
+    padding-top: 5%;
+    z-index: 0;
+    font-size: 30px;
+}
+
+section#about p {
+    font-size: 24px;
+    line-height: 1.25;
+    text-align: left;
+    letter-spacing: 20px;
+    font-family: "verdana", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    
+}
+
+section#philosophy .quote {
+    line-height: 2;
+    color: #fff;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+}
+
+.light {
+    color: #ff7a54;
+}
+
+.txt-adv {
+    font-size: 26px;
+    line-height: 1.5;
+    text-align: left;
+    padding-bottom: 10px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+
+section#graduate .graduate-wrap .graduate-half li {
+    font-size: 14px;
+    color: #fff;
+    line-height: auto;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    list-style: circle;
+    padding: 5px 0 0 15px;
+    margin-left: 25px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+}
+
+#faq-hero {
+
+    background-color: #323232;
+}
+
+section#locations {
+    z-index: 4;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    background-color: #323232;
+}
+
+a {
+    text-decoration: none;
+    color: #a1b1c7;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+section#locations h2, section#locations p {
+    padding-left: 2%;
+}
+
+section#contact-form {
+    background-color: #323232;
+    padding-bottom: 90px;
+    padding-left: 2%;
 }

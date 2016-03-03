@@ -1,5 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display:900);
 
+.curtain .hero-knockout {
+    background: url(/images/new_media_white_type.svg) no-repeat;
+}
 section h2{
     font-family: 'Playfair Display', serif;
     font-size: 40px!important;
@@ -20,4 +23,51 @@ section h1{
 
 .txt-lrg{
     
+}
+.about-wrap{   
+    
+}
+
+.block_types {
+    background-position: center center;
+    background-size: cover;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+    /*border: solid 5px #000;*/
+    color: #fff;
+}
+.block_types:hover {}
+.one {
+    /*background-color: #2b019d;*/
+    background-image: url("/images/home5.jpg");
+}
+.one:hover {
+    background-image: url("/images/artofprojection_small.gif");
+    color: #000;
+}
+.two {
+    background-image: url("/images/home6.jpg");
+    /*background-color: #ff5454;*/
+}
+.two:hover {
+    background-image: url("/images/artofprojection_small.gif");
+    color: #000;
+}
+.three {
+    background-image: url("/images/home18.jpg");
+    /*background-color: #0b89c1;*/
+}
+.three:hover {
+    background-image: url("/images/artofprojection_small.gif");
+    color: #000;
+}
+.four {
+    background-color: rgba(0, 255, 132, 1);
+}
+.four:hover {
+    border: none;
+    background-color: rgba(0, 255, 132, 1);
+    color: #000;
+    background-image: url("/images/end_fast.gif");
+    background-blend-mode: difference;
 }

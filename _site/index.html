@@ -60,10 +60,12 @@
 
                 <h1 class="hero-txt hero-reveal"><!--what is new media?-->  
                     <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
-                <video loop autoplay poster="/videos/Snapshots/A-Purple-Balloon.jpg" class="video_layer_vid">
+                <video loop autoplay poster="/videos/Snapshots/A-Purple-Balloon.jpg" class="video_layer_vid avoid-clicks">
+                    <source src="/videos/WEBM/A-Purple-Balloon.webm" type="video/webm">
                     <source src="/videos/MP4/A-Purple-Balloon.mp4" type="video/mp4">
                     <source src="/videos/OGV/A-Purple-Balloon.ogv" type="video/ogg">
-                    <source src="/videos/WEBM/A-Purple-Balloon.webm" type="video/webm">Your browser does not support HTML5 video.
+                    Your browser does not support HTML5 video.
+                    
                 </video>
 
             </div>
@@ -81,8 +83,8 @@
                     <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main">
                     <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
                     <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
-                        <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
-                    <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole"><p id="nicole-title"></p>
+                    <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
+                    <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
                 </form>
             
           </div> 
@@ -121,14 +123,17 @@
                     <li><a class="ss-target" href="#locations">location</a></li>
                     <li><a class="ss-target" href="#contact-form">get_more</a></li>
                     <li>
+                        <p class="mobile-nav-title">style sitcher menu</p>
                         <form class="style-switcher-mobile">
-                            <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="" id="main">
-                            <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="" id="tim">
-                            <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="" id="janice">
-                            <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="" id="gabriel">
-                            <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="" id="nicole">
+                            <a href=""><input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main"></a>
+                            <a href=""><input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim"></a>
+                            <a href=""><input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice"></a>
+                            <a href=""><input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel"></a>
+                            <a href=""><input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole"></a>
                         </form>
+                        <br>
                     </li>
+                    
                 </ul>
             </nav>
         </div>
@@ -146,7 +151,7 @@
         <a href="#" data-featherlight="#interactive">
             <div class="block_types one type-blk">
                 <div class="type_content">
-                    <h3 class="title">web &amp; Interactive Design</h3>
+                    <h3 class="title">web + Interactive Design</h3>
                     <p>learn_more</p>
                 </div>
             </div>
@@ -155,7 +160,7 @@
         <a href="#" data-featherlight="#animation">
             <div class="block_types two type-blk">
                 <div class="type_content">
-                    <h3 class="title">3-d &amp; Animation</h3>
+                    <h3 class="title">Animation</h3>
                     <p>learn_more</p>
                 </div>
             </div>
@@ -164,7 +169,7 @@
         <a href="#" data-featherlight="#video">
             <div class="block_types three type-blk">
                 <div class="type_content">
-                    <h3 class="title">Video &amp; motion graphics</h3>
+                    <h3 class="title">Video Art + Design</h3>
                     <p>learn_more</p>
                 </div>
             </div>
@@ -183,46 +188,35 @@
 <div class="lightbox" id="interactive">
     <div class="lightbox-half">
         <h3 class="title">web &amp; Interactive Design</h3>
-        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
-        <br>
-        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        
+        <p class="overview"> If you decide to follow the web + interactive track, prepare to have your mind blown! We blend big ideas with web design, interactivity and a splash of performance art.  You will learn how to create, code, and publish content for any device while mastering HTML5, Javascript, CSS3. If you are as passionate about web design as we are, come join us!</p>
     </div>
     <div class="lightbox-half">
         <h4 class="lightbox-secondary-heading">Software</h4>
         <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
-        <br>
-        <h4 class="lightbox-secondary-heading">Projects</h4>
-        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+        
     </div>
 </div>
 <div class="lightbox" id="animation">
     <div class="lightbox-half">
         <h3 class="title">3-d &amp; Animation</h3>
-        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
-        <br>
-        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        <p class="overview"> Our New Media's animation program was designed to prepare you for a career in this ever-changing field. You will continue to expand your artistic abilities and maybe learn some new tricks in 2-d and 3-d modeling, compositing, rendering, and rigging all with the latest software and technology at your disposal and that's just the beginning. Come check it out!</p>
     </div>
     <div class="lightbox-half">
         <h4 class="lightbox-secondary-heading">Software</h4>
-        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
-        <br>
-        <h4 class="lightbox-secondary-heading">Projects</h4>
-        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+        <p class="details">maya + mudbox + 3ds max + flash + toonboom</p>
+        
     </div>
 </div>
 <div class="lightbox" id="video">
     <div class="lightbox-half">
-        <h3 class="title">video &amp; Motion Graphics</h3>
-        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
-        <br>
-        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        <h3 class="title">video  Art &amp; Design</h3>
+        <p class="overview"> The video art + design track here at UNCA you learn the industry from the ground up. This program is all about hands-on-experience. You’ll learn the preproduction process: creating story, scripts, to the production process: shooting, lighting, recording audio, finally the post-production process: cutting, rearranging, and enhancing footage, recording and editing additional dialogue, sound effects, music, as well as adding visual effects and titles. With all of that and more, there can't be a reason not to sign up!</p>
     </div>
     <div class="lightbox-half">
         <h4 class="lightbox-secondary-heading">Software</h4>
-        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
-        <br>
-        <h4 class="lightbox-secondary-heading">Projects</h4>
-        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+        <p class="details">final cut pro + after effects + premiere pro + max msp jitter</p>
+        
     </div>
 </div>
 <div class="lightbox" id="mix">
@@ -230,14 +224,12 @@
         <h3 class="title">mix it up/dual focus</h3>
         <p class="overview">This is a dual focus track that blends the courses.</p>
         <br>
-        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+        <p class="overview"> Why settle when you can have it all? It's understandable if you can't bring yourself to pick just one of these tracks, we get it. So why not double up and experiment with your own creative blend that fits your skill and interest?  Try Animation/Video Art + Design or Web + Interactive/Video Art + Design. Here at UNCA, new media can be anything you make it!</p>
     </div>
     <div class="lightbox-half">
         <h4 class="lightbox-secondary-heading">Software</h4>
-        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
-        <br>
-        <h4 class="lightbox-secondary-heading">Projects</h4>
-        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter + final cut pro + after effects + premiere pro + maya + mudbox + 3ds max + flash + toonboom </p>
+        
     </div>
 </div>
 
@@ -299,59 +291,63 @@
 
 </section> 
     <section id="statistics">
-    <h2>proof_nm</h2>
+    <h2>attitude is everything</h2>
+    <h4>Having the right attitude is key to thriving in the creative industry. Master these skills below and you will succeed! The first five were taken from <a href="http://www.aiga.org/want-to-change-your-job--first-change-your-attitude/">this great article</a> originally posted on <a href="http://www.aiga.org/">AIGA.org</a>, an incredible resource for aspiring designers/artists. </h4>
+    
     <div class="statistics-row clearfix">
         <div class="block_timeline one_timeline type-blk">
-            <h3>Highest Salaries</h3>
-            <p>Designers with website design and digital animation experience will have the best opportunities and likely the highest salaries in the profession.</p>
-            <h6 class="credit">Source: Bureau of Labor Statistics</h6>
+            <div class="timeline_content">
+            <h3>1. Be a pro-active doer</h3>
+            <p>If you don't know what to do or find yourself stuck (which will often be the case when you're new in a job or just starting out in your career) ask someone who can give you the right answer.</p>
+            </div>
         </div>
-
+    
 
 
         <div class="block_timeline two_timeline type-blk">
-            <h3>Exceeds Sports</h3>
-            <p>The economic impact of art and design exceeds that of sports worldwide </p>
-            <h6 class="credit">Source: U.S. Bureau of Education</h6>
+            <div class="timeline_content">
+            <h3>2. Be a problem solver</h3>
+            <p>Your drive to find the best solution should always carry you through this stage of any brief, especially when you feel you've exhausted all possible creative avenues. </p>
+            </div>
         </div>
 
 
 
         <div class="block_timeline three_timeline type-blk">
-            <h3>Over 30%</h3>
-            <p>Creative jobs have grown from 10% to over 30% of the economy </p>
-            <h6 class="credit">Source: Americans for the Arts</h6>
+            <div class="timeline_content">
+            <h3>3. Be an attentive listener</h3>
+            <p>Design for the clients' needs, not what you think their needs are. </p>
+            </div>
         </div>
 
         <div class="block_timeline four_timeline type-blk">
-            <h3>42%</h3>
-            <p>By 2016, jobs for artists and designers are predicted to increase by 42% </p>
-            <h6 class="credit">Source: National Endowment for the Arts</h6>
+            <div class="timeline_content">
+            <h3>4. Be a passionate learner</h3>
+            <p>As this desire to grow develops into action and learning, you become more valuable and, in turn, are delivering higher standards of work. </p>
+            </div>
         </div>
 
         <div class="block_timeline five_timeline type-blk">
-            <h3>3rd &amp; 4th</h3>
-            <p>Computer Science and Software Engineering are ranked by Forbes as the 3rd and 4th Most Valuable College Majors </p>
-            <h6 class="credit">Source: Forbes</h6>
+            <div class="timeline_content">
+            <h3>5. Be grateful</h3>
+            <p>A small shift in perspective like this will not only have employers drawn to you, but you will begin to love challenges and have more energy in your approaches. </p>
+            </div>
         </div>
 
         <div class="block_timeline six_timeline type-blk">
-            <h3>150 million</h3>
-            <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
-            <h6 class="credit">Source: Name Here</h6>
+            <div class="timeline_content">
+            <h3>6. do what you're afraid to do</h3>
+            <p>if the projects your involved in and the clients you're going after don't scare you, then push harder and aim higher. </p>
+            </div>
         </div>
 
         <div class="block_timeline seven_timeline type-blk">
-            <h3>More than 80%</h3>
-            <p> Nulla vitae elit libero, a pharetra augue.  </p>
-            <h6 class="credit">Source: Name Here</h6>
+            <div class="timeline_content">
+            <h3>7. enjoy it, it'll be over soon</h3>
+            <p>It may seem like an eternity when you're up against a creative block but don't forget to enjoy that part of the process too – you'll find the gold!</p>
+            </div>
         </div>
 
-        <div class="block_timeline eight_timeline type-blk">
-            <h3>Wow</h3>
-            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Nulla vitae elit libero, a pharetra augue. </p>
-            <h6 class="credit">Source: Name Here</h6>
-        </div>
 
     </div>
 
@@ -359,14 +355,15 @@
     <section> 
 <div id="about">
         <h2>Our_Story</h2>
-        <p>We are a science experiment brought together to blend the disciplines of artist, designer, and computer scientist. We are a rare bunch who push oursleves to open our minds and produce creative work in a broad spectrum of softwares and technological devices – and then, after we have made a crazy assortment of projects, we choose and focus on our specialty with well rounded experience in new media and a widened understanding of processes. Check out what a typical portfolio of one of our graduates looks like.</p> </div>
+        <p>We are an educational science experiment – a fusion of artist, designer, and computer scientist – and we've had very successful results. Check out where several of our alumni are now.</p> </div>
     
         <div id="nm-slider" class="owl-carousel owl-theme">
             <div class="item slider1">
                     <div class="alumni">
+                        <p>UNCA 2009</p>
+                        
                         <h2>Allison Callaway</h2>
                         <h3>Web Designer</h3>
-                        <p>UNCA 2009</p>
                         <br>
                         <p><a href="www.allisoncallaway.com">
                             &lt;Check out their work&gt;
@@ -375,9 +372,10 @@
             </div>
             <div class="item slider2">
                     <div class="alumni">
+                        <p>UNCA 2010</p>
                         <h2>David Howard</h2>
                         <h3>Freelance Animator</h3>
-                        <p>UNCA 2010</p>
+                        
                         <br>
                         <p><a href="www.davidhfilms.com">
                             &lt;Check out their work&gt;
@@ -386,9 +384,9 @@
             </div>
             <div class="item slider3">
                     <div class="alumni">
-                        <h2>Joshua Coyle</h2>
-                        <h3>Web Designer, CEO of GRP82</h3>
                         <p>UNCA 2005</p>
+                        <h2>Joshua Coyle</h2>
+                        <h3>Web Designer, CEO of GRP82</h3>                   
                         <br>
                         <p><a href="www.joshuacoyle.com">
                             &lt;Check out their work&gt;
@@ -397,9 +395,9 @@
             </div>
             <div class="item slider4">
                     <div class="alumni">
+                        <p>UNCA 2008</p>
                         <h2>Mike Patterson</h2>
                         <h3>Lead Designer at Secret Michael</h3>
-                        <p>UNCA 2008</p>
                         <br>
                         <p><a href="www.secretmichael.com">
                             &lt;Check out their work&gt;
@@ -408,9 +406,9 @@
             </div>
             <div class="item slider5">
                     <div class="alumni">
+                        <p>UNCA 2009</p>
                         <h2>Wray Bolwing</h2>
                         <h3>Graphic &amp; Web Designer</h3>
-                        <p>UNCA 2009</p>
                         <br>
                         <p><a href="www.rgbk.org">
                             &lt;Check out their work&gt;
@@ -430,7 +428,7 @@
     <section id="commitment">
     
     <div id="com-photo">
-        <img src="images/optical_art.png">
+        <!--<img src="images/optical_art.png">-->
         <div class="com-hero">this is the future</div>
         <p class="photo-caption"></p>
     </div>
@@ -440,7 +438,7 @@
     <div class="graduate-pic light">
             <img src="/images/idea_graduate.png">
         </div>
-    <h2 class="light">your_story</h2>
+    <h2 class="light">your_story?</h2>
     <h1 class="hero-txt">typical graduate's portfolio</h1>
     <br>
     <p class="txt-adv light">A graduate from UNCA New Media will leave with a diverse portfolio covering a wide array of concepts and skills. You will get the experience of experimentation across multiple disciplines, technological devices and software.</p>
@@ -493,10 +491,11 @@
 
 
 <div class="lightbox" id="interactive-port">
-    <div class="lightbox-half">
-        <h3 class="title">Projects Completed by student on web &amp; Interactive Design track</h3>
-        <p>This is a real overview of work completed while a student at UNCA New Media with a focus in web &amp; Interactive Design</p>
+    <h3 class="title full-width">Projects Completed by student on Web + interactive design track</h3>
+        <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in web &amp; Interactive Design</p>
         <br>
+    <div class="lightbox-half">
+        
         <ul>
                 <li>Custom mythical creature</li>
                 <li>Promotional video using type animation</li>
@@ -509,7 +508,6 @@
             </ul>
     </div>
     <div class="lightbox-half">
-        <h4 class="lightbox-secondary-heading">Software</h4>
         <ul>
                 <li>3-d animated short film</li>
                 <li>Music video</li>
@@ -530,54 +528,114 @@
 
 
 <div class="lightbox" id="animation-port">
-    <div class="lightbox-half">
-        <h3 class="title">3-d &amp; Animation</h3>
-        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+    <h3 class="title full-width">Projects Completed by student on Animation track</h3>
+        <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in web &amp; Interactive Design</p>
         <br>
-        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    <div class="lightbox-half">
+        
+        <ul>
+                <li>Custom mythical creature</li>
+                <li>Promotional video using type animation</li>
+                <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
+                <li>Director of an episode for a Independent Pilot Show</li>
+                <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
+                <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
+                <li>Interactive mucsical interface website </li>
+                 
+            </ul>
     </div>
     <div class="lightbox-half">
-        <h4 class="lightbox-secondary-heading">Software</h4>
-        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
-        <br>
-        <h4 class="lightbox-secondary-heading">Projects</h4>
-        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+        <ul>
+                <li>3-d animated short film</li>
+                <li>Music video</li>
+                <li>Personal logo</li>
+                <li>Pitch deck template</li>
+                <li>Stop-motion film</li>
+                <li>Abstract film</li>  
+                <li>T-shirt design</li>
+                <li>Web application using an api that evaluates the sentiment of text and website urls</li>
+                <li>Custom typeface that was offered online as a free download</li>
+                <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
+                <li>Narrative short film</li>
+               
+
+            </ul>
     </div>
 </div>
 <div class="lightbox" id="video-port">
-    <div class="lightbox-half">
-        <h3 class="title">video &amp; Motion Graphics</h3>
-        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+     <h3 class="title full-width">Projects Completed by student on Video art + design track</h3>
+        <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in web &amp; Interactive Design</p>
         <br>
-        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    <div class="lightbox-half">
+        
+        <ul>
+                <li>Custom mythical creature</li>
+                <li>Promotional video using type animation</li>
+                <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
+                <li>Director of an episode for a Independent Pilot Show</li>
+                <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
+                <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
+                <li>Interactive mucsical interface website </li>
+                 
+            </ul>
     </div>
     <div class="lightbox-half">
-        <h4 class="lightbox-secondary-heading">Software</h4>
-        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
-        <br>
-        <h4 class="lightbox-secondary-heading">Projects</h4>
-        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+        <ul>
+                <li>3-d animated short film</li>
+                <li>Music video</li>
+                <li>Personal logo</li>
+                <li>Pitch deck template</li>
+                <li>Stop-motion film</li>
+                <li>Abstract film</li>  
+                <li>T-shirt design</li>
+                <li>Web application using an api that evaluates the sentiment of text and website urls</li>
+                <li>Custom typeface that was offered online as a free download</li>
+                <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
+                <li>Narrative short film</li>
+               
+
+            </ul>
     </div>
 </div>
 
 <div class="lightbox" id="multi-port">
-    <div class="lightbox-half">
-        <h3 class="title">video &amp; Motion Graphics</h3>
-        <p class="overview">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. </p>
+     <h3 class="title full-width">Projects Completed by student on dual focus track - Interactive + Video</h3>
+        <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in web &amp; Interactive Design</p>
         <br>
-        <p class="overview"> Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    <div class="lightbox-half">
+        
+        <ul>
+                <li>Custom mythical creature</li>
+                <li>Promotional video using type animation</li>
+                <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
+                <li>Director of an episode for a Independent Pilot Show</li>
+                <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
+                <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
+                <li>Interactive mucsical interface website </li>
+                 
+            </ul>
     </div>
     <div class="lightbox-half">
-        <h4 class="lightbox-secondary-heading">Software</h4>
-        <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter</p>
-        <br>
-        <h4 class="lightbox-secondary-heading">Projects</h4>
-        <p class="details">Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Curabitur blandit tempus porttitor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. </p>
+        <ul>
+                <li>3-d animated short film</li>
+                <li>Music video</li>
+                <li>Personal logo</li>
+                <li>Pitch deck template</li>
+                <li>Stop-motion film</li>
+                <li>Abstract film</li>  
+                <li>T-shirt design</li>
+                <li>Web application using an api that evaluates the sentiment of text and website urls</li>
+                <li>Custom typeface that was offered online as a free download</li>
+                <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
+                <li>Narrative short film</li>
+               
+
+            </ul>
     </div>
 </div>
 
     <section id="nm_buttons">
-        <h1 class="hero-txt">that's what we got</h1>
+        <!--<h1 class="hero-txt">that's what we got</h1>
         <br>
         <div class="center_buttons">
             <a href="http://nm.unca.edu" target="_blank">
@@ -586,7 +644,7 @@
             <a href="http://nm.unca.edu" target="_blank">
                 <div class="register button adv-btn">just_register</div>
             </a>
-        </div>
+        </div>-->
     </section>
 </div>
 
@@ -594,14 +652,18 @@
 
     
     <div id="faq-hero">
+        <div class="hero-content">
         <h1>create the life you want</h1>
+        <h3><a href="http://nm.unca.edu">Learn more at nm.unca.edu</a></h3>
     </div>
+        </div>
     
     
     <section id="locations">
+        <div class="locations-content">
         <h2>location</h2>
-        <p class="txt-lrg">unc asheville campus is located in the mountains of Asheville, NC, which is home to <a href="http://www.moogmusic.com/content/visit-moog" target="_blank">Moog Music Inc</a>, <a href="http://moogfoundation.org/" target="_blank">Bob Moog Foundation</a>, <a href="http://www.blackmountaincollege.org/" target="_blank">The Black Mountain College Museum + Arts Center</a> and <a href="http://www.craftcreativitydesign.org/" target="_blank">The Center for Craft, Creativity and Design</a>. The diverse spirit of new media lives hear.</p>
-
+        <p class="txt-lrg">unc asheville is located in the mountains of Asheville, NC, and has partnered with incredible creative companies in the area including <a href="http://www.moogmusic.com/content/visit-moog" target="_blank">Moog Music Inc</a>, <a href="http://moogfoundation.org/" target="_blank">Bob Moog Foundation</a>, <a href="http://www.blackmountaincollege.org/" target="_blank">The Black Mountain College Museum + Arts Center</a> and <a href="http://www.craftcreativitydesign.org/" target="_blank">The Center for Craft, Creativity and Design</a>. Yes, the diverse spirit of new media lives here.</p>
+</div>
         <div id="map-container">
             <div id='map'></div>
 <script>
@@ -619,14 +681,14 @@
         "geometry": {
         "type": "Point",
         "coordinates": [
-          -82.554426,
-            35.600102
+          -82.552926,
+            35.602002
         ]
       },
         "properties": {
-        "title": "Moog Music Inc",
-        "marker-color": "#3bb2d0",
-        "marker-size": "medium",
+        "title": "Moog Music Inc, 160 Broadway",
+        "marker-color": "#00ff84",
+        "marker-size": "small",
         "marker-symbol": "triangle"
       }
     },
@@ -643,9 +705,9 @@
         ]
       },
         "properties": {
-        "title": "Center for Craft, Creativity & Design",
-        "marker-color": "#3bb2d0",
-        "marker-size": "medium",
+        "title": "Center for Craft, Creativity & Design, 67 Broadway",
+        "marker-color": "#00ff84",
+        "marker-size": "small",
         "marker-symbol": "square"
       }
     },
@@ -660,9 +722,9 @@
         ]
       },
         "properties": {
-        "title": "Black Mountain Museum",
-        "marker-color": "#3bb2d0",
-        "marker-size": "medium",
+        "title": "Black Mountain Museum, 56 Broadway",
+        "marker-color": "#00ff84",
+        "marker-size": "small",
         "marker-symbol": "star"
       }
     },
@@ -672,13 +734,13 @@
         "geometry": {
         "type": "Point",
         "coordinates": [
-          -82.567850,
-          35.616402
+          -82.567590,
+          35.617802
         ]
       },
         "properties": {
-        "title": "UNC Asheville",
-        "marker-color": "#3bb2d0",
+        "title": "We're here!",
+        "marker-color": "#00ff84",
         "marker-size": "large",
         "marker-symbol": "college"
       }
@@ -764,6 +826,16 @@
 
                 </div>
                 <p>#hello_nm</p>
+            </div>
+            
+            <div class="site-credits">
+                <h4>Makers</h4>
+                    <h2>Site</h2>
+                    <p><a href="https://www.facebook.com/Gabriel-Fobert-Art-Design-795087437245485/">Gabriel Fobert</a> + Janice Andrews +<a href="https://vimeo.com/user39031336"> Nicole Erskine</a> + <a href="http://timscroggs.co">Tim Scroggs</a></p>
+                <br>
+                    <h2>Video</h2>
+                    <p>Madeleine Richardson + Ana Pak + Chris Harris</p> 
+            
             </div>
 
         </div>
@@ -857,7 +929,6 @@
             return '';
         }
     </script>
-
 
 
 
