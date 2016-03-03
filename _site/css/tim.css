@@ -18,6 +18,9 @@ a:hover{
     -o-background-size: cover;
     background-size: cover;
 }
+nav#main-nav{
+    background-color: rgba(252, 252, 252, .95);
+}
 section#philosophy h2.light{
     color:#bbbbbb;    
 }
