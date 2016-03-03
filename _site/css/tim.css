@@ -11,7 +11,7 @@ a:hover{
     height: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    background: url(/images/new_media_white_tim_hand.svg) no-repeat;
+    background: url(/images/new_media_white_tim2.svg) no-repeat;
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -254,4 +254,40 @@ footer div.unca-logo{
 footer div.nm-logo{
         background-color: #ff7a54;
     padding: 20px;
+}
+
+
+/*iPhone 6 Portrait*/
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) {
+    .curtain .hero-knockout {
+        background: url(/images/new_media_HERO_portrait_tim1.svg) no-repeat;
+    }
+}
+
+/*iPhone 6+ Portrait*/
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+    .curtain .hero-knockout {
+        background: url(/images/new_media_HERO_portrait_tim1.svg) no-repeat;
+    }
+}
+
+/*iPad Portrait*/
+
+@media only screen 
+and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { /* STYLES GO HERE */ 
+    .curtain .hero-knockout {
+        background: url(/images/new_media_HERO_portrait_tim1.svg) no-repeat;
+    }
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : portrait)
+and (-webkit-min-device-pixel-ratio: 2) { /* STYLES GO HERE */ 
+    .curtain .hero-knockout {
+        background: url(/images/new_media_HERO_portrait_tim1.svg) no-repeat;
+    }
 }

@@ -793,6 +793,9 @@ nav#main-nav .nav-active a {
 .stuck nav#main-nav .nav-active a {
     color: #fff!important;
 }
+nav#main-nav a{
+    color:black;
+}
 .stuck {
     top: 0;
     z-index: 999999;
@@ -807,7 +810,7 @@ nav#main-nav .nav-active a {
     background-color: rgba(0, 0, 0, 0.85)!important;
 }
 .stuck a {
-    color: #fff;
+    color: #fff!important;
 }
 .stuck a:hover {
     color: #fff;
