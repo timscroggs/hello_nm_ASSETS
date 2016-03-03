@@ -921,6 +921,10 @@ section#types p {
 section#statistics {
     padding-bottom: 15px;
 }
+section#statistics a {
+    padding-bottom: 15px;
+	color: #3B45C3;
+}
 section#statistics .statistics-row {
     
     max-width: 1152px;
