@@ -2698,7 +2698,7 @@ h6.credit {
     text-transform: lowercase;
 }
 .featherlight .featherlight-inner p.details {
-    font-size: 12px;
+    font-size: 16px;
     padding-right: 25px;
     line-height: 1.8;
     letter-spacing: 1px;
@@ -2710,11 +2710,12 @@ h6.credit {
     font-size: 15px;
 }
 .lightbox-half {
-    width: 48%;
+    
+    width: 42%;
     float: left;
 }
 .lightbox-half:first-child {
-    margin-right: 4%;
+    margin-right: 8%;
     padding-bottom: 50px;
 }
 
@@ -2768,7 +2769,7 @@ h6.credit {
         background: #fff;
         cursor: auto;
         white-space: normal;
-        padding: 50px;
+        padding: 75px 65px;
     }
     /*
     .featherlight .featherlight-content {

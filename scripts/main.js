@@ -1746,7 +1746,7 @@ function(t) {
             "down" == t ? ($("#main-nav ul li").removeClass("nav-active"), $("#main-nav ul li.nav2").addClass("nav-active")) : ($("#main-nav ul li.nav2").removeClass("nav-active"), $("#main-nav ul li.nav1").addClass("nav-active"))
         }, {
             offset: "100"
-        }), $("#types-hero").waypoint(function(t) {
+        }), $("section#faq").waypoint(function(t) {
             "down" == t ? ($("#main-nav ul li").removeClass("nav-active"), $("#main-nav ul li.nav3").addClass("nav-active")) : ($("#main-nav ul li.nav3").removeClass("nav-active"), $("#main-nav ul li.nav2").addClass("nav-active"))
         }, {
             offset: "100"
