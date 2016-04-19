@@ -4,41 +4,68 @@
 
     <div class="question">
         <h2>You can <span id="typed" class="typed"></span></h2>
+
+        <div class="wrap">
+            <div class="type-wrap">
+                <div id="typed-strings">
+                    <p>Typed.js is a <strong>jQuery</strong> plugin.</p>
+                    <p>It <em>types</em> out sentences.</p>
+                    <p>And then deletes them.</p>
+                    <p>Try it out!</p>
+                </div>
+                <span id="typed" style="white-space:pre;"></span>
+            </div>
+        </div>
     </div>
 
 
+    <script type="text/javascript">
+        (function($) {
+            $(function() {
+                $("#typed").typed({
+                    stringsElement: $('#typed-strings')
+                    
+                    
+                    
+                });
+            });
+        })(jQuery);
 
+    </script>
+    
+    
     <!--quick JS -->
+    <!--
     <script type="text/javascript">
         (function ($) {
 
             $(function () {
                 $("#typed").typed({
-                    strings: ["do anything you want. no really! ",
-                              "design websites. ", 
-                              "be a film director. ",
-                              "work at a hospital. ",
-                              "be a coder. ",
-                              "join the cia! ",
-                              "build virtual reality environments. ",
-                              "be a digital editor. ",
-                              "work from anywhere on your laptop. ",
-                              "start a revolution. ",
-                              "become a youtube sensation. ",
-                              "work for Pixar. ",
-                              "start your own production company. ",
-                              "work a camera. ",
-                              "create music videos. ", 
-                              "design user interface for surgeons. ",
-                              "make big bucks as a creative director. ",
-                              "be a graphic designer. ", 
-                              "do research. ",
-                              "visualize data. ",
-                              "change the world. ",
-                              "create hilarious super bowl ads. ",
-                              "brand anybody or anything! ",
-                              "start your own agency. ",
-                              "be an educator. "],
+                    strings: ["do anything you want. no really!",
+                              "design websites.", 
+                              "be a film director.",
+                              "work at a hospital.",
+                              "be a coder.",
+                              "join the cia!",
+                              "build virtual reality environments.",
+                              "be a digital editor.",
+                              "work from anywhere on your laptop.",
+                              "start a revolution.",
+                              "become a youtube sensation.",
+                              "work for Pixar.",
+                              "start your own production company.",
+                              "work a camera.",
+                              "create music videos.", 
+                              "design user interface for surgeons.",
+                              "make big bucks as a creative director.",
+                              "be a graphic designer.", 
+                              "do research.",
+                              "visualize data.",
+                              "change the world.",
+                              "create hilarious super bowl ads.",
+                              "brand anybody or anything!",
+                              "start your own agency.",
+                              "be an educator."],
                     
                     typeSpeed: 60,
                     backDelay: 1500,
@@ -48,6 +75,11 @@
             });
         })(jQuery);
     </script>
+-->
+
+
+
+
 
 
 </section>

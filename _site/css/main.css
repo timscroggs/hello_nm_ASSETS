@@ -2388,13 +2388,62 @@ body.overflow-hidden {
     line-height: 64px;
     max-width: 90%;
 }
-.typed {
-    border-bottom: 2px solid #000;
+
+/*Typed.js*/
+
+/* code for animated blinking cursor */
+.typed {    
+    border-bottom: dotted;
+    border-color: #000;
+    border-bottom-width: 1px;
 }
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+
+
+
+
+
+/*janices code for the typed out section
+
+
 .typed-cursor {
     opacity: 1;
     animation: blink 0.7s infinite;
 }
+
 @keyframes blink {
     0% {
         opacity: 1;
@@ -2406,6 +2455,8 @@ body.overflow-hidden {
         opacity: 1;
     }
 }
+*/
+
 .info {
     position: absolute;
     top: 10px;
