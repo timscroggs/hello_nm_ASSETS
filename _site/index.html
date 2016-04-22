@@ -32,7 +32,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
 
-<!-- Do we need these jQuery docs? -->
+<!-- Do we need both of these jQuery docs? -->
     <script type="text/javascript" src="/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/jquery.js"></script>
     
@@ -245,6 +245,7 @@
 
     <section id="faq">
     <h2>faq</h2>
+    <h4>this is the only question everyone wants to know...</h4>
     <h1 class="hero-txt light">What can I do with a nm_degree?</h1>
 
     <div class="question">
@@ -253,10 +254,36 @@
         <div class="wrap">
             <div class="type-wrap">
                 <div id="typed-strings">
-                    <p>Typed.js is a <strong>jQuery</strong> plugin.</p>
-                    <p>It <em>types</em> out sentences.</p>
-                    <p>And then deletes them.</p>
-                    <p>Try it out!</p>
+                    
+                    <p>do anything you want... no really!</p>
+                    <p>join the cia!</p>
+                    <p>be a film director.</p>
+                    <p>design websites.</p>
+                    <p>create interactive interfaces for hospitals.</p>
+                    <p>build virtual reality environments.</p>
+                    <p>start a revolution.</p>
+                    <p>be a coder.</p>
+                    <p>work from anywhere on your laptop.</p>
+                    <p>be in politics.</p>
+                    <p>brand the next US president!</p>
+                    <p>be a digital editor.</p>
+                    <p>become a youtube sensation.</p>
+                    <p>work for Pixar.</p>
+                    <p>start your own production company.</p>
+                    <p>work a camera.</p>
+                    <p>create music videos.</p>
+                    <p>design user interface for surgeons.</p>
+                    <p>make big bucks as a creative director.</p>
+                    <p>be a graphic designer.</p>
+                    <p>do research.</p>
+                    <p>visualize data.</p>
+                    <p>change the world.</p>
+                    <p>create hilarious super bowl ads.</p>
+                    <p>brand anybody or anything!</p>
+                    <p>start your own agency.</p>
+                    <p>be an educator.</p>
+                    <p>...whatever it is</p> 
+                    <p>do it.</p>
                 </div>
                 <span id="typed" style="white-space:pre;"></span>
             </div>
@@ -268,17 +295,24 @@
         (function($) {
             $(function() {
                 $("#typed").typed({
-                    stringsElement: $('#typed-strings')
-                    
-                    
-                    
+                    stringsElement: $('#typed-strings'),
+                    typeSpeed: 0,
+                    backDelay: 1000,
+                    loop: true,
+                    cursorChar: "_",
+                    contentType: 'text',
+                    callback: function() {}
+
                 });
             });
+
+
+
         })(jQuery);
 
     </script>
-    
-    
+
+
     <!--quick JS -->
     <!--
     <script type="text/javascript">
@@ -320,6 +354,17 @@
             });
         })(jQuery);
     </script>
+
+
+- ADD THIS TO THE FUNCTION IF THE BUG HAPPENS AGAIN -
+
+        function jiggle_cursor(){
+                $('.typed-cursor').toggle();
+                setTimeout(function(){ jiggle_cursor(); }, 600);
+            }
+
+            jiggle_cursor();
+
 -->
 
 
