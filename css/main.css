@@ -2769,14 +2769,67 @@ h6.credit {
 .featherlight .featherlight-inner p.overview {
     font-size: 15px;
 }
-.lightbox-half {
-    
+.lightbox-half {  
     width: 42%;
     float: left;
 }
 .lightbox-half:first-child {
     margin-right: 8%;
     padding-bottom: 50px;
+}
+/**
+ * 
+ * Four Year Plan Design
+ *
+**/
+.four-year-plan {
+    max-width: 100%;
+    padding: 30px;
+    background-color: #00F3B6;
+    clear: both;
+}
+.four-year-plan table p.details{
+    font-size: 13px!important;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+}
+.four-year-plan .requirement-notes .overview{
+    font-size: 12px !important;
+    font-weight: 800;
+}
+.requirement-notes{
+    margin-top: 25px;
+}
+.four-year-plan-details{
+    margin-top: 25px;
+    display: inline-block;
+   
+}
+.four-year-plan-details.fall{
+    padding-right: 55px;
+}
+.four-year-plan-details table { 
+    border-collapse: collapse;
+    background-color: #fff;
+}
+.four-year-plan-details th{
+    font-size: 1.5em;
+    border-bottom: 1px dotted #fff;
+}
+.four-year-plan-details tr{
+    margin: 5px 0;
+  
+}
+.four-year-plan-details td{
+    font-size: 13px!important;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+    padding: 10px 5px 0 0;
+    border-right: 1px dotted #fff;
+    
 }
 
 /**
