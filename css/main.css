@@ -2777,38 +2777,62 @@ h6.credit {
     margin-right: 8%;
     padding-bottom: 50px;
 }
+.spacer{
+    padding: 25px 0;
+}
 /**
  * 
  * Four Year Plan Design
  *
 **/
+.rotate-it {
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
+    transform: rotate(-90deg);
+}
 .four-year-plan {
     max-width: 100%;
-    padding: 30px;
-    background-color: #00F3B6;
+    padding-top: 40px;
+    /*padding: 30px;
+    background-color: #00F3B6;*/
+    border-top: 1px dotted #333;
     clear: both;
 }
+.four-year-plan-details{
+    display: inline-block;
+}
+.four-year-plan p.overview {
+    width: 80%;
+}
 .four-year-plan table p.details{
-    font-size: 13px!important;
-    line-height: 1.8;
-    letter-spacing: 1px;
+    font-size: 13!important;
     font-weight: 900;
-    font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
+}
+.total-hrs {
+    font-weight: 900;
+    border-top:1px dotted #777;
 }
 .four-year-plan .requirement-notes .overview{
     font-size: 12px !important;
-    font-weight: 800;
 }
+.four-year-plan ul {
+    list-style: none;
+}
+.four-year-plan li:before {
+    content: "+";
+    margin-right: 8px;
+}
+
 .requirement-notes{
     margin-top: 25px;
 }
-.four-year-plan-details{
-    margin-top: 25px;
-    display: inline-block;
-   
-}
+
 .four-year-plan-details.fall{
-    padding-right: 55px;
+    padding-right: 75px;
+    padding-bottom: 25px;
+}
+.four-year-plan-details.spring{
+    padding-bottom: 25px;
 }
 .four-year-plan-details table { 
     border-collapse: collapse;
@@ -2816,7 +2840,7 @@ h6.credit {
 }
 .four-year-plan-details th{
     font-size: 1.5em;
-    border-bottom: 1px dotted #fff;
+    
 }
 .four-year-plan-details tr{
     margin: 5px 0;
@@ -2827,10 +2851,24 @@ h6.credit {
     line-height: 1.8;
     letter-spacing: 1px;
     font-family: "Droid Sans Mono", "Monaco", "Lucida Console", "Courier New", monospace;
-    padding: 10px 5px 0 0;
-    border-right: 1px dotted #fff;
-    
+    padding: 10px 15px 0 0;  
 }
+.year-section{
+    margin-top: 25px;
+    padding-top: 20px;
+    padding-left: 35px;
+    background-color: #eee;
+}
+.year-section:hover{
+    opacity: 1 !important;
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    -moz-transform: translate(0, -4px);
+    -webkit-transform: translate(0, -4px);
+    transform: translate(0, -4px);
+}
+
 
 /**
  * Featherlight - ultra slim jQuery lightbox
