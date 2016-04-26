@@ -2790,12 +2790,15 @@ h6.credit {
     -webkit-transform: rotate(-90deg); /* Chrome, Safari, Opera */
     transform: rotate(-90deg);
 }
+.divider-four-year{
+    border-top: 1px dotted #333;
+    clear: both;
+}
 .four-year-plan {
     max-width: 100%;
     padding-top: 40px;
     /*padding: 30px;
     background-color: #00F3B6;*/
-    border-top: 1px dotted #333;
     clear: both;
 }
 .four-year-plan-details{
@@ -2861,10 +2864,14 @@ h6.credit {
     padding-left: 35px;
     padding-right: 35px;
     margin-right: 25px;
+    min-height: 330px;
     background-color: #72f5c8;
 }
-.year-section nm-class{
-    font-weight: bolder!important;
+.year-section td span.nm-class{
+    background-color: yellow;
+}
+.year-section td span.special-class{
+    font-size: 9px;
 }
 .year-section h4{
     color: #fff;
