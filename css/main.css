@@ -2824,7 +2824,9 @@ h6.credit {
 }
 
 .requirement-notes{
-    margin-top: 25px;
+    padding-top: 40px;
+    width: 80%;
+    clear: both;
 }
 
 .four-year-plan-details.fall{
@@ -2857,7 +2859,22 @@ h6.credit {
     margin-top: 25px;
     padding-top: 20px;
     padding-left: 35px;
-    background-color: #eee;
+    padding-right: 35px;
+    margin-right: 25px;
+    background-color: #72f5c8;
+}
+.year-section nm-class{
+    font-weight: bolder!important;
+}
+.year-section h4{
+    color: #fff;
+    font-size: 24px!important;
+    line-height: 1.2em!important;
+    padding-top: .4em;
+    padding-bottom: .5em;
+}
+.year-section .details{
+    color: #fff;
 }
 .year-section:hover{
     opacity: 1 !important;
@@ -2867,6 +2884,15 @@ h6.credit {
     -moz-transform: translate(0, -4px);
     -webkit-transform: translate(0, -4px);
     transform: translate(0, -4px);
+}
+@media screen and (min-width: 800px) {
+    .year-section{
+        width: 40%;
+        float: left;
+    }
+    .four-year-plan p.overview{
+        width: 60%
+    }
 }
 
 
