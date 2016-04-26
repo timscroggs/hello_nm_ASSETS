@@ -2922,26 +2922,7 @@ h6.credit {
         white-space: normal;
         padding: 75px 65px;
     }
-    /*
-    .featherlight .featherlight-content {
-        max-width: 800px;
-        position: relative;
-        text-align: left;
-        vertical-align: middle;
-        display: inline-block;
-        overflow: auto;
-        padding: 25px 25px 0;
-        border-bottom: 25px solid transparent;
-        min-width: 50%;
-        height: 400px;
-        margin-left: 5%;
-        margin-right: 5%;
-        max-height: 95%;
-        background: #fff;
-        cursor: auto;
-        white-space: normal;
-    }
-    */
+    
     .featherlight .featherlight-close-icon {
         position: absolute;
         z-index: 9999;
@@ -2957,23 +2938,7 @@ h6.credit {
     .featherlight .featherlight-close-icon:hover {
         color: #777;
     }
-    /*
-    .featherlight .featherlight-close-icon:hover:after {
-        background: rgba(154, 154, 154, 0.2);
-    }
-    .featherlight .featherlight-close-icon::after {
-        content: "";
-        position: absolute;
-        width: 5em; /*2.625em;
-        height: 2em;
-        display: block;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 6.25em;
-        transition: all 0.3s ease;
-    }
-    */
+    
     .featherlight .featherlight-image {
         width: 100%;
     }
@@ -2986,15 +2951,7 @@ h6.credit {
     }
 }
 @media only screen and (max-width:1024px) {
-    /*
-    .featherlight .featherlight-content {
-        margin-left: 8%;
-        margin-right: 8%;
-        max-height: 98%;
-        /*padding: 25px 25px 0;
-        border-bottom: 10px solid transparent;
-    }
-    */
+
 }
 
 /* ++++++++++ fixed style switcher buttons ++++++++++ */
