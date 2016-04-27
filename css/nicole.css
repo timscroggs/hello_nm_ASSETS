@@ -334,6 +334,8 @@ footer #follow .diamond-border {
 .one:hover {
     background-image: url("/images/types_nicole.gif");
     color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .two {
     background-image: url("/images/home6.jpg");
@@ -342,6 +344,8 @@ footer #follow .diamond-border {
 .two:hover {
     background-image: url("/images/types_nicole1.gif");
     color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .three {
     background-image: url("/images/home18.jpg");
@@ -350,6 +354,8 @@ footer #follow .diamond-border {
 .three:hover {
     background-image: url("/images/types_nicole2.gif");
     color: #000;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .four {
     background-color: rgba(0, 255, 132, 1);

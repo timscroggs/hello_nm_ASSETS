@@ -251,6 +251,8 @@ h1.hero-txt {
     color: #fff;
     background-image: url("/images/1.gif");
     background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .two {
     background-color:#5c9d95;
@@ -261,6 +263,8 @@ h1.hero-txt {
     color: #fff;
     background-image: url(/images/2.gif);
     background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .three {
     background-color: #C39ECF;
@@ -270,6 +274,8 @@ h1.hero-txt {
     color: #fff;
     background-image: url(/images/9.gif);
     background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .four {
     background-color: rgb(62, 188, 127);
@@ -279,6 +285,8 @@ h1.hero-txt {
     color: #fff;
     background-image: url("/images/6.gif");
     background-blend-mode: difference;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .adv-btn {
     background-color: #729dc3;
