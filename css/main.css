@@ -2814,7 +2814,7 @@ body.overflow-hidden {
 }
 
 .two {
-    background-image: url("/images/coffeechaos-image-square.jpg");
+    background-image: url("/images/coffeechaos.jpg");
     -moz-transition: all 0.55s;
     -webkit-transition: all 0.55s;
     transition: all 0.55s;
@@ -2826,7 +2826,7 @@ body.overflow-hidden {
 }
 
 .three {
-    background-image: url("/images/untold-image-square.jpg");
+    background-image: url("/images/untold.jpg");
     -moz-transition: all 0.55s;
     -webkit-transition: all 0.55s;
     transition: all 0.55s;
