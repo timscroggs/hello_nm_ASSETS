@@ -5,94 +5,72 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
-
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome to Jekyll!</title>
     <meta name="description" content="Hi, you. Meet New Media. New media, say hello. Hello_nm! Welcome to a light hearted introduction to New Media and what we think about it here at UNC Asheville. Going to college is expensive. Choosing a degree is heavy. Let us help you earn a degree you can use to create yourself, tools to create the life you want.">
-
     <link rel="canonical" href="/jekyll/update/2016/02/04/welcome-to-jekyll.html">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css" title="main">
-    <link rel="stylesheet" type="text/css" href="/css/tim.css" title="tim">
-    <link rel="stylesheet" type="text/css" href="/css/janice.css" title="janice">
-    <link rel="stylesheet" type="text/css" href="/css/gabriel.css" title="gabriel">
-    <link rel="stylesheet" type="text/css" href="/css/nicole.css" title="nicole">
-
-
+    <meta property="og:site_name" content="hello_nm"/>
+    <meta property="og:title" content="Home"/>
+    <meta property="og:url" content="https://hellonm.unca.edu/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://hellonm.unca.edu/images/coffeechaos.jpg" />
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css" title="main">
+    <link rel="stylesheet" type="text/css" href="/css/tim.min.css" title="tim">
+    <link rel="stylesheet" type="text/css" href="/css/janice.min.css" title="janice">
+    <link rel="stylesheet" type="text/css" href="/css/gabriel.min.css" title="gabriel">
+    <link rel="stylesheet" type="text/css" href="/css/nicole.min.css" title="nicole">
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
-
-<!-- Do we need both of these jQuery docs? -->
     <script type="text/javascript" src="/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/jquery.js"></script>
-    
-    
-    <!-- Get jQuery from typed.js plugin -->
-    <script src="scripts/typed.js" type="text/javascript"></script>
-    
-    <!-- END - Get jQuery from typed.js plugin -->
-    
-    
+    <!-- This code is pasted into defer.js <script src="scripts/typed.min.js" type="text/javascript"></script>-->
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
     <script src="/scripts/vendor/modernizr-2.8.3.min.js"></script>
-
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-
 <body>
-
     <!-- load cover -->
     <div class="pace-cover"></div>
     <div class="container-main">
         <header role="banner" id="top">
-
             <div class="curtain">
                 <h2 class="fixed-logo">hello_nm</h2>
                 <div class="hero-knockout"></div>
-                
             </div>
-
             <div id="hero">
                 <h1 class="hero-txt hero-reveal"><!--what is new media?-->  
                     <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
                 <video muted loop autoplay poster="/videos/Snapshots/hello_nm_video.jpg" class="video_layer_vid avoid-clicks">
                     <source src="/videos/WEBM/hello_nm_video.webm" type="video/webm">
                     <source src="/videos/MP4/hello_nm_video.mp4" type="video/mp4">
-                    <source src="/videos/OGV/hello_nm_video.ogv" type="video/ogg">  
+                    <source src="/videos/OGV/hello_nm_video.ogv" type="video/ogg">
                 </video>
                 <div class="mobile-poster"></div>
             </div>
-
         </header>
         <div class="lightbox-vid">
             <iframe class="lightbox" src="https://player.vimeo.com/video/157631810?badge=0&title=0&byline=0" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-
         <div id="nav-spacer"></div>
-        
-<!-- style switcher menu -->
+        <!-- style switcher menu -->
         <div class="style-switcher-menu">
-                <form class="style-switcher">
-                    <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Reset_style" id="main">
-                    <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
-                    <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
-                    <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
-                    <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
-                </form>
-            
-          </div> 
+            <form class="style-switcher">
+                <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Reset_style" id="main">
+                <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
+                <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
+                <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
+                <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
+            </form>
+        </div>
         <!-- main nav -->
         <nav id="main-nav">
             <ul>
@@ -103,23 +81,17 @@
                 <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
                 <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
             </ul>
-           
-            
-            
         </nav>
-
         <!-- mobile nav -->
         <div id="mobile-nav">
             <header class="cd-header">
                 <a href="#top">
                     <div class="mobile-nav-logo">hello_nm</div>
                 </a>
-
                 <div class="cd-primary-nav-trigger">
                     <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
                 </div>
             </header>
-
             <nav>
                 <ul class="cd-primary-nav">
                     <li><a class="ss-target" href="#types">types_nm</a></li>
@@ -130,19 +102,28 @@
                     <li>
                         <p class="mobile-nav-title">style sitcher menu</p>
                         <form class="style-switcher-mobile">
-                            <a href=""><input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main"></a>
-                            <a href=""><input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim"></a>
-                            <a href=""><input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice"></a>
-                            <a href=""><input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel"></a>
-                            <a href=""><input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole"></a>
+                            <a href="">
+                                <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main">
+                            </a>
+                            <a href="">
+                                <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
+                            </a>
+                            <a href="">
+                                <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
+                            </a>
+                            <a href="">
+                                <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
+                            </a>
+                            <a href="">
+                                <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
+                            </a>
                         </form>
                         <br>
                     </li>
-                    
+
                 </ul>
             </nav>
         </div>
-
         <main role="main" class="cf">
 <article class="posts">
  <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -180,16 +161,14 @@
 </main>
  <footer role="contentinfo" class="page-footer">
         <div id="footer-split" class="clearfix">
-            <address>
-                    
-                <h4>New Media at UNC Asheville</h4>
+            <address>                  
+                <h4>NM at UNC Asheville</h4>
                     <p>205 Zeis Hall, CPO # 2015<br>
                     One University Heights<br>
                     Asheville, NC 28804 <br>
                     <a href="tel:828-350-4567">+1 828 350 4567</a></p>
                     <a href="mailto:tmccants@unca.edu">send an email</a>
                 </address>
-
             <div id="follow">
                 <h4>Follow</h4>
                 <div id="icons">
@@ -199,47 +178,55 @@
                             <div class="the-icons"><i class="social-icon fa fa-facebook"></i></div>
                         </div>
                     </a>
-<!--
-                    <a href="#" target="_blank">
-                        <div class="diamond">
-                            <div class="diamond-border"></div>
-                            <div class="the-icons"><i class="social-icon fa fa-instagram"></i></div>
-                        </div>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <div class="diamond">
-                            <div class="diamond-border"></div>
-                            <div class="the-icons"><i class="social-icon fa fa-twitter"></i></div>
-                        </div>
-                    </a>
--->
                 </div>
                 <p>#hello_nm</p>
-            </div>
-            
+            </div>           
             <div class="site-credits">
                 <h4>Makers</h4>
                     <h2>Site</h2>
                     <p><a href="https://www.facebook.com/Gabriel-Fobert-Art-Design-795087437245485/" target="_blank">Gabriel Fobert</a> + <a href="http://janiceaandrews.com/preview" target="_blank"> Janice Andrews </a> +<a href="https://vimeo.com/user39031336" target="_blank"> Nicole Erskine</a> + <a href="http://timscroggs.co" target="_blank">Tim Scroggs</a></p>
                 <br>
                     <h2>Video</h2>
-                    <p>Madeleine Richardson + Ana Pak + Chris Harris</p> 
-            
+                    <p>Madeleine Richardson + Ana Pak + Chris Harris</p>       
             </div>
-
-        </div>
-        <div class="official-logos">
-            
+            <div class="official-logos">           
              <div class="nm-logo">
             <a href="http://nm.unca.edu"><img src="/images/nmlogo_white.svg"></a>
                  </div>
             <div class="unca-logo">
             <a href="http://unca.edu"><img src="/images/unca_logo_white.png"></a>
                 </div>
-        </div>
+        </div>      
+    </div> 
+     <section id="credit">
+    <h2>site_credit</h2>
+    <p>This site is a Senior Capstone Project, designed and built by New Media students at UNC Asheville: Gabriel Fobert, Janice Andrews, Nicole Erskine and Tim Scroggs. The content and imagery above showcases all orignal student work. And the style switcher – that beautiful multi-color bar fixed to the left of your browser window (On mobile? the buttons are in main menu.) – will modify the style of the site to the unique taste of each of the designers. Check it out! </p> 
+     <div class="spacer"></div>
+     <div id="follow">
+         <h5>Share this project</h5>
+                  <br>  
+                <div id="icons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//hellonm.unca.edu/" target="_blank">
+                        <div class="diamond">
+                            <div class="diamond-border"></div>
+                            <div class="the-icons"><i class="social-icon fa fa-facebook"></i></div>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/home?status=Check%20out%20this%20website%20made%20by%20New%20Media%20students%20at%20UNC%20Asheville!%20" target="_blank">
+                        <div class="diamond">
+                            <div class="diamond-border"></div>
+                            <div class="the-icons"><i class="social-icon fa fa-twitter"></i></div>
+                        </div>
+                    </a>           
+                    <a href="https://plus.google.com/share?url=https%3A//hellonm.unca.edu" target="_blank">
+                        <div class="diamond">
+                            <div class="diamond-border"></div>
+                            <div class="the-icons"><i class="social-icon fa fa-google-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+</section>
     </footer>
-
 
     </div>
     <!-- Load jQuery -->
@@ -247,28 +234,17 @@
     <script>
         window.jQuery || document.write('<script src="/scripts/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
-
-    <!-- Main JS -->
-    <script src="/scripts/main.js"></script>
-
-    <!-- for featherlight light box -->
-    <script type="text/javascript" src="/scripts/vendor/featherlight.min.js"></script>
+    <!-- Main JS code is pasted into defer.js <script src="/scripts/main.min.js"></script>-->
+    <!-- for featherlight light box -code is pasted into defer.js <script type="text/javascript" src="/scripts/vendor/featherlight.min.js"></script> -->
     <!--
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>-->
-
-
-
-
     <script>
         // *** TO BE CUSTOMISED ***
-
         var style_cookie_name = "style";
         var style_cookie_duration = 30;
         var style_domain = "";
-
         // *** END OF CUSTOMISABLE SECTION ***
         // You do not need to customise anything below this line
-
         function switch_style(css_title) {
             // You may use this script on your site free of charge provided
             // you do not remove this notice or the URL below. Script from
@@ -286,14 +262,12 @@
                     style_cookie_duration, style_domain);
             }
         }
-
         function set_style_from_cookie() {
             var css_title = get_cookie(style_cookie_name);
             if (css_title.length) {
                 switch_style(css_title);
             }
         }
-
         function set_cookie(cookie_name, cookie_value,
             lifespan_in_days, valid_domain) {
             // http://www.thesitewizard.com/javascripts/cookies.shtml
@@ -305,7 +279,6 @@
                 24 * lifespan_in_days +
                 "; path=/" + domain_string;
         }
-
         function get_cookie(cookie_name) {
             // http://www.thesitewizard.com/javascripts/cookies.shtml
             var cookie_string = document.cookie;
@@ -319,17 +292,37 @@
             return '';
         }
     </script>
-    
+<!-- Google Analytics Script goes here -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <!-- Google Analytics Script goes here -->
-    
-    
-    
-    
-    <!-- END - Google Analytics Script goes here -->
-
-    
-    <!-- Site by Gabriel Fobert, Nicole Erskine, Janice Andrews, and Tim Scroggs -->
+        ga('create', 'UA-77065809-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- END - Google Analytics Script goes here -->    
+<!-- Code snippet from varvy.com - defers loading of javascript until the page has loaded -->
+<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "/scripts/defer.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>    
+<!-- Site by Gabriel Fobert, Nicole Erskine, Janice Andrews, and Tim Scroggs -->
 </body>
-
 </html>

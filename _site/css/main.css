@@ -635,6 +635,7 @@ section {
     z-index: 9;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
     position: fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -963,10 +964,10 @@ nav#main-nav a {
     width: 100%;
     height: 110vh;
     position: relative;
-    background-attachment: fixed;
     background-image: url("/images/rosen2.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 #faq-hero h1 {
@@ -1270,7 +1271,8 @@ section#locations #stock ul#list {
     text-align: left;
 }
 
-section#hello {
+section#hello,
+section#credit {
     margin: 0 0 45px 0;
 }
 
@@ -1330,6 +1332,7 @@ section#commitment .photo-caption {
 section#graduate {
     position: relative;
     padding-bottom: 65px;
+    overflow: hidden;
 }
 
 section#graduate .graduate-wrap {
@@ -1534,7 +1537,7 @@ footer {
     position: relative;
     width: 100%;
     overflow: hidden;
-    padding-bottom: 15px;
+    padding-bottom: 0;
     padding-top: 100px;
     background-color: #000;
 }
@@ -1553,9 +1556,11 @@ footer p {
 
 footer #footer-split {
     max-width: 1600px;
-    padding: 0 0 0 11%;
+    padding: 0 11% 0 11%;
     overflow: hidden;
-    padding-bottom: 10px;
+    padding-bottom: 150px;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 footer #footer-split address {
@@ -1648,7 +1653,9 @@ footer #follow .the-icons {
 }
 
 footer .official-logos {
-    position: relative;
+    position: absolute;
+    right:0;
+    bottom: 0;
 }
 
 footer div.unca-logo img {
@@ -1667,6 +1674,21 @@ footer .nm-logo img {
 footer div.unca-logo {
     margin: 0 25px 0 0;
     float: right;
+}
+
+
+/*
+ * Site Credit at very bottom of site
+ */
+
+section#credit {
+    background-color: #FF7A54;
+    margin: 0;
+    padding: 35px 11% 50px 11%;
+}
+
+section#credit h2 {
+    color: #fff;
 }
 
 .js-bg-white {
@@ -1985,8 +2007,8 @@ footer div.unca-logo {
         font-size: 24px;
     }
     footer #footer-split {
-        width: 90%;
-        margin: 0 auto;
+        /*width: 90%;
+        margin: 0 auto;*/
     }
     footer #footer-split address {
         width: 100%;
@@ -2045,6 +2067,15 @@ footer div.unca-logo {
     }
 }
 
+@media only screen and (max-width: 667px) {
+    #faq-hero h1 {
+        font-size: 66px;
+    }
+    #faq-hero h3 {
+        font-size: 30px;
+    }
+}
+
 @media only screen and (max-width: 604px) {
     section#graduate .type-blk {
         width: 47%;
@@ -2072,7 +2103,6 @@ footer div.unca-logo {
         overflow: hidden;
     }
     #hero h1.hero-txt {
-        /*width: 100%;*/
         font-size: 66px;
     }
     h1.hero-txt {
@@ -2098,7 +2128,8 @@ footer div.unca-logo {
         font-size: 21px;
     }
     #faq-hero {
-        height: 130vh;
+        height: 100vh;
+        background-attachment: scroll;
     }
     #faq-hero h1 {
         font-size: 60px;
@@ -2158,7 +2189,14 @@ footer div.unca-logo {
         width: 90%
     }
     footer #footer-split {
-        margin-bottom: 120px;
+        padding: 0 11% 150px 11%;
+        margin-bottom: 15px;
+        position: relative;
+    }
+    footer .official-logos {
+    position: absolute;
+    bottom: 0;
+    right: 0;
     }
     section#graduate .type-blk {
         width: 100%;
@@ -3144,6 +3182,10 @@ h6.credit {
     float: left;
 }
 
+.pad-right {
+    padding-right: 8%;
+}
+
 .lightbox-half:first-child {
     margin-right: 8%;
     padding-bottom: 50px;
@@ -3279,7 +3321,7 @@ h6.credit {
     .year-section {
         margin-right: 25px;
     }
-    .requirement-notes {
+    .four-year-plan .overview {
         width: 80%;
     }
     .four-year-plan-details.fall {
@@ -3289,7 +3331,7 @@ h6.credit {
 
 @media screen and (min-width: 800px) {
     .four-year-plan-details.fall {
-    width: 45%;
+        width: 45%;
     }
 }
 
@@ -3298,9 +3340,6 @@ h6.credit {
         width: 46.88473%;
         float: left;
         min-height: 580px;
-    }
-    .four-year-plan p.overview {
-        width: 60%
     }
     .four-year-plan-details.fall {
         padding-right: 15px;
@@ -3321,6 +3360,15 @@ h6.credit {
         top: 0;
         left: 5%;
     }
+    section#graduate .graduate-pic {
+        left: 50%;
+    }
+    .four-year-plan p.overview {
+        width: 60%
+    }
+    .requirement-notes {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 2000px) {
@@ -3333,7 +3381,7 @@ h6.credit {
         top: 0;
         left: 15%;
     }
-    section#graduate .graduate-pic{
+    section#graduate .graduate-pic {
         left: 40%;
     }
 }

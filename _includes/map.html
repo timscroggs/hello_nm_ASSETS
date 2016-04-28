@@ -1,109 +1,95 @@
 <div id='map'></div>
 <script>
-    L.mapbox.accessToken = 
-'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
+    L.mapbox.accessToken ='pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
+    var map = L.mapbox.map('map', 'gfobert.6f9af935');
+    var myLayer = L.mapbox.featureLayer().addTo(map);
     var geojson = [
-    {
-  "type": "FeatureCollection",
-  "features": [
-      
-      
-      
-    {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -82.552926,
-            35.602002
-        ]
-      },
-        "properties": {
-        "title": "Moog Music Inc, 160 Broadway",
-        "marker-color": "#00ff84",
-        "marker-size": "small",
-        "marker-symbol": "triangle"
-      }
+        {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "Moog Music Inc, 160 Broadway",
+                        "description": "160 Broadway Street, Asheville, NC 28801<br><hr>Robert Moog's current company, producing synthesizers, teremins, and accessories.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "small",
+                        "marker-symbol": "triangle"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-82.552926, 35.602002]
+                    }
     },
-      
-      
-      
-      {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
           -82.552817,
           35.597776
         ]
-      },
-        "properties": {
-        "title": "Center for Craft, Creativity & Design, 67 Broadway",
-        "marker-color": "#00ff84",
-        "marker-size": "small",
-        "marker-symbol": "square"
-      }
+                    },
+                    "properties": {
+                        "title": "Center for Craft, Creativity & Design",
+                        "description": "67 Broadway, Asheville, NC 28801<br><hr>Supports research in the area of craft and design and curates exhibitions for a small gallery space and the sculpture and public art.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "small",
+                        "marker-symbol": "square"
+                    }
     },
-      
-      {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
+
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
           -82.552044,
           35.597118
         ]
-      },
-        "properties": {
-        "title": "Black Mountain Museum, 56 Broadway",
-        "marker-color": "#00ff84",
-        "marker-size": "small",
-        "marker-symbol": "star"
-      }
+                    },
+                    "properties": {
+                        "title": "Black Mountain College Museum + Arts Center",
+                        "description": "56 Broadway Street, Asheville, NC 28801<br><hr>Dedicated to preserving the history and exploring the legacy of Black Mountain College.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "small",
+                        "marker-symbol": "star"
+                    }
     },
-      
-      {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
+
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
           -82.567590,
           35.617802
         ]
-      },
-        "properties": {
-        "title": "We're here!",
-        "marker-color": "#00ff84",
-        "marker-size": "large",
-        "marker-symbol": "college"
-      }
+                    },
+                    "properties": {
+                        "title": "Here we are – our campus!",
+                        "description": "1 University Heights, Asheville, NC 28804<br><hr>Come and see us, you will be inspired.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "large",
+                        "marker-symbol": "college"
+                    }
     }
-      
   ]
 }
         ];
-    /*Old Map Code
-    mapboxgl.accessToken =
-    'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
-    var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/gfobert/cikcuwcv8007c9slyoez5mhyj', //stylesheet location{
-    scrollZoom: false //stop zoom on scroll
-    }).setView([-82.56, 35.60], 13.8); //location of the map*/
-    
-    var map = L.mapbox.map('map', 'gfobert.6f9af935');
-    map.scrollWheelZoom.disable();
-    var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(map);
-    
+    myLayer.setGeoJSON(geojson);
+    myLayer.on('mouseover', function (e) {
+        e.layer.openPopup();
+    });
+    myLayer.on('mouseout', function (e) {
+        e.layer.closePopup();
+    });
     // Disable drag and zoom handlers.
     map.dragging.disable();
     map.touchZoom.disable();
     map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
     map.keyboard.disable();
-
     // Disable tap handler, if present.
     if (map.tap) map.tap.disable();
-    _mapView.userInteractionEnabled = NO;
-    
 </script>

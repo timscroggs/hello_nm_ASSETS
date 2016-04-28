@@ -5,94 +5,72 @@
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="">
 <!--<![endif]-->
-
-
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>hello_nm</title>
     <meta name="description" content="Hi, you. Meet New Media. New media, say hello. Hello_nm! Welcome to a light hearted introduction to New Media and what we think about it here at UNC Asheville. Going to college is expensive. Choosing a degree is heavy. Let us help you earn a degree you can use to create yourself, tools to create the life you want.">
-
     <link rel="canonical" href="/">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css" title="main">
-    <link rel="stylesheet" type="text/css" href="/css/tim.css" title="tim">
-    <link rel="stylesheet" type="text/css" href="/css/janice.css" title="janice">
-    <link rel="stylesheet" type="text/css" href="/css/gabriel.css" title="gabriel">
-    <link rel="stylesheet" type="text/css" href="/css/nicole.css" title="nicole">
-
-
+    <meta property="og:site_name" content="hello_nm"/>
+    <meta property="og:title" content="Home"/>
+    <meta property="og:url" content="https://hellonm.unca.edu/"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:image" content="https://hellonm.unca.edu/images/coffeechaos.jpg" />
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css" title="main">
+    <link rel="stylesheet" type="text/css" href="/css/tim.min.css" title="tim">
+    <link rel="stylesheet" type="text/css" href="/css/janice.min.css" title="janice">
+    <link rel="stylesheet" type="text/css" href="/css/gabriel.min.css" title="gabriel">
+    <link rel="stylesheet" type="text/css" href="/css/nicole.min.css" title="nicole">
     <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
     <link rel="icon" href="/favicon.ico?" type="image/x-icon">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link href='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
-
-<!-- Do we need both of these jQuery docs? -->
     <script type="text/javascript" src="/scripts/jquery.min.js"></script>
     <script type="text/javascript" src="/scripts/jquery.js"></script>
-    
-    
-    <!-- Get jQuery from typed.js plugin -->
-    <script src="scripts/typed.js" type="text/javascript"></script>
-    
-    <!-- END - Get jQuery from typed.js plugin -->
-    
-    
+    <!-- This code is pasted into defer.js <script src="scripts/typed.min.js" type="text/javascript"></script>-->
     <script src='https://api.tiles.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
     <script src="/scripts/vendor/modernizr-2.8.3.min.js"></script>
-
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
 </head>
-
 <body>
-
     <!-- load cover -->
     <div class="pace-cover"></div>
     <div class="container-main">
         <header role="banner" id="top">
-
             <div class="curtain">
                 <h2 class="fixed-logo">hello_nm</h2>
                 <div class="hero-knockout"></div>
-                
             </div>
-
             <div id="hero">
                 <h1 class="hero-txt hero-reveal"><!--what is new media?-->  
                     <!-- Button trigger modal --><a class="btn" data-featherlight="#video-play"><i class="fa fa-play-circle fa-1x"></i></a></h1>
                 <video muted loop autoplay poster="/videos/Snapshots/hello_nm_video.jpg" class="video_layer_vid avoid-clicks">
                     <source src="/videos/WEBM/hello_nm_video.webm" type="video/webm">
                     <source src="/videos/MP4/hello_nm_video.mp4" type="video/mp4">
-                    <source src="/videos/OGV/hello_nm_video.ogv" type="video/ogg">  
+                    <source src="/videos/OGV/hello_nm_video.ogv" type="video/ogg">
                 </video>
                 <div class="mobile-poster"></div>
             </div>
-
         </header>
         <div class="lightbox-vid">
             <iframe class="lightbox" src="https://player.vimeo.com/video/157631810?badge=0&title=0&byline=0" width="100%" height="100%" id="video-play" style="border:none;" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
         </div>
-
         <div id="nav-spacer"></div>
-        
-<!-- style switcher menu -->
+        <!-- style switcher menu -->
         <div class="style-switcher-menu">
-                <form class="style-switcher">
-                    <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Reset_style" id="main">
-                    <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
-                    <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
-                    <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
-                    <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
-                </form>
-            
-          </div> 
+            <form class="style-switcher">
+                <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Reset_style" id="main">
+                <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
+                <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
+                <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
+                <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
+            </form>
+        </div>
         <!-- main nav -->
         <nav id="main-nav">
             <ul>
@@ -103,23 +81,17 @@
                 <li class="nav5"><a class="ss-target" href="#locations">location</a></li>
                 <li class="nav6"><a class="ss-target" href="#contact-form">get_more</a></li>
             </ul>
-           
-            
-            
         </nav>
-
         <!-- mobile nav -->
         <div id="mobile-nav">
             <header class="cd-header">
                 <a href="#top">
                     <div class="mobile-nav-logo">hello_nm</div>
                 </a>
-
                 <div class="cd-primary-nav-trigger">
                     <span class="cd-menu-text">Menu</span><span class="cd-menu-icon"></span>
                 </div>
             </header>
-
             <nav>
                 <ul class="cd-primary-nav">
                     <li><a class="ss-target" href="#types">types_nm</a></li>
@@ -130,29 +102,35 @@
                     <li>
                         <p class="mobile-nav-title">style sitcher menu</p>
                         <form class="style-switcher-mobile">
-                            <a href=""><input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main"></a>
-                            <a href=""><input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim"></a>
-                            <a href=""><input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice"></a>
-                            <a href=""><input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel"></a>
-                            <a href=""><input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole"></a>
+                            <a href="">
+                                <input id="main-refresh" type="submit" onclick="switch_style('main');return false;" name="theme" value="Original_Experience" id="main">
+                            </a>
+                            <a href="">
+                                <input id="tim-theme" type="submit" onclick="switch_style('tim');return false;" name="theme" value="Tim_Experience" id="tim">
+                            </a>
+                            <a href="">
+                                <input id="janice-theme" type="submit" onclick="switch_style('janice');return false;" name="theme" value="Janice_Experience" id="janice">
+                            </a>
+                            <a href="">
+                                <input id="gabriel-theme" type="submit" onclick="switch_style('gabriel');return false;" name="theme" value="Gabriel_Experience" id="gabriel">
+                            </a>
+                            <a href="">
+                                <input id="nicole-theme" type="submit" onclick="switch_style('nicole');return false;" name="theme" value="Nicole_Experience" id="nicole">
+                            </a>
                         </form>
                         <br>
                     </li>
-                    
+
                 </ul>
             </nav>
         </div>
-
             <section id="hello">
     <h2>what is New_Media?</h2>
     <p class="txt-lrg">New media is humans playing, breaking, learning, building, fixing, and innovating with technology in search of new forms of communication, art and entertainment. It's anything, you make it – it's everything, you create it. New media is <span style="text-decoration:underline;">YOU</span> experimenting with the power and mysterious possibilities of technology. </p>
 </section>
     <section id="types">
     <h2>types_nm</h2>
-
-
     <div class="types-row clearfix">
-
         <a href="#" data-featherlight="#interactive">
             <div class="block_types one type-blk">
                 <div class="type_content">
@@ -161,7 +139,6 @@
                 </div>
             </div>
         </a>
-
         <a href="#" data-featherlight="#animation">
             <div class="block_types two type-blk">
                 <div class="type_content">
@@ -170,7 +147,6 @@
                 </div>
             </div>
         </a>
-
         <a href="#" data-featherlight="#video">
             <div class="block_types three type-blk">
                 <div class="type_content">
@@ -188,13 +164,10 @@
             </div>
         </a>
     </div>
-
 </section>
 <div class="lightbox" id="interactive">
-
     <div class="lightbox-half">
         <h3 class="title">web &amp; Interactive Design</h3>
-
         <p class="overview"> If you decide to follow the web + interactive track, prepare to have your mind blown! We blend big ideas with web design, interactivity and a splash of performance art. You will learn how to create, code, and publish content for any device while mastering HTML5 and CSS3 with a touch of javascript thrown in.</p>
         <br>
         <p>If you are as passionate as we are about creating interactive experiences by fusing the digital world of technology and web design with the physical world and art performance, <strong>come join us!</strong></p>
@@ -210,16 +183,13 @@
         <p class="overview"> To help you get started on this collegiate adventure of New Media, we have put together a suggested 4-year plan that charts out the required classes and prerequisites involved in a New Media major focusing on Web and interactive design. To read detailed course descriptions <a href="http://catalog.unca.edu/content.php?filter%5B27%5D=NM&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=9&expand=&navoid=498&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter" target="_blank">click here</a>.</p>
         <br>
         <h4 class="lightbox-secondary-heading">cumulative total_hrs: 122</h4>
-
         <div class="year-section">
             <h4 class="lightbox-secondary-heading">Freshman Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
                         <p class="details">+ Fall</p>
                     </th>
-
                 </tr>
                 <tr>
                     <td><span class="nm-class">nm_101</span></td>
@@ -242,7 +212,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -274,11 +243,8 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
-
             <h4 class="lightbox-secondary-heading">sophomore Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
@@ -310,7 +276,6 @@
                     <td>18</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -339,7 +304,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -349,7 +313,6 @@
                     <th>
                         <p class="details">+ Fall</p>
                     </th>
-
                 </tr>
                 <tr>
                     <td><span class="nm-class">nm_222 <span class="special-class">(ARTS)</span></span></td>
@@ -372,7 +335,6 @@
                     <td>16</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -405,7 +367,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -438,7 +399,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -470,8 +430,7 @@
                     <td>13</td>
                 </tr>
             </table>
-        </div>
-        
+        </div> 
         <div class="requirement-notes">
             <p class="overview"> * Students in all New Media tracks MUST TAKE: nm_101, nm_231, nm_251, nm_281, nm_222, nm_438, and nm_490
             </p>
@@ -481,10 +440,8 @@
             </p>
             <p class="overview"> * Satisfactory completion of nm_438 with a grade of C or better domonstrates oral competency. Completetion of nm_490 with a grade of C or better domonstrates major and computer competency.
             </p>
-
         </div>
     </div>
-
 </div>
 <div class="lightbox" id="animation">
     <div class="lightbox-half">
@@ -502,16 +459,13 @@
         <p class="overview"> To help you get started on this collegiate adventure of New Media, we have put together a suggested 4-year plan that charts out the required classes and prerequisites involved in a New Media major focusing on Web and interactive design. To read detailed course descriptions <a href="http://catalog.unca.edu/content.php?filter%5B27%5D=NM&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=9&expand=&navoid=498&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter" target="_blank">click here</a>.</p>
         <br>
         <h4 class="lightbox-secondary-heading">cumulative total_hrs: 122</h4>
-
         <div class="year-section">
             <h4 class="lightbox-secondary-heading">Freshman Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
                         <p class="details">+ Fall</p>
                     </th>
-
                 </tr>
                 <tr>
                     <td><span class="nm-class">nm_101</span></td>
@@ -534,7 +488,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -566,11 +519,8 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
-
             <h4 class="lightbox-secondary-heading">sophomore Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
@@ -602,7 +552,6 @@
                     <td>18</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -631,7 +580,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -641,7 +589,6 @@
                     <th>
                         <p class="details">+ Fall</p>
                     </th>
-
                 </tr>
                 <tr>
                     <td><span class="nm-class">nm_222 <span class="special-class">(ARTS)</span></span></td>
@@ -664,7 +611,6 @@
                     <td>16</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -697,7 +643,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -730,7 +675,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -762,8 +706,7 @@
                     <td>13</td>
                 </tr>
             </table>
-        </div>
-        
+        </div> 
         <div class="requirement-notes">
             <p class="overview"> * Students in all New Media tracks MUST TAKE: nm_101, nm_231, nm_251, nm_281, nm_222, nm_438, and nm_490
             </p>
@@ -773,11 +716,8 @@
             </p>
             <p class="overview"> * Satisfactory completion of nm_438 with a grade of C or better domonstrates oral competency. Completetion of nm_490 with a grade of C or better domonstrates major and computer competency.
             </p>
-
         </div>
-    </div>
-    
-    
+    </div>   
 </div>
 <div class="lightbox" id="video">
     <div class="lightbox-half">
@@ -790,24 +730,20 @@
         <h4 class="lightbox-secondary-heading">Software used</h4>
         <p class="details">final cut pro + after effects + premiere pro + max msp jitter</p>
         <div class="spacer"></div>
-    </div>
-    
+    </div> 
     <div class="divider-four-year"></div>
     <div class="four-year-plan">
         <h3 class="title">Suggested 4_year Plan</h3>
         <p class="overview"> To help you get started on this collegiate adventure of New Media, we have put together a suggested 4-year plan that charts out the required classes and prerequisites involved in a New Media major focusing on Web and interactive design. To read detailed course descriptions <a href="http://catalog.unca.edu/content.php?filter%5B27%5D=NM&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=9&expand=&navoid=498&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter" target="_blank">click here</a>.</p>
         <br>
         <h4 class="lightbox-secondary-heading">cumulative total_hrs: 122</h4>
-
         <div class="year-section">
             <h4 class="lightbox-secondary-heading">Freshman Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
                         <p class="details">+ Fall</p>
                     </th>
-
                 </tr>
                 <tr>
                     <td><span class="nm-class">nm_101</span></td>
@@ -830,7 +766,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -862,11 +797,8 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
-
             <h4 class="lightbox-secondary-heading">sophomore Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
@@ -898,7 +830,6 @@
                     <td>18</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -927,7 +858,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -960,7 +890,6 @@
                     <td>16</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -993,7 +922,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -1026,7 +954,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -1058,8 +985,7 @@
                     <td>13</td>
                 </tr>
             </table>
-        </div>
-        
+        </div>  
         <div class="requirement-notes">
             <p class="overview"> * Students in all New Media tracks MUST TAKE: nm_101, nm_231, nm_251, nm_281, nm_222, nm_438, and nm_490
             </p>
@@ -1071,8 +997,7 @@
             </p>
 
         </div>
-    </div>
-    
+    </div>    
 </div>
 <div class="lightbox" id="mix">
     <div class="lightbox-half">
@@ -1085,26 +1010,20 @@
         <h4 class="lightbox-secondary-heading">Software used</h4>
         <p class="details">photoshop + illustrator + html + css + javascript + brackets + dreamweaver + max msp jitter + final cut pro + after effects + premiere pro + maya + mudbox + 3ds max + flash + toonboom </p>
         <div class="spacer"></div>
-
-    </div>
-    
-    
+    </div>    
     <div class="divider-four-year"></div>
     <div class="four-year-plan">
         <h3 class="title">Suggested 4_year Plan</h3>
         <p class="overview"> To help you get started on this collegiate adventure of New Media, we have put together a suggested 4-year plan that charts out the required classes and prerequisites involved in a New Media major focusing on web and interactive design. To read detailed course descriptions <a href="http://catalog.unca.edu/content.php?filter%5B27%5D=NM&filter%5B29%5D=&filter%5Bcourse_type%5D=-1&filter%5Bkeyword%5D=&filter%5B32%5D=1&filter%5Bcpage%5D=1&cur_cat_oid=9&expand=&navoid=498&search_database=Filter&filter%5Bexact_match%5D=1#acalog_template_course_filter" target="_blank">click here</a>.</p>
         <br>
         <h4 class="lightbox-secondary-heading">cumulative total_hrs: 122</h4>
-
         <div class="year-section">
             <h4 class="lightbox-secondary-heading">Freshman Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
                         <p class="details">+ Fall</p>
                     </th>
-
                 </tr>
                 <tr>
                     <td><span class="nm-class">nm_101</span></td>
@@ -1127,7 +1046,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -1159,11 +1077,8 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
-
             <h4 class="lightbox-secondary-heading">sophomore Year</h4>
-
             <table class="four-year-plan-details fall">
                 <tr>
                     <th>
@@ -1195,7 +1110,6 @@
                     <td>18</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -1224,7 +1138,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -1257,7 +1170,6 @@
                     <td>16</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -1290,7 +1202,6 @@
                 </tr>
             </table>
         </div>
-
         <div class="year-section">
             <table class="four-year-plan-details fall">
                 <th>
@@ -1323,7 +1234,6 @@
                     <td>14</td>
                 </tr>
             </table>
-
             <table class="four-year-plan-details spring">
                 <tr>
                     <th>
@@ -1355,8 +1265,7 @@
                     <td>13</td>
                 </tr>
             </table>
-        </div>
-        
+        </div>   
         <div class="requirement-notes">
             <p class="overview"> * Students in all New Media tracks MUST TAKE: nm_101, nm_231, nm_251, nm_281, nm_222, nm_438, and nm_490
             </p>
@@ -1366,27 +1275,19 @@
             </p>
             <p class="overview"> * Satisfactory completion of nm_438 with a grade of C or better domonstrates oral competency. Completetion of nm_490 with a grade of C or better domonstrates major and computer competency.
             </p>
-
         </div>
-    </div>
-    
+    </div>    
 </div>
     <!-- Big block of content that has the changing color background when scrolling -->
-
 <div class="about-wrap">
-
     <section id="faq">
     <h2>faq</h2>
-    <!--<h4>this is the only question everyone wants to know...</h4>-->
     <h1 class="hero-txt light">What can I do with a nm_degree?</h1>
-
     <div class="question">
         <h2>You can <span id="typed" class="typed"></span></h2>
-
         <div class="wrap">
             <div class="type-wrap">
-                <div id="typed-strings">
-                    
+                <div id="typed-strings">             
                     <p>do anything you want... no really!</p>
                     <p>join the cia!</p>
                     <p>be a film director.</p>
@@ -1421,8 +1322,6 @@
             </div>
         </div>
     </div>
-
-
     <script type="text/javascript">
         (function($) {
             $(function() {
@@ -1434,82 +1333,15 @@
                     cursorChar: "_",
                     contentType: 'text',
                     callback: function() {}
-
-                });
-            });
-
-
-
-        })(jQuery);
-
-    </script>
-
-
-    <!--quick JS -->
-    <!--
-    <script type="text/javascript">
-        (function ($) {
-
-            $(function () {
-                $("#typed").typed({
-                    strings: ["do anything you want. no really!",
-                              "design websites.", 
-                              "be a film director.",
-                              "work at a hospital.",
-                              "be a coder.",
-                              "join the cia!",
-                              "build virtual reality environments.",
-                              "be a digital editor.",
-                              "work from anywhere on your laptop.",
-                              "start a revolution.",
-                              "become a youtube sensation.",
-                              "work for Pixar.",
-                              "start your own production company.",
-                              "work a camera.",
-                              "create music videos.", 
-                              "design user interface for surgeons.",
-                              "make big bucks as a creative director.",
-                              "be a graphic designer.", 
-                              "do research.",
-                              "visualize data.",
-                              "change the world.",
-                              "create hilarious super bowl ads.",
-                              "brand anybody or anything!",
-                              "start your own agency.",
-                              "be an educator."],
-                    
-                    typeSpeed: 60,
-                    backDelay: 1500,
-                    loop: true,
-                    callback: function () {}
                 });
             });
         })(jQuery);
     </script>
-
-
-- ADD THIS TO THE FUNCTION IF THE BUG HAPPENS AGAIN -
-
-        function jiggle_cursor(){
-                $('.typed-cursor').toggle();
-                setTimeout(function(){ jiggle_cursor(); }, 600);
-            }
-
-            jiggle_cursor();
-
--->
-
-
-
-
-
-
 </section>
  
     <section id="statistics">
     <h2>attitude is everything</h2>
-    <h4>Having the right attitude is key to thriving in the creative industry. Master these skills below and you will succeed! The first five were taken from <a href="http://www.aiga.org/want-to-change-your-job--first-change-your-attitude/" target="_blank">this great article</a> originally posted on <a href="http://www.aiga.org/" target="_blank">AIGA.org</a>, an incredible resource for aspiring designers/artists. </h4>
-    
+    <h4>Having the right attitude is key to thriving in the creative industry. Master these skills below and you will succeed! The first five were taken from <a href="http://www.aiga.org/want-to-change-your-job--first-change-your-attitude/" target="_blank">this great article</a> originally posted on <a href="http://www.aiga.org/" target="_blank">AIGA.org</a>, an incredible resource for aspiring designers/artists. </h4>  
     <div class="statistics-row clearfix">
         <div class="block_timeline one_timeline type-blk">
             <div class="timeline_content">
@@ -1517,139 +1349,120 @@
             <p>If you don't know what to do or find yourself stuck (which will often be the case when you're new in a job or just starting out in your career) ask someone who can give you the right answer.</p>
             </div>
         </div>
-    
-
-
         <div class="block_timeline two_timeline type-blk">
             <div class="timeline_content">
             <h3>2. Be a problem solver</h3>
             <p>Your drive to find the best solution should always carry you through this stage of any brief, especially when you feel you've exhausted all possible creative avenues. </p>
             </div>
         </div>
-
-
-
         <div class="block_timeline three_timeline type-blk">
             <div class="timeline_content">
             <h3>3. Be an attentive listener</h3>
             <p>Design for the clients' needs, not what you think their needs are. </p>
             </div>
         </div>
-
         <div class="block_timeline four_timeline type-blk">
             <div class="timeline_content">
             <h3>4. Be a passionate learner</h3>
             <p>As this desire to grow develops into action and learning, you become more valuable and, in turn, are delivering higher standards of work. </p>
             </div>
         </div>
-
         <div class="block_timeline five_timeline type-blk">
             <div class="timeline_content">
             <h3>5. Be grateful</h3>
             <p>A small shift in perspective like this will not only have employers drawn to you, but you will begin to love challenges and have more energy in your approaches. </p>
             </div>
         </div>
-
         <div class="block_timeline six_timeline type-blk">
             <div class="timeline_content">
             <h3>6. do what you're afraid to do</h3>
             <p>if the projects your involved in and the clients you're going after don't scare you, then push harder and aim higher. </p>
             </div>
         </div>
-
         <div class="block_timeline seven_timeline type-blk">
             <div class="timeline_content">
             <h3>7. enjoy it, it'll be over soon</h3>
             <p>It may seem like an eternity when you're up against a creative block but don't forget to enjoy that part of the process too – you'll find the gold!</p>
             </div>
         </div>
-
-
     </div>
-
 </section>
-    <section> 
-<div id="about">
+    <section>
+    <div id="about">
         <h2>Our_Story</h2>
-        <p>We are an educational science experiment – a fusion of artist, designer, and computer scientist – and we've had very successful results. Check out where several of our alumni are now.</p> </div>
-    
-        <div id="nm-slider" class="owl-carousel owl-theme">
-            <div class="item slider1">
-                    <div class="alumni">
-                        <p>UNCA 2009</p>
-                        
-                        <h2>Allison Callaway</h2>
-                        <h3>Web Designer</h3>
-                        <br>
-                        <p><a href="http://www.allisoncallaway.com" target="_blank">
+        <p>We are an educational science experiment – a fusion of artist, designer, and computer scientist – and we've had very successful results. Check out where some of our alumni are now.</p>
+    </div>
+    <div id="nm-slider" class="owl-carousel owl-theme">
+        <div class="item slider1">
+            <div class="alumni">
+                <p>UNCA 2009</p>
+                <h2>Allison Callaway</h2>
+                <h3>Web Designer</h3>
+                <br>
+                <p><a href="http://www.allisoncallaway.com" target="_blank">
                             &lt;Check out their work&gt;
                         </a></p>
-                    </div>
-            </div>
-            <div class="item slider2">
-                    <div class="alumni">
-                        <p>UNCA 2010</p>
-                        <h2>David Howard</h2>
-                        <h3>Freelance Animator</h3>
-                        
-                        <br>
-                        <p><a href="http://www.davidhfilms.com" target="_blank">
-                            &lt;Check out their work&gt;
-                        </a></p>
-                    </div>
-            </div>
-            <div class="item slider3">
-                    <div class="alumni">
-                        <p>UNCA 2005</p>
-                        <h2>Joshua Coyle</h2>
-                        <h3>Web Designer, CEO of GRP82</h3>                   
-                        <br>
-                        <p><a href="http://www.joshuacoyle.com" target="_blank">
-                            &lt;Check out their work&gt;
-                        </a></p>
-                    </div>
-            </div>
-            <div class="item slider4">
-                    <div class="alumni">
-                        <p>UNCA 2008</p>
-                        <h2>Mike Patterson</h2>
-                        <h3>Lead Designer at Secret Michael</h3>
-                        <br>
-                        <p><a href="http://www.secretmichael.com" target="_blank">
-                            &lt;Check out their work&gt;
-                        </a></p>
-                    </div>
-            </div>
-            <div class="item slider5">
-                    <div class="alumni">
-                        <p>UNCA 2009</p>
-                        <h2>Wray Bolwing</h2>
-                        <h3>Graphic &amp; Web Designer</h3>
-                        <br>
-                        <p><a href="http://www.rgbk.org" target="_blank">
-                            &lt;Check out their work&gt;
-                            </a></p>
-                    </div>
             </div>
         </div>
-
-    </section> 
-    <section id="philosophy">
+        <div class="item slider2">
+            <div class="alumni">
+                <p>UNCA 2010</p>
+                <h2>David Howard</h2>
+                <h3>Freelance Animator</h3>
+                <br>
+                <p><a href="http://www.davidhfilms.com" target="_blank">
+                            &lt;Check out their work&gt;
+                        </a></p>
+            </div>
+        </div>
+        <div class="item slider3">
+            <div class="alumni">
+                <p>UNCA 2005</p>
+                <h2>Joshua Coyle</h2>
+                <h3>Web Designer, CEO of GRP82</h3>
+                <br>
+                <p><a href="http://www.joshuacoyle.com" target="_blank">
+                            &lt;Check out their work&gt;
+                        </a></p>
+            </div>
+        </div>
+        <div class="item slider4">
+            <div class="alumni">
+                <p>UNCA 2008</p>
+                <h2>Mike Patterson</h2>
+                <h3>Lead Designer at Secret Michael</h3>
+                <br>
+                <p><a href="http://www.secretmichael.com" target="_blank">
+                            &lt;Check out their work&gt;
+                        </a></p>
+            </div>
+        </div>
+        <div class="item slider5">
+            <div class="alumni">
+                <p>UNCA 2009</p>
+                <h2>Wray Bolwing</h2>
+                <h3>Graphic &amp; Web Designer</h3>
+                <br>
+                <p><a href="http://www.rgbk.org" target="_blank">
+                            &lt;Check out their work&gt;
+                            </a></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="philosophy">
     <h2 class="light">Our_Belief</h2>
-    <p class="quote light">“Experimentation is relevant to any discipline but particularly New Media because its <span style="text-decoration:underline;">new</span>, so how are you going to know what's possible unless you play and break things to see how it works”</p>
+    <p class="quote light">“Experimentation is relevant to any discipline but particularly New Media because it's <span style="text-decoration:underline;">new</span>, so how are you going to know what's possible unless you play and break things to see how it works”</p>
     <h6 class="credit light">Curt Cloninger, Professor of New Media at UNC Asheville</h6>
-<br>
-
-</section> 
-    <section id="commitment">
-    
+    <br>
+</section>
+<section id="commitment">    
     <div id="com-photo">
         <!--<img src="images/optical_art.png">-->
         <div class="com-hero">this is the future</div>
         <p class="photo-caption"></p>
     </div>
-
-</section>
+</section> 
     <section id="graduate">
     <div class="graduate-pic light">
         <img src="/images/idea_graduate.png">
@@ -1658,9 +1471,7 @@
     <h1 class="hero-txt light">typical graduate's portfolio</h1>
     <br>
     <p class="txt-adv light">A graduate from UNCA New Media will leave with a diverse portfolio covering a wide array of concepts and skills. You will get the experience of experimentation across multiple disciplines, technological devices and software.</p>
-
     <div class="types-row clearfix">
-
         <a href="#" data-featherlight="#interactive-port">
             <div class="block_types one-port type-blk">
                 <div class="type_content">
@@ -1670,7 +1481,6 @@
                 </div>
             </div>
         </a>
-
         <a href="#" data-featherlight="#animation-port">
             <div class="block_types two-port type-blk">
                 <div class="type_content">
@@ -1680,7 +1490,6 @@
                 </div>
             </div>
         </a>
-
         <a href="#" data-featherlight="#video-port">
             <div class="block_types three-port type-blk">
                 <div class="type_content light">
@@ -1690,7 +1499,6 @@
                 </div>
             </div>
         </a>
-
         <a href="#" data-featherlight="#multi-port">
             <div class="block_types four-port type-blk">
                 <div class="type_content">
@@ -1701,185 +1509,137 @@
             </div>
         </a>
     </div>
-
 </section>
-
-
-
 <div class="lightbox" id="interactive-port">
     <h3 class="title full-width">Projects Completed by student on Web + interactive design track</h3>
-    <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in web &amp; Interactive Design</p>
+    <p>This Graduate's Portfolio lists all works completed by a student while at UNCA in the New Media program focusing in web &amp; Interactive Design</p>
     <br>
-    <div class="lightbox-half">
-
+    <div class="lightbox-half pad-right">
         <ul>
-            <li>Custom mythical creature</li>
-
-            <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
-            <li>Director of an episode for a Independent Pilot Show</li>
-            <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
-            <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
-            <li>Website instrument </li>
-            <li>Stop-motion film</li>
-            <li>Animated type driven narrative short</li>
-
+            <li>Experimental animated gif collage displayed as a scrolling webpage</li>
+            <li>Responsive website featuring a non-linear experience</li>
+            <li>Full length pilot episode for a mock show</li>
+            <li>Interactive web-based instrument in the form of a website</li>
+            <li>Narrative short film</li>
+            <li>Mythical creature/character design</li>
+            <li>Short stop-motion film</li>
+            <li>Animated-type driven narrative short</li>
         </ul>
     </div>
     <div class="lightbox-half">
         <ul>
-
-            <li>Produced a music video</li>
-            <li>Personal brand design</li>
-            <li>Pitch deck template</li>
-
+            <li>Produced/edited a music video</li>
+            <li>Developed personal brand including a logo</li>
             <li>Abstract film</li>
             <li>Poster design</li>
-            <li>3-d animated short</li>
-            <li>Web application using an api that evaluates the sentiment of text and website urls</li>
-            <li>Custom typeface that was offered online as a free download</li>
-            <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
-            <li>Narrative short film</li>
-
-
+            <li>3-d animated short film</li>
+            <li>Web application/tool that used a public api</li>
+            <li>Developed a 2-d character</li>
+            <li>3-d fantasy environment modeled, textured, and lit in Maya</li>
         </ul>
     </div>
 </div>
-
-
 <div class="lightbox" id="animation-port">
     <h3 class="title full-width">Projects Completed by student on Computer Animation track</h3>
-    <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in computer animation.</p>
+    <p>This Graduate's Portfolio lists all works completed by a student while at UNCA in the New Media program focusing in computer animation.</p>
     <br>
-    <div class="lightbox-half">
-
+    <div class="lightbox-half pad-right">
         <ul>
-
+            <li>Music video</li>
             <li>Promotional video using type animation</li>
-            <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
-            <li>Director of an episode for a Independent Pilot Show</li>
+            <li>Custom 2-d character development</li>  
+            <li>Narrative short film</li>
             <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
             <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
             <li>Custom mythical creature</li>
-            <li>Interactive musical interface website </li>
-
+            <li>Interactive musical interface website </li>         
         </ul>
     </div>
     <div class="lightbox-half">
-        <ul>
+        <ul> 
             <li>3-d animated short film</li>
-            <li>Music video</li>
-            <li>Personal logo</li>
-            <li>Pitch deck template</li>
+            <li>Logo for freelance animation business</li>
             <li>Stop-motion film</li>
             <li>Abstract film</li>
-            <li>T-shirt design</li>
             <li>Web application using an api that evaluates the sentiment of text and website urls</li>
-            <li>Custom typeface that was offered online as a free download</li>
-            <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
-            <li>Narrative short film</li>
-
-
+            <li>3-d post-apocalyptic environment</li>
+            <li>Fully developed 3-d character with rigging</li>
+            <li>3-d post-apocalyptic environment</li>
+            <li>Computer animated film using custom character and environment</li>
         </ul>
     </div>
 </div>
 <div class="lightbox" id="video-port">
     <h3 class="title full-width">Projects Completed by student on Video art + design track</h3>
-    <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in video art and design.</p>
+    <p>This Graduate's Portfolio lists all works completed by a student while at UNCA in the New Media program focusing in video art and design.</p>
     <br>
-    <div class="lightbox-half">
-
+    <div class="lightbox-half pad-right">
         <ul>
-            <li>Designed a t-shirt</li>
-            <li>Promotional video using type animation</li>
+            <li>Designed a concert poster for National touring band</li>
+            <li>Promoted an idea with video hinged on type-animation</li>
             <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
-            <li>Web application using an api that evaluates the sentiment of text and website urls</li>
-            <li>Custom typeface that was offered online as a free download</li>
-            <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
-            <li>Interactive musical interface website </li>
-
+            <li>Created a 2-d character with a world and history</li>
+            <li>Online collage with scrolling page of animated gifs</li>
+            <li>Created a musical interface with html/css on the web </li>
+            <li>3-d animated narrative film</li>
+            <li>Live action narrative short film</li>
         </ul>
     </div>
     <div class="lightbox-half">
         <ul>
-            <li>3-d animated short film</li>
-            <li>Music video</li>
-            <li>Personal logo</li>
-            <li>Pitch deck template</li>
-            <li>Stop-motion film</li>
             <li>Abstract film</li>
+            <li>Personal demo/sizzle reel</li>
+            <li>Stop-motion film</li>
+            <li>Music video</li>
+            <li>Modeled a 3-d Lord of the Rings environment in maya with textures and lighting</li>
             <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
-            <li>Director of an episode for a Independent Pilot Show</li>
-            <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
-            <li>Mythical creature design</li> 
-            <li>Narrative short film</li>
-
-
+            <li>Director/editor of a pilot episode for a Independent Show</li>
+            <li>Custom 2-d mythical creature</li> 
         </ul>
     </div>
 </div>
-
 <div class="lightbox" id="multi-port">
     <h3 class="title full-width">Projects Completed by student on dual focus track - Interactive + Video</h3>
-    <p>Graduate's Portfolio listing all works completed while a student at UNCA New Media focusing in both web and Interactive Design and video art and desgin.</p>
+    <p>This Graduate's Portfolio lists all works completed by a student while at UNCA in the New Media program focusing in both web and interactive design and video art and design.</p>
     <br>
-    <div class="lightbox-half">
-
+    <div class="lightbox-half pad-right">
         <ul>
             <li>Custom mythical creature</li>
             <li>Promotional video using type animation</li>
+            <li>Personal logo and portfolio site</li>
             <li>Responsive website featuring a non-linear experience that demonstrates the mystery of memory through interactivity</li>
             <li>Director of an episode for a Independent Pilot Show</li>
             <li>A collection of fine art pieces disassembled and animated into gifs that reveal the power of manipulation via digital media</li>
             <li>Interactive musical interface website </li>
-            <li>3-d animated short film</li>
+            <li>3-d modeled, computer animated short film</li>
             <li>Music video</li>
-
-
+            <li>Abstract film</li>
+            <li>Interactive MAX MSP live video editing system</li>
         </ul>
     </div>
     <div class="lightbox-half">
         <ul>
             <li>Experimental web-based scrolling collage built out of custom animated gifs</li>
-            <li>Personal logo</li>
             <li>Pitch deck template</li>
+            <li>Live art performance Max patch that interacts with sound to create visuals </li>
             <li>Stop-motion film</li>
-            <li>Abstract film</li>
             <li>T-shirt design</li>
             <li>Web application using an api that evaluates the sentiment of text and website urls</li>
-            <li>Custom typeface that was offered online as a free download</li>
+            <li>Created custom font/typeface that was offered online as a free download</li>
             <li>Realistic 3-d environment modeled, textured, and lighting in Maya</li>
             <li>Narrative short film</li>
-
-
+            <li>Developed one-page website for recruitment office of UNCA to introduce New Media to prospective students</li>
+            <li>Designed and build Official UNC Asheville New Media Department Website</li>
         </ul>
     </div>
+</div>   
 </div>
-
-    <section id="nm_buttons">
-        <!--<h1 class="hero-txt">that's what we got</h1>
-        <br>
-        <div class="center_buttons">
-            <a href="http://nm.unca.edu" target="_blank">
-                <div class="learn button adv-btn">learn_more</div>
-            </a>
-            <a href="http://nm.unca.edu" target="_blank">
-                <div class="register button adv-btn">just_register</div>
-            </a>
-        </div>-->
-    </section>
-</div>
-
-
-
-    
-    <div id="faq-hero">
+<div id="faq-hero">
         <div class="hero-content">
         <h1>create the life you want</h1>
         <h3><a href="http://nm.unca.edu" target="_blank">Learn more at nm.unca.edu</a></h3>
     </div>
-        </div>
-    
-    
+</div>
     <section id="locations">
         <div class="locations-content">
         <h2>location</h2>
@@ -1888,125 +1648,106 @@
         <div id="map-container">
             <div id='map'></div>
 <script>
-    L.mapbox.accessToken = 
-'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
+    L.mapbox.accessToken ='pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
+    var map = L.mapbox.map('map', 'gfobert.6f9af935');
+    var myLayer = L.mapbox.featureLayer().addTo(map);
     var geojson = [
-    {
-  "type": "FeatureCollection",
-  "features": [
-      
-      
-      
-    {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -82.552926,
-            35.602002
-        ]
-      },
-        "properties": {
-        "title": "Moog Music Inc, 160 Broadway",
-        "marker-color": "#00ff84",
-        "marker-size": "small",
-        "marker-symbol": "triangle"
-      }
+        {
+            "type": "FeatureCollection",
+            "features": [
+                {
+                    "type": "Feature",
+                    "properties": {
+                        "title": "Moog Music Inc, 160 Broadway",
+                        "description": "160 Broadway Street, Asheville, NC 28801<br><hr>Robert Moog's current company, producing synthesizers, teremins, and accessories.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "small",
+                        "marker-symbol": "triangle"
+                    },
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [-82.552926, 35.602002]
+                    }
     },
-      
-      
-      
-      {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
           -82.552817,
           35.597776
         ]
-      },
-        "properties": {
-        "title": "Center for Craft, Creativity & Design, 67 Broadway",
-        "marker-color": "#00ff84",
-        "marker-size": "small",
-        "marker-symbol": "square"
-      }
+                    },
+                    "properties": {
+                        "title": "Center for Craft, Creativity & Design",
+                        "description": "67 Broadway, Asheville, NC 28801<br><hr>Supports research in the area of craft and design and curates exhibitions for a small gallery space and the sculpture and public art.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "small",
+                        "marker-symbol": "square"
+                    }
     },
-      
-      {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
+
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
           -82.552044,
           35.597118
         ]
-      },
-        "properties": {
-        "title": "Black Mountain Museum, 56 Broadway",
-        "marker-color": "#00ff84",
-        "marker-size": "small",
-        "marker-symbol": "star"
-      }
+                    },
+                    "properties": {
+                        "title": "Black Mountain College Museum + Arts Center",
+                        "description": "56 Broadway Street, Asheville, NC 28801<br><hr>Dedicated to preserving the history and exploring the legacy of Black Mountain College.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "small",
+                        "marker-symbol": "star"
+                    }
     },
-      
-      {
-        "type": "Feature",
-        "geometry": {
-        "type": "Point",
-        "coordinates": [
+
+                {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point",
+                        "coordinates": [
           -82.567590,
           35.617802
         ]
-      },
-        "properties": {
-        "title": "We're here!",
-        "marker-color": "#00ff84",
-        "marker-size": "large",
-        "marker-symbol": "college"
-      }
+                    },
+                    "properties": {
+                        "title": "Here we are – our campus!",
+                        "description": "1 University Heights, Asheville, NC 28804<br><hr>Come and see us, you will be inspired.",
+                        "marker-color": "#00ff84",
+                        "marker-size": "large",
+                        "marker-symbol": "college"
+                    }
     }
-      
   ]
 }
         ];
-    /*Old Map Code
-    mapboxgl.accessToken =
-    'pk.eyJ1IjoiZ2ZvYmVydCIsImEiOiJjaWs4djJmYzYwMHBmdjRrdXM1Y2Flc2NiIn0.IYhHn-yc5t0mXA3ND8XkTw';
-    var map = new mapboxgl.Map({
-    container: 'map', // container id
-    style: 'mapbox://styles/gfobert/cikcuwcv8007c9slyoez5mhyj', //stylesheet location{
-    scrollZoom: false //stop zoom on scroll
-    }).setView([-82.56, 35.60], 13.8); //location of the map*/
-    
-    var map = L.mapbox.map('map', 'gfobert.6f9af935');
-    map.scrollWheelZoom.disable();
-    var myLayer = L.mapbox.featureLayer().setGeoJSON(geojson).addTo(map);
-    
+    myLayer.setGeoJSON(geojson);
+    myLayer.on('mouseover', function (e) {
+        e.layer.openPopup();
+    });
+    myLayer.on('mouseout', function (e) {
+        e.layer.closePopup();
+    });
     // Disable drag and zoom handlers.
     map.dragging.disable();
     map.touchZoom.disable();
     map.doubleClickZoom.disable();
     map.scrollWheelZoom.disable();
     map.keyboard.disable();
-
     // Disable tap handler, if present.
     if (map.tap) map.tap.disable();
-    _mapView.userInteractionEnabled = NO;
-    
 </script>
              <!--<div id="map-bar"></div>-->
         </div>
-
-
-    </section>
-
-    <section id="contact-form">
+</section>
+<section id="contact-form">
         <h2>Contact</h2>
         <p class="txt-lrg">New Media is all about asking questions and searching for answers, and when you can't find any answers you create one. Get in touch if you have questions.</p>
-
-
-    </section>
+</section>
 
      
 
@@ -2021,16 +1762,14 @@
 
  <footer role="contentinfo" class="page-footer">
         <div id="footer-split" class="clearfix">
-            <address>
-                    
-                <h4>New Media at UNC Asheville</h4>
+            <address>                  
+                <h4>NM at UNC Asheville</h4>
                     <p>205 Zeis Hall, CPO # 2015<br>
                     One University Heights<br>
                     Asheville, NC 28804 <br>
                     <a href="tel:828-350-4567">+1 828 350 4567</a></p>
                     <a href="mailto:tmccants@unca.edu">send an email</a>
                 </address>
-
             <div id="follow">
                 <h4>Follow</h4>
                 <div id="icons">
@@ -2040,47 +1779,55 @@
                             <div class="the-icons"><i class="social-icon fa fa-facebook"></i></div>
                         </div>
                     </a>
-<!--
-                    <a href="#" target="_blank">
-                        <div class="diamond">
-                            <div class="diamond-border"></div>
-                            <div class="the-icons"><i class="social-icon fa fa-instagram"></i></div>
-                        </div>
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <div class="diamond">
-                            <div class="diamond-border"></div>
-                            <div class="the-icons"><i class="social-icon fa fa-twitter"></i></div>
-                        </div>
-                    </a>
--->
                 </div>
                 <p>#hello_nm</p>
-            </div>
-            
+            </div>           
             <div class="site-credits">
                 <h4>Makers</h4>
                     <h2>Site</h2>
                     <p><a href="https://www.facebook.com/Gabriel-Fobert-Art-Design-795087437245485/" target="_blank">Gabriel Fobert</a> + <a href="http://janiceaandrews.com/preview" target="_blank"> Janice Andrews </a> +<a href="https://vimeo.com/user39031336" target="_blank"> Nicole Erskine</a> + <a href="http://timscroggs.co" target="_blank">Tim Scroggs</a></p>
                 <br>
                     <h2>Video</h2>
-                    <p>Madeleine Richardson + Ana Pak + Chris Harris</p> 
-            
+                    <p>Madeleine Richardson + Ana Pak + Chris Harris</p>       
             </div>
-
-        </div>
-        <div class="official-logos">
-            
+            <div class="official-logos">           
              <div class="nm-logo">
             <a href="http://nm.unca.edu"><img src="/images/nmlogo_white.svg"></a>
                  </div>
             <div class="unca-logo">
             <a href="http://unca.edu"><img src="/images/unca_logo_white.png"></a>
                 </div>
-        </div>
+        </div>      
+    </div> 
+     <section id="credit">
+    <h2>site_credit</h2>
+    <p>This site is a Senior Capstone Project, designed and built by New Media students at UNC Asheville: Gabriel Fobert, Janice Andrews, Nicole Erskine and Tim Scroggs. The content and imagery above showcases all orignal student work. And the style switcher – that beautiful multi-color bar fixed to the left of your browser window (On mobile? the buttons are in main menu.) – will modify the style of the site to the unique taste of each of the designers. Check it out! </p> 
+     <div class="spacer"></div>
+     <div id="follow">
+         <h5>Share this project</h5>
+                  <br>  
+                <div id="icons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//hellonm.unca.edu/" target="_blank">
+                        <div class="diamond">
+                            <div class="diamond-border"></div>
+                            <div class="the-icons"><i class="social-icon fa fa-facebook"></i></div>
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/home?status=Check%20out%20this%20website%20made%20by%20New%20Media%20students%20at%20UNC%20Asheville!%20" target="_blank">
+                        <div class="diamond">
+                            <div class="diamond-border"></div>
+                            <div class="the-icons"><i class="social-icon fa fa-twitter"></i></div>
+                        </div>
+                    </a>           
+                    <a href="https://plus.google.com/share?url=https%3A//hellonm.unca.edu" target="_blank">
+                        <div class="diamond">
+                            <div class="diamond-border"></div>
+                            <div class="the-icons"><i class="social-icon fa fa-google-plus"></i></div>
+                        </div>
+                    </a>
+                </div>
+</section>
     </footer>
-
 
     </div>
     <!-- Load jQuery -->
@@ -2088,28 +1835,17 @@
     <script>
         window.jQuery || document.write('<script src="/scripts/vendor/jquery-1.11.2.min.js"><\/script>')
     </script>
-
-    <!-- Main JS -->
-    <script src="/scripts/main.js"></script>
-
-    <!-- for featherlight light box -->
-    <script type="text/javascript" src="/scripts/vendor/featherlight.min.js"></script>
+    <!-- Main JS code is pasted into defer.js <script src="/scripts/main.min.js"></script>-->
+    <!-- for featherlight light box -code is pasted into defer.js <script type="text/javascript" src="/scripts/vendor/featherlight.min.js"></script> -->
     <!--
     <script src="//cdn.rawgit.com/noelboss/featherlight/1.3.5/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>-->
-
-
-
-
     <script>
         // *** TO BE CUSTOMISED ***
-
         var style_cookie_name = "style";
         var style_cookie_duration = 30;
         var style_domain = "";
-
         // *** END OF CUSTOMISABLE SECTION ***
         // You do not need to customise anything below this line
-
         function switch_style(css_title) {
             // You may use this script on your site free of charge provided
             // you do not remove this notice or the URL below. Script from
@@ -2127,14 +1863,12 @@
                     style_cookie_duration, style_domain);
             }
         }
-
         function set_style_from_cookie() {
             var css_title = get_cookie(style_cookie_name);
             if (css_title.length) {
                 switch_style(css_title);
             }
         }
-
         function set_cookie(cookie_name, cookie_value,
             lifespan_in_days, valid_domain) {
             // http://www.thesitewizard.com/javascripts/cookies.shtml
@@ -2146,7 +1880,6 @@
                 24 * lifespan_in_days +
                 "; path=/" + domain_string;
         }
-
         function get_cookie(cookie_name) {
             // http://www.thesitewizard.com/javascripts/cookies.shtml
             var cookie_string = document.cookie;
@@ -2160,17 +1893,37 @@
             return '';
         }
     </script>
-    
+<!-- Google Analytics Script goes here -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <!-- Google Analytics Script goes here -->
-    
-    
-    
-    
-    <!-- END - Google Analytics Script goes here -->
-
-    
-    <!-- Site by Gabriel Fobert, Nicole Erskine, Janice Andrews, and Tim Scroggs -->
+        ga('create', 'UA-77065809-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- END - Google Analytics Script goes here -->    
+<!-- Code snippet from varvy.com - defers loading of javascript until the page has loaded -->
+<script type="text/javascript">
+function downloadJSAtOnload() {
+var element = document.createElement("script");
+element.src = "/scripts/defer.js";
+document.body.appendChild(element);
+}
+if (window.addEventListener)
+window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+</script>    
+<!-- Site by Gabriel Fobert, Nicole Erskine, Janice Andrews, and Tim Scroggs -->
 </body>
-
 </html>
