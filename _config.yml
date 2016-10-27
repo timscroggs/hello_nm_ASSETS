@@ -12,6 +12,7 @@ description: "Hi, you. Meet New Media. New media, say hello. Hello_nm! Welcome t
 baseurl: ""
 url: ""
 tagline: "What is new media?"
+include: ['.htaccess']
 
 
 # Build settings
