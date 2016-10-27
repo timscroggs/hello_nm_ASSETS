@@ -679,7 +679,7 @@ h1.hero-txt {
 }
 
 #hero h1.hero-txt a {
-    opacity: .5;
+    opacity: .8;
     font-size: 130px;
     font-weight: 700;
     color: #fff;
@@ -1855,6 +1855,7 @@ section#credit h2 {
     }
     #hero h1.hero-txt a {
         font-size: 90px;
+        color:#ff7a54;
     }
     h1.hero-txt {
         padding-top: 25px;
